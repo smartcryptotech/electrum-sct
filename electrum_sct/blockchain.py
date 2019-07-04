@@ -424,7 +424,7 @@ class Blockchain(util.PrintError):
         if os.path.exists(path):
             return
         elif not os.path.exists(util.get_headers_dir(self.config)):
-            raise FileNotFoundError('Electrum-NYC headers_dir does not exist. Was it deleted while running?')
+            raise FileNotFoundError('Electrum-SCT headers_dir does not exist. Was it deleted while running?')
         else:
             raise FileNotFoundError('Cannot find headers file but headers_dir is there. Should be at {}'.format(path))
 
@@ -688,7 +688,7 @@ class Blockchain(util.PrintError):
         # for each chunk, store the hash of the last block and the target after the chunk
         cp = []
 
-        # NewYorkCoin: don't generate checkpoints for unexpired names, because
+        # SmartCryptoTech: don't generate checkpoints for unexpired names, because
         # otherwise we'll need to fetch chunks on demand during name lookups,
         # which will add some latency.  TODO: Allow user-configurable pre-
         # fetching of checkpointed unexpired chunks.
