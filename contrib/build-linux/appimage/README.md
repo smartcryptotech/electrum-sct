@@ -1,4 +1,4 @@
-AppImage binary for Electrum-NYC
+AppImage binary for Electrum-SCT
 ============================
 
 This assumes an Ubuntu host, but it should not be too hard to adapt to another
@@ -25,9 +25,9 @@ folder.
     ```
     $ sudo docker run -it \
         --name electrum-appimage-builder-cont \
-        -v $PWD:/opt/electrum-nyc \
+        -v $PWD:/opt/electrum-sct \
         --rm \
-        --workdir /opt/electrum-nyc/contrib/build-linux/appimage \
+        --workdir /opt/electrum-sct/contrib/build-linux/appimage \
         electrum-appimage-builder-img \
         ./build.sh
     ```
@@ -38,4 +38,4 @@ folder.
 ## FAQ
 
 ### How can I see what is included in the AppImage?
-Execute the binary as follows: `./electrum-nyc*.AppImage --appimage-extract`
+Execute the binary as follows: `./electrum-sct*.AppImage --appimage-extract`
