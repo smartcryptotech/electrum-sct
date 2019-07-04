@@ -249,7 +249,7 @@ class CoinChooserBase(PrintError):
             return total_input >= spent_amount + fee_estimator_w(total_weight)
 
         # Collect the coins into buckets, choose a subset of the buckets
-        # We check sufficient_funds against an empty list because in NewYorkCoin
+        # We check sufficient_funds against an empty list because in SmartCryptoTech
         # we might have sufficient funds solely from the name inputs.
         if sufficient_funds([]):
             buckets = []
