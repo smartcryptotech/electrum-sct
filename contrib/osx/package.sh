@@ -17,15 +17,15 @@ export PATH=$PATH:~/bin
 . $(dirname "$0")/base.sh
 
 if [ -z "$1" ]; then
-    echo "Usage: $0 Electrum-NYC.app"
+    echo "Usage: $0 Electrum-SCT.app"
     exit -127
 fi
 
 mkdir -p ~/bin
 
 if ! which ${genisoimage} > /dev/null 2>&1; then
-	mkdir -p /tmp/electrum-nyc-macos
-	cd /tmp/electrum-nyc-macos
+	mkdir -p /tmp/electrum-sct-macos
+	cd /tmp/electrum-sct-macos
 	info "Downloading cdrkit $cdrkit_version"
 	wget -nc ${cdrkit_download_path}/${cdrkit_file_name}
 	tar xvf ${cdrkit_file_name}
@@ -41,8 +41,8 @@ if ! which ${genisoimage} > /dev/null 2>&1; then
 fi
 
 if ! which dmg > /dev/null 2>&1; then
-    mkdir -p /tmp/electrum-nyc-macos
-	cd /tmp/electrum-nyc-macos
+    mkdir -p /tmp/electrum-sct-macos
+	cd /tmp/electrum-sct-macos
 	info "Downloading libdmg"
     LD_PRELOAD= git clone ${libdmg_url}
     cd libdmg-hfsplus
@@ -60,9 +60,9 @@ test -f "$plist" || fail "Info.plist not found"
 VERSION=$(grep -1 ShortVersionString $plist |tail -1|gawk 'match($0, /<string>(.*)<\/string>/, a) {print a[1]}')
 echo $VERSION
 
-rm -rf /tmp/electrum-nyc-macos/image > /dev/null 2>&1
-mkdir /tmp/electrum-nyc-macos/image/
-cp -r $1 /tmp/electrum-nyc-macos/image/
+rm -rf /tmp/electrum-sct-macos/image > /dev/null 2>&1
+mkdir /tmp/electrum-sct-macos/image/
+cp -r $1 /tmp/electrum-sct-macos/image/
 
 build_dir=$(dirname "$1")
 test -n "$build_dir" -a -d "$build_dir" || exit
@@ -73,16 +73,16 @@ ${genisoimage} \
     -D \
     -l \
     -probe \
-    -V "Electrum-NYC" \
+    -V "Electrum-SCT" \
     -no-pad \
     -r \
     -dir-mode 0755 \
     -apple \
-    -o Electrum-NYC_uncompressed.dmg \
-    /tmp/electrum-nyc-macos/image || fail "Unable to create uncompressed dmg"
+    -o Electrum-SCT_uncompressed.dmg \
+    /tmp/electrum-sct-macos/image || fail "Unable to create uncompressed dmg"
 
-dmg dmg Electrum-NYC_uncompressed.dmg electrum-nyc-$VERSION.dmg || fail "Unable to create compressed dmg"
-rm Electrum-NYC_uncompressed.dmg
+dmg dmg Electrum-SCT_uncompressed.dmg electrum-sct-$VERSION.dmg || fail "Unable to create compressed dmg"
+rm Electrum-SCT_uncompressed.dmg
 
 echo "Done."
-sha256sum electrum-nyc-$VERSION.dmg
+sha256sum electrum-sct-$VERSION.dmg
