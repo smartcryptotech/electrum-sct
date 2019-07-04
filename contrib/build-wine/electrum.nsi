@@ -6,9 +6,9 @@
 ;--------------------------------
 ;Variables
 
-  !define PRODUCT_NAME "Electrum-NYC"
-  !define PRODUCT_WEB_SITE "https://www.newyorkcoin.org/"
-  !define PRODUCT_PUBLISHER "NewYorkCoin Project"
+  !define PRODUCT_NAME "Electrum-SCT"
+  !define PRODUCT_WEB_SITE "https://www.smartcryptotech.org/"
+  !define PRODUCT_PUBLISHER "SmartCryptoTech Project"
   !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
 
 ;--------------------------------
@@ -16,7 +16,7 @@
 
   ;Name and file
   Name "${PRODUCT_NAME}"
-  OutFile "dist/electrum-nyc-setup.exe"
+  OutFile "dist/electrum-sct-setup.exe"
 
   ;Default installation folder
   InstallDir "$PROGRAMFILES\${PRODUCT_NAME}"
@@ -72,7 +72,7 @@
   !define MUI_ABORTWARNING
   !define MUI_ABORTWARNING_TEXT "Are you sure you wish to abort the installation of ${PRODUCT_NAME}?"
   
-  !define MUI_ICON "c:\electrum-nyc\electrum_nyc\gui\icons\electrum_nyc.ico"
+  !define MUI_ICON "c:\electrum-sct\electrum_sct\gui\icons\electrum_sct.ico"
   
 ;--------------------------------
 ;Pages
@@ -110,8 +110,8 @@ Section
   Delete "$SMPROGRAMS\${PRODUCT_NAME}\*.*"
   
   ;Files to pack into the installer
-  File /r "dist\electrum-nyc\*.*"
-  File "c:\electrum-nyc\electrum_nyc\gui\icons\electrum_nyc.ico"
+  File /r "dist\electrum-sct\*.*"
+  File "c:\electrum-nyc\electrum_sct\gui\icons\electrum_sct.ico"
 
   ;Store installation folder
   WriteRegStr HKCU "Software\${PRODUCT_NAME}" "" $INSTDIR
@@ -122,21 +122,21 @@ Section
 
   ;Create desktop shortcut
   DetailPrint "Creating desktop shortcut..."
-  CreateShortCut "$DESKTOP\${PRODUCT_NAME}.lnk" "$INSTDIR\electrum-nyc-${PRODUCT_VERSION}.exe" ""
+  CreateShortCut "$DESKTOP\${PRODUCT_NAME}.lnk" "$INSTDIR\electrum-sct-${PRODUCT_VERSION}.exe" ""
 
   ;Create start-menu items
   DetailPrint "Creating start-menu items..."
   CreateDirectory "$SMPROGRAMS\${PRODUCT_NAME}"
   CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\Uninstall.lnk" "$INSTDIR\Uninstall.exe" "" "$INSTDIR\Uninstall.exe" 0
-  CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\${PRODUCT_NAME}.lnk" "$INSTDIR\electrum-nyc-${PRODUCT_VERSION}.exe" "" "$INSTDIR\electrum-nyc-${PRODUCT_VERSION}.exe" 0
-  CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\${PRODUCT_NAME} Testnet.lnk" "$INSTDIR\electrum-nyc-${PRODUCT_VERSION}.exe" "--testnet" "$INSTDIR\electrum-nyc-${PRODUCT_VERSION}.exe" 0
+  CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\${PRODUCT_NAME}.lnk" "$INSTDIR\electrum-sct-${PRODUCT_VERSION}.exe" "" "$INSTDIR\electrum-sct-${PRODUCT_VERSION}.exe" 0
+  CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\${PRODUCT_NAME} Testnet.lnk" "$INSTDIR\electrum-sct-${PRODUCT_VERSION}.exe" "--testnet" "$INSTDIR\electrum-sct-${PRODUCT_VERSION}.exe" 0
 
 
   ;Links bitcoin: URI's to Electrum
-  WriteRegStr HKCU "Software\Classes\newyorkcoin" "" "URL:newyorkcoin Protocol"
-  WriteRegStr HKCU "Software\Classes\newyorkcoin" "URL Protocol" ""
-  WriteRegStr HKCU "Software\Classes\newyorkcoin" "DefaultIcon" "$\"$INSTDIR\electrum_nyc.ico, 0$\""
-  WriteRegStr HKCU "Software\Classes\newyorkcoin\shell\open\command" "" "$\"$INSTDIR\electrum-nyc-${PRODUCT_VERSION}.exe$\" $\"%1$\""
+  WriteRegStr HKCU "Software\Classes\smartcryptotech" "" "URL:smartcryptotech Protocol"
+  WriteRegStr HKCU "Software\Classessmartcryptotech" "URL Protocol" ""
+  WriteRegStr HKCU "Software\Classes\smartcryptotech" "DefaultIcon" "$\"$INSTDIR\electrum_sct.ico, 0$\""
+  WriteRegStr HKCU "Software\Classes\smartcryptotech\shell\open\command" "" "$\"$INSTDIR\electrum-sct-${PRODUCT_VERSION}.exe$\" $\"%1$\""
 
   ;Adds an uninstaller possibility to Windows Uninstall or change a program section
   WriteRegStr HKCU "${PRODUCT_UNINST_KEY}" "DisplayName" "$(^Name)"
@@ -144,7 +144,7 @@ Section
   WriteRegStr HKCU "${PRODUCT_UNINST_KEY}" "DisplayVersion" "${PRODUCT_VERSION}"
   WriteRegStr HKCU "${PRODUCT_UNINST_KEY}" "URLInfoAbout" "${PRODUCT_WEB_SITE}"
   WriteRegStr HKCU "${PRODUCT_UNINST_KEY}" "Publisher" "${PRODUCT_PUBLISHER}"
-  WriteRegStr HKCU "${PRODUCT_UNINST_KEY}" "DisplayIcon" "$INSTDIR\electrum_nyc.ico"
+  WriteRegStr HKCU "${PRODUCT_UNINST_KEY}" "DisplayIcon" "$INSTDIR\electrum_sct.ico"
 
   ;Fixes Windows broken size estimates
   ${GetSize} "$INSTDIR" "/S=0K" $0 $1 $2
@@ -167,7 +167,7 @@ Section "Uninstall"
   Delete "$SMPROGRAMS\${PRODUCT_NAME}\*.*"
   RMDir  "$SMPROGRAMS\${PRODUCT_NAME}"
   
-  DeleteRegKey HKCU "Software\Classes\newyorkcoin"
+  DeleteRegKey HKCU "Software\Classes\smartcryptotech"
   DeleteRegKey HKCU "Software\${PRODUCT_NAME}"
   DeleteRegKey HKCU "${PRODUCT_UNINST_KEY}"
 SectionEnd
