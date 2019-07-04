@@ -1,15 +1,15 @@
 include LICENCE RELEASE-NOTES AUTHORS
 include README.rst
-include electrum-nyc.desktop
+include electrum-sct.desktop
 include *.py
-include run_electrum_nyc
+include run_electrum_sct
 include contrib/requirements/requirements.txt
 include contrib/requirements/requirements-hw.txt
 recursive-include packages *.py
 recursive-include packages cacert.pem
 
-graft electrum_nyc
-prune electrum_nyc/tests
+graft electrum_sct
+prune electrum_sct/tests
 
 global-exclude __pycache__
 global-exclude *.py[co~]
