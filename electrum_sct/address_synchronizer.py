@@ -790,7 +790,7 @@ class AddressSynchronizer(PrintError):
                 # The only_uno_txids argument is used to search for name outputs
                 # from a specific list of txid's, and only return those utxo's.
                 # In the future it might make more sense to search by
-                # txid+vout, but for compatibility with NewYorkCoin Core's
+                # txid+vout, but for compatibility with SmartCryptoTech Core's
                 # name_firstupdate syntax (where only a txid is specified, not
                 # a txid+vout) we don't do that right now.
                 if only_uno_txids is not None:
