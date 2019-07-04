@@ -1,0 +1,115 @@
+#!/usr/bin/env bash
+
+set -eu -o pipefail
+shopt -s nullglob globstar
+
+if [ -d "./electrum" ]; then
+    echo "Rebranding needed"
+    exit 1
+fi
+
+for i in **/*.py; do
+    # This RegEx is designed to exclude "btchip" and "C2YxWaiTpNPuxjSNhUlBtcJmcdkz3"
+    if ./contrib/print_python_strings "$i" "btc$|btc[^hj]|btch[^i]|btchi[^p]|btcj[^m]|btcjm[^c]"; then
+        echo "Rebranding needed"
+        exit 1
+    fi
+
+    # 'b"Bitcoin seed"' is the BIP32 root preimage
+    # main_window.py contains 'bitcoin' in its console namespace
+    # Payment Protocol is a known possible bug: https://github.com/newyorkcoin/electrum-nyc/issues/108
+    # Ledger rebranding is a known bug: https://github.com/newyorkcoin/electrum-nyc/issues/105
+    if ./contrib/print_python_strings "$i" "bitcoin" \
+        | grep -v "'b\"Bitcoin seed\"'" \
+        | grep -v "main_window.py.*\"'bitcoin'\"" \
+        | grep -v "org.bitcoin.protocols.payments" \
+        | grep -v "electrum_nyc/plugins/ledger/"; then
+        echo "Rebranding needed"
+        exit 1
+    fi
+
+    # coldcard plugin uses "b'1234 Electrum Plugin 4321'" as a ping echo blob
+    # keepkey plugin uses '"electrum pinging device"' as a ping echo blob
+    # safe_t plugin uses '"electrum pinging device"' as a ping echo blob
+    # trezor plugin uses '"electrum pinging device"' as a ping echo blob
+    # test_util unit tests use 'electrum test' as an address label, etc
+    # setup.py contains a copyright statement that references upstream
+    if ./contrib/print_python_strings "$i" "electrum " \
+        | grep -v "#:import" \
+        | grep -v "plugins/coldcard.*\"b'1234 Electrum Plugin 4321'\"" \
+        | grep -v "plugins/keepkey.*'\"electrum pinging device\"'" \
+        | grep -v "plugins/safe_t.*'\"electrum pinging device\"'" \
+        | grep -v "plugins/trezor.*'\"electrum pinging device\"'" \
+        | grep -v "tests/test_util.py.*'electrum test'" \
+        | grep -v "setup.py.*based on Electrum by Thomas Voegtlin"; then
+        echo "Rebranding needed"
+        exit 1
+    fi
+
+    # Bitcoin Bech32 addresses
+    if ./contrib/print_python_strings "$i" "['\"]bc1"; then
+        echo "Rebranding needed"
+        exit 1
+    fi
+
+    # Bitcoin private keys
+    if ./contrib/print_python_strings "$i" "p2w?pkh(-p2sh)?:[KL]"; then
+        echo "Rebranding needed"
+        exit 1
+    fi
+done
+
+EXCEPTIONS="--exclude=check_nyc_rebranding --exclude-dir=.git"
+
+if grep -r $EXCEPTIONS "import electrum\\." ./; then
+    echo "Rebranding needed"
+    exit 1
+fi
+
+if grep -r $EXCEPTIONS "from electrum\\." ./; then
+    echo "Rebranding needed"
+    exit 1
+fi
+
+if grep -r $EXCEPTIONS "from electrum import" ./; then
+    echo "Rebranding needed"
+    exit 1
+fi
+
+# Locale rebranding is a known bug: https://github.com/newyorkcoin/electrum-nyc/issues/109
+# Issue 4994 has no NewYorkCoin equivalent.
+# The localization button SVG is a known bug: https://github.com/newyorkcoin/electrum-nyc/issues/114
+if grep -r $EXCEPTIONS "electrum/" ./ \
+    | grep -v "./contrib/deterministic-build/electrum-locale/locale/" \
+    | grep -v "https://github.com/spesmilo/electrum/issues/4994" \
+    | grep -v "https://d322cqt584bo4o.cloudfront.net/electrum/localized.svg" \
+    | grep -v "./.tox/" \
+    | grep -v "CalinsQRReader/README.md" \
+    | grep -v "./Electrum_NYC.egg-info/SOURCES.txt"; then
+    echo "Rebranding needed"
+    exit 1
+fi
+
+# Locale rebranding is a known bug: https://github.com/newyorkcoin/electrum-nyc/issues/109
+if grep -r $EXCEPTIONS "electrum\\\\" ./ \
+    | grep -v "./contrib/deterministic-build/electrum-locale/locale/"; then
+    echo "Rebranding needed"
+    exit 1
+fi
+
+if grep -r $EXCEPTIONS "electrum.icns" ./; then
+    echo "Rebranding needed"
+    exit 1
+fi
+
+if grep -r $EXCEPTIONS "electrum\\.ico" ./; then
+    echo "Rebranding needed"
+    exit 1
+fi
+
+if grep -r $EXCEPTIONS "electrum.png" ./; then
+    echo "Rebranding needed"
+    exit 1
+fi
+
+exit 0
