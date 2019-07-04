@@ -2,9 +2,9 @@ Metadata-Version: 2.1
 Name: Electrum-SCT
 Version: 1.0.0
 Summary: Lightweight SmartCryptoTech Wallet
-Home-page: https://www.smart-crypto-tech.co.uk
+Home-page: https://www.smartcryptotech.org
 Author: The SmartCryptoTech developers; based on Electrum by Thomas Voegtlin and Electrum-DOGE by The Electrum-DOGE contributors
-Author-email: jeremy@newyorkcoin.org
+Author-email: cryptolover@smartcryptotech.org
 License: GNU GPLv3+ for Electrum-DOGE components; MIT Licence for all other components
 Description: Lightweight SmartCryptoTech Wallet
 Platform: UNKNOWN
