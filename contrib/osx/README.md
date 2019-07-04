@@ -45,7 +45,7 @@ Move `prebuilt_qr` to El Capitan: `contrib/osx/CalinsQRReader/prebuilt_qr`.
     cd electrum-sct
     ./contrib/osx/make_osx
     
-This creates both a folder named Electrum-NYC.app and the .dmg file.
+This creates both a folder named Electrum-SCT.app and the .dmg file.
 
 
 ## 2. Building the image deterministically (WIP)
