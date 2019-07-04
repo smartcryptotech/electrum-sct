@@ -109,7 +109,7 @@ def command(s):
             wallet = args[0].wallet
             password = kwargs.get('password')
             if c.requires_wallet and wallet is None:
-                raise Exception("wallet not loaded. Use 'electrum-nyc daemon load_wallet'")
+                raise Exception("wallet not loaded. Use 'electrum-sct daemon load_wallet'")
             if c.requires_password and password is None and wallet.has_password():
                 return {'error': 'Password required' }
             return func(*args, **kwargs)
@@ -170,8 +170,8 @@ class Commands:
     @command('')
     def restore(self, text, passphrase=None, password=None, encrypt_file=True):
         """Restore a wallet from text. Text can be a seed phrase, a master
-        public key, a master private key, a list of newyorkcoin addresses
-        or newyorkcoin private keys.
+        public key, a master private key, a list of smartcryptotech addresses
+        or smartcryptotech private keys.
         If you want to be prompted for an argument, type '?' or ':' (concealed)
         """
         d = restore_wallet_from_text(text,
@@ -400,7 +400,7 @@ class Commands:
     @command('')
     def dumpprivkeys(self):
         """Deprecated."""
-        return "This command is deprecated. Use a pipe instead: 'electrum-nyc listaddresses | electrum-nyc getprivatekeys - '"
+        return "This command is deprecated. Use a pipe instead: 'electrum-sct listaddresses | electrum-sct getprivatekeys - '"
 
     @command('')
     def validateaddress(self, address):
@@ -528,7 +528,7 @@ class Commands:
         change_addr = self._resolver(change_addr)
 
         # The domain map will (for unknown reasons) delete its contents when
-        # read.  Since we want to use it multiple times for NewYorkCoin, the most
+        # read.  Since we want to use it multiple times for SmartCryptoTech, the most
         # obvious workaround is to simply make copies of it before we cast it
         # into a map.
         name_txid_domain = copy.deepcopy(domain)
@@ -722,7 +722,7 @@ class Commands:
 
     @command('w')
     def setlabel(self, key, label):
-        """Assign a label to an item. Item may be a newyorkcoin address or a
+        """Assign a label to an item. Item may be a smartcryptotech address or a
         transaction ID"""
         self.wallet.set_label(key, label)
 
@@ -803,7 +803,7 @@ class Commands:
             PR_PAID: 'Paid',
             PR_EXPIRED: 'Expired',
         }
-        out['amount (NYC)'] = format_satoshis(out.get('amount'))
+        out['amount (SCT)'] = format_satoshis(out.get('amount'))
         out['status'] = pr_str[out.get('status', PR_UNKNOWN)]
         return out
 
@@ -1064,7 +1064,7 @@ class Commands:
                 if "name" in o.name_op:
                     if o.name_op["name"] != identifier_bytes:
                         # Identifier mismatch.  This will definitely fail under
-                        # current NewYorkCoin consensus rules, but in a future
+                        # current SmartCryptoTech consensus rules, but in a future
                         # hardfork there might be multiple name outputs, so we
                         # might as well future-proof and scan the other
                         # outputs.
@@ -1140,8 +1140,8 @@ def eval_bool(x: str) -> bool:
 
 param_descriptions = {
     'privkey': 'Private key. Type \'?\' to get a prompt.',
-    'destination': 'NewYorkCoin address, contact or alias',
-    'address': 'NewYorkCoin address',
+    'destination': 'SmartCryptoTech address, contact or alias',
+    'address': 'SmartCryptoTech address',
     'seed': 'Seed phrase',
     'txid': 'Transaction ID',
     'pos': 'Position',
@@ -1151,8 +1151,8 @@ param_descriptions = {
     'pubkey': 'Public key',
     'message': 'Clear text message. Use quotes if it contains spaces.',
     'encrypted': 'Encrypted message',
-    'amount': 'Amount to be sent (in NYC). Type \'!\' to send the maximum available.',
-    'requested_amount': 'Requested amount (in NYC).',
+    'amount': 'Amount to be sent (in SCT). Type \'!\' to send the maximum available.',
+    'requested_amount': 'Requested amount (in SCT).',
     'outputs': 'list of ["address", amount]',
     'redeem_script': 'redeem script (hexadecimal)',
 }
@@ -1170,7 +1170,7 @@ command_options = {
     'labels':      ("-l", "Show the labels of listed addresses"),
     'nocheck':     (None, "Do not verify aliases"),
     'imax':        (None, "Maximum number of inputs"),
-    'fee':         ("-f", "Transaction fee (in NYC)"),
+    'fee':         ("-f", "Transaction fee (in SCT)"),
     'from_addr':   ("-F", "Source address (must be a wallet address; use sweep to spend from non-wallet address)."),
     'change_addr': ("-c", "Change address. Default is a spare address, or the source address if it's not in the wallet"),
     'nbits':       (None, "Number of bits of entropy"),
@@ -1197,8 +1197,8 @@ command_options = {
     'fee_level':   (None, "Float between 0.0 and 1.0, representing fee slider position"),
     'from_height': (None, "Only show transactions that confirmed after given block height"),
     'to_height':   (None, "Only show transactions that confirmed before given block height"),
-    'destination': (None, "NewYorkCoin address, contact or alias"),
-    'amount':      (None, "Amount to be sent (in NYC). Type \'!\' to send the maximum available."),
+    'destination': (None, "SmartCryptoTech address, contact or alias"),
+    'amount':      (None, "Amount to be sent (in SCT). Type \'!\' to send the maximum available."),
     'allow_existing': (None, "Allow pre-registering a name that already is registered.  Your registration fee will be forfeited until you can register the name after it expires."),
     'allow_early': (None, "Allow submitting a name registration while its pre-registration is still pending.  This increases the risk of an attacker stealing your name registration."),
     'identifier':  (None, "The requested name identifier"),
@@ -1237,10 +1237,10 @@ config_variables = {
         'requests_dir': 'directory where a bip70 file will be written.',
         'ssl_privkey': 'Path to your SSL private key, needed to sign the request.',
         'ssl_chain': 'Chain of SSL certificates, needed for signed requests. Put your certificate at the top and the root CA at the end',
-        'url_rewrite': 'Parameters passed to str.replace(), in order to create the r= part of newyorkcoin: URIs. Example: \"(\'file:///var/www/\',\'https://www.newyorkcoin.org/\')\"',
+        'url_rewrite': 'Parameters passed to str.replace(), in order to create the r= part of smartcryptotech: URIs. Example: \"(\'file:///var/www/\',\'https://www.smartcryptotech/\')\"',
     },
     'listrequests':{
-        'url_rewrite': 'Parameters passed to str.replace(), in order to create the r= part of newyorkcoin: URIs. Example: \"(\'file:///var/www/\',\'https://www.newyorkcoin.org/\')\"',
+        'url_rewrite': 'Parameters passed to str.replace(), in order to create the r= part of smartcryptotech: URIs. Example: \"(\'file:///var/www/\',\'https://www.smartcryptotech.org/\')\"',
     }
 }
 
@@ -1308,8 +1308,8 @@ def add_global_options(parser):
     # const is for when no argument is given to verbosity
     # default is for when the flag is missing
     group.add_argument("-v", dest="verbosity", help="Set verbosity filter", default='', const='*', nargs='?')
-    group.add_argument("-D", "--dir", dest="electrum_path", help="electrum-nyc directory")
-    group.add_argument("-P", "--portable", action="store_true", dest="portable", default=False, help="Use local 'electrum-nyc_data' directory")
+    group.add_argument("-D", "--dir", dest="electrum_path", help="electrum-sct directory")
+    group.add_argument("-P", "--portable", action="store_true", dest="portable", default=False, help="Use local 'electrum-sct_data' directory")
     group.add_argument("-w", "--wallet", dest="wallet_path", help="wallet path")
     group.add_argument("--testnet", action="store_true", dest="testnet", default=False, help="Use Testnet")
     group.add_argument("--regtest", action="store_true", dest="regtest", default=False, help="Use Regtest")
@@ -1318,12 +1318,12 @@ def add_global_options(parser):
 def get_parser():
     # create main parser
     parser = argparse.ArgumentParser(
-        epilog="Run 'electrum-nyc help <command>' to see the help for a command")
+        epilog="Run 'electrum-sct help <command>' to see the help for a command")
     add_global_options(parser)
     subparsers = parser.add_subparsers(dest='cmd', metavar='<command>')
     # gui
-    parser_gui = subparsers.add_parser('gui', description="Run Electrum-NYC's Graphical User Interface.", help="Run GUI (default)")
-    parser_gui.add_argument("url", nargs='?', default=None, help="newyorkcoin URI (or bip70 file)")
+    parser_gui = subparsers.add_parser('gui', description="Run Electrum-SCT's Graphical User Interface.", help="Run GUI (default)")
+    parser_gui.add_argument("url", nargs='?', default=None, help="smartcryptotech URI (or bip70 file)")
     parser_gui.add_argument("-g", "--gui", dest="gui", help="select graphical user interface", choices=['qt', 'kivy', 'text', 'stdio'])
     parser_gui.add_argument("-o", "--offline", action="store_true", dest="offline", default=False, help="Run offline")
     parser_gui.add_argument("-m", action="store_true", dest="hide_gui", default=False, help="hide GUI on startup")
