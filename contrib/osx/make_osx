@@ -2,9 +2,9 @@
 
 # Parameterize
 PYTHON_VERSION=3.6.4
-BUILDDIR=/tmp/electrum-nyc-build
-PACKAGE=Electrum-NYC
-GIT_REPO=https://github.com/newyorkcoin/electrum-nyc
+BUILDDIR=/tmp/electrum-sct-build
+PACKAGE=Electrum-SCT
+GIT_REPO=https://github.com/CryptoLover705/electrum-sct
 LIBSECP_VERSION="b408c6a8b287003d1ade5709e6f7bc3c7f1d5be7"
 
 . $(dirname "$0")/base.sh
@@ -71,7 +71,7 @@ git submodule update
 rm  -rf $BUILDDIR > /dev/null 2>&1
 mkdir $BUILDDIR
 
-cp -R ./contrib/deterministic-build/electrum-locale/locale/ ./electrum_nyc/locale/
+cp -R ./contrib/deterministic-build/electrum-locale/locale/ ./electrum_sct/locale/
 
 
 info "Downloading libusb..."
@@ -133,9 +133,9 @@ plutil -insert 'CFBundleURLTypes' \
 DoCodeSignMaybe "app bundle" "dist/${PACKAGE}.app" "$APP_SIGN" # If APP_SIGN is empty will be a noop
 
 info "Creating .DMG"
-hdiutil create -fs HFS+ -volname $PACKAGE -srcfolder dist/$PACKAGE.app dist/electrum-nyc-$VERSION.dmg || fail "Could not create .DMG"
+hdiutil create -fs HFS+ -volname $PACKAGE -srcfolder dist/$PACKAGE.app dist/electrum-sct-$VERSION.dmg || fail "Could not create .DMG"
 
-DoCodeSignMaybe ".DMG" "dist/electrum-nyc-${VERSION}.dmg" "$APP_SIGN" # If APP_SIGN is empty will be a noop
+DoCodeSignMaybe ".DMG" "dist/electrum-sct-${VERSION}.dmg" "$APP_SIGN" # If APP_SIGN is empty will be a noop
 
 if [ -z "$APP_SIGN" ]; then
     warn "App was built successfully but was not code signed. Users may get security warnings from macOS."
