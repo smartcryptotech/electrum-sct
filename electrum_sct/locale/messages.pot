@@ -1,0 +1,5707 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-04 16:44+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: electrum_nyc/exchange_rate.py:665
+msgid "  (No FX rate available)"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:164
+msgid " confirmation"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3495
+msgid " is already registered, sorry!"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3499
+msgid " is available to register!"
+msgstr ""
+
+#: electrum_nyc/gui/qt/uno_list.py:209
+msgid " to wallet"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:619
+msgid "&About"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:190
+#: electrum_nyc/gui/qt/main_window.py:565
+msgid "&Addresses"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:620
+msgid "&Check for updates"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:623
+msgid "&Documentation"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:626
+msgid "&Donate to server"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:605
+msgid "&Encrypt/decrypt message"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:561
+#: electrum_nyc/gui/qt/main_window.py:569
+#: electrum_nyc/gui/qt/main_window.py:574
+msgid "&Export"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:544
+msgid "&File"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:566
+#: electrum_nyc/gui/qt/main_window.py:571
+msgid "&Filter"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:614
+msgid "&From QR code"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:611
+msgid "&From file"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:612
+msgid "&From text"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:613
+msgid "&From the blockchain"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:618
+msgid "&Help"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:570
+msgid "&History"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:560
+#: electrum_nyc/gui/qt/main_window.py:568
+msgid "&Import"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:554
+msgid "&Information"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:567
+msgid "&Labels"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:610
+msgid "&Load transaction"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:601
+msgid "&Network"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:576
+msgid "&New"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:547
+msgid "&New/Restore"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:621
+msgid "&Official website"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:546
+msgid "&Open"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:556
+msgid "&Password"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:608
+msgid "&Pay to many"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:573
+msgid "&Plot"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:602
+msgid "&Plugins"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:558
+msgid "&Private keys"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:551
+msgid "&Quit"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:545
+msgid "&Recently open"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:624
+msgid "&Report Bug"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:548
+msgid "&Save Copy"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:557
+msgid "&Seed"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:604
+msgid "&Sign/verify message"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:572
+msgid "&Summary"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:559
+msgid "&Sweep"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:597
+msgid "&Tools"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:591
+msgid "&View"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:553
+msgid "&Wallet"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:627
+msgid "(Touch {} of {})"
+msgstr ""
+
+#: electrum_nyc/plugins/virtualkeyboard/qt.py:15
+msgid "+"
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:56
+msgid "1 day"
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:55
+msgid "1 hour"
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:57
+msgid "1 week"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:458
+msgid "1. Place this paper on a flat and well iluminated surface."
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:459
+msgid "2. Align your Revealer borderlines to the dashed lines on the top and left."
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:460
+msgid "3. Press slightly the Revealer against the paper and read the numbers that best match on the opposite sides. "
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:462
+msgid "4. Type the numbers in the software"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3410
+msgid "<html><head/><body><p>Use <span style='font-weight:600;'>d/</span> prefix for domain names.  E.g. <span style='font-weight:600;'>d/mysite</span> will register <span style='font-weight:600;'>mysite.bit</span></p><p>See the <a href='https://github.com/newyorkcoin/proposals/blob/master/ifa-0001.md'><span style='text-decoration:underline; color:#0000ff;'>NewYorkCoin Domain Names specification</span></a> for reference.  Other prefixes can be used for miscellaneous purposes (not domain names).</p></body></html>"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:187
+msgid "A backup is saved automatically when generating a new wallet."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:504
+msgid "A copy of your wallet file was created in"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:37
+msgid "A few examples"
+msgstr ""
+
+#: electrum_nyc/plugin.py:449
+msgid "A library is probably missing."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:77
+msgid "A small fee will be charged on each transaction that uses the remote server.  You may check and modify your billing preferences once the installation is complete."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1196
+msgid "A suggested fee is automatically added to this field. You may override it. The suggested fee increases with the size of the transaction."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main.kv:445
+msgid "About"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/about.kv:4
+msgid "About Electrum-NYC"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:240
+msgid "Accept"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:75
+msgid "Accept Word"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:327
+msgid "Acquisition price"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:411
+#: electrum_nyc/gui/kivy/uix/dialogs/installwizard.py:1019
+msgid "Add Cosigner"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:191
+msgid "Add a cosigner to your multi-sig wallet"
+msgstr ""
+
+#: electrum_nyc/plugins/virtualkeyboard/__init__.py:4
+msgid "Add an optional virtual keyboard to the password dialog."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:180
+msgid "Add cosigner"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1657
+#: electrum_nyc/gui/kivy/uix/screens.py:294
+msgid "Additional fees"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1135
+msgid "Additional {} satoshis are going to be added."
+msgstr ""
+
+#: electrum_nyc/gui/qt/request_list.py:53
+#: electrum_nyc/gui/qt/main_window.py:2160
+#: electrum_nyc/gui/qt/main_window.py:2273
+#: electrum_nyc/gui/qt/main_window.py:2354 electrum_nyc/gui/qt/util.py:353
+#: electrum_nyc/gui/qt/address_dialog.py:45
+#: electrum_nyc/gui/qt/contact_list.py:49 electrum_nyc/gui/qt/utxo_list.py:47
+#: electrum_nyc/gui/qt/address_list.py:90
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:40
+msgid "Address"
+msgstr ""
+
+#: electrum_nyc/gui/qt/uno_list.py:126
+msgid "Address and coin are frozen"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main.kv:101
+msgid "Address copied to clipboard"
+msgstr ""
+
+#: electrum_nyc/gui/qt/uno_list.py:128 electrum_nyc/gui/qt/utxo_list.py:90
+#: electrum_nyc/gui/qt/utxo_list.py:143
+msgid "Address is frozen"
+msgstr ""
+
+#: electrum_nyc/plugins/hw_wallet/plugin.py:77
+#: electrum_nyc/gui/qt/main_window.py:2305 electrum_nyc/wallet.py:1150
+msgid "Address not in wallet."
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_dialog.py:57
+msgid "Address:"
+msgstr ""
+
+#: electrum_nyc/gui/text.py:69
+msgid "Addresses"
+msgstr ""
+
+#: electrum_nyc/wallet.py:828
+msgid "Addresses generated:"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:586 electrum_nyc/plugins/safe_t/qt.py:494
+#: electrum_nyc/plugins/trezor/qt.py:621
+msgid "Advanced"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:383 electrum_nyc/plugins/safe_t/qt.py:261
+#: electrum_nyc/plugins/trezor/qt.py:388
+msgid "After disabling passphrases, you can only pair this Electrum-NYC wallet if it had an empty passphrase.  If its passphrase was not empty, you will need to create a new wallet with the install wizard.  You can use this wallet again at any time by re-enabling passphrases and entering its passphrase."
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:405
+#: electrum_nyc/gui/qt/history_list.py:429
+#: electrum_nyc/gui/qt/address_list.py:62
+#: electrum_nyc/gui/qt/address_list.py:66
+msgid "All"
+msgstr ""
+
+#: electrum_nyc/plugins/greenaddress_instant/__init__.py:4
+msgid "Allows validating if your transactions have instant confirmations by GreenAddress"
+msgstr ""
+
+#: electrum_nyc/gui/qt/update_checker.py:88
+msgid "Already up to date"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1259
+msgid "Also, dust is not kept as change, but added to the fee."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1260
+msgid "Also, when batching RBF transactions, BIP 125 imposes a lower bound on the fee."
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:181
+msgid "Always check your backups."
+msgstr ""
+
+#: electrum_nyc/gui/qt/request_list.py:56
+#: electrum_nyc/gui/qt/main_window.py:1176
+#: electrum_nyc/gui/qt/main_window.py:1981
+#: electrum_nyc/gui/qt/history_list.py:333 electrum_nyc/gui/qt/utxo_list.py:49
+#: electrum_nyc/gui/qt/invoice_list.py:52
+#: electrum_nyc/gui/kivy/uix/ui_screens/send.kv:53
+#: electrum_nyc/gui/kivy/uix/ui_screens/send.kv:54
+#: electrum_nyc/gui/kivy/uix/ui_screens/receive.kv:89
+#: electrum_nyc/gui/kivy/uix/ui_screens/receive.kv:90
+#: electrum_nyc/gui/stdio.py:108 electrum_nyc/gui/text.py:109
+#: electrum_nyc/gui/text.py:180
+msgid "Amount"
+msgstr ""
+
+#: electrum_nyc/plugins/hw_wallet/plugin.py:147
+msgid "Amount for OP_RETURN output must be zero."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:34
+msgid "Amount received"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:264
+msgid "Amount received:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:266
+msgid "Amount sent:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1650
+#: electrum_nyc/gui/kivy/uix/screens.py:288
+msgid "Amount to be sent"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1172
+msgid "Amount to be sent."
+msgstr ""
+
+#: electrum_nyc/gui/qt/exception_window.py:46
+msgid "An Error Occurred"
+msgstr ""
+
+#: electrum_nyc/plugins/cosigner_pool/qt.py:206
+#: electrum_nyc/plugins/cosigner_pool/qt.py:211
+#: electrum_nyc/plugins/cosigner_pool/qt.py:217
+msgid "An encrypted transaction was retrieved from cosigning pool."
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:183
+msgid "An uninitialized Digital Bitbox is detected."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:310
+msgid "An unnamed {}"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:490 electrum_nyc/plugins/safe_t/qt.py:375
+#: electrum_nyc/plugins/trezor/qt.py:502
+msgid "Apply"
+msgstr ""
+
+#: electrum_nyc/i18n.py:46
+msgid "Arabic"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:430 electrum_nyc/plugins/safe_t/qt.py:318
+#: electrum_nyc/plugins/trezor/qt.py:445
+msgid ""
+"Are you SURE you want to wipe the device?\n"
+"Your wallet still has newyorkcoins in it!"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:319
+msgid "Are you sure you want to erase the Digital Bitbox?"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:394 electrum_nyc/plugins/safe_t/qt.py:272
+#: electrum_nyc/plugins/trezor/qt.py:399
+msgid "Are you sure you want to proceed?"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:611
+msgid "Are you sure you want to remove this transaction and {} child transactions?"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:608
+msgid "Are you sure you want to remove this transaction?"
+msgstr ""
+
+#: electrum_nyc/i18n.py:58
+msgid "Armenian"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1257
+msgid "At most 100 swartz might be lost due to this rounding."
+msgstr ""
+
+#: electrum_nyc/plugins/audio_modem/__init__.py:3
+msgid "Audio MODEM"
+msgstr ""
+
+#: electrum_nyc/plugins/audio_modem/qt.py:47
+msgid "Audio Modem Settings"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:102
+msgid "Authorization"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:605
+msgid "Auto connect"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:33
+msgid "Auto-connect"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2976
+msgid "Automatically check for software updates"
+msgstr ""
+
+#: electrum_nyc/gui/qt/seed_dialog.py:82
+msgid "BIP39 seed"
+msgstr ""
+
+#: electrum_nyc/gui/qt/seed_dialog.py:74
+msgid "BIP39 seeds can be imported in NYCFlash Electrum Wallet, so that users can access funds locked in other wallets."
+msgstr ""
+
+#: electrum_nyc/gui/qt/seed_dialog.py:76
+msgid "BIP39 seeds do not include a version number, which compromises compatibility with future software."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:91
+#: electrum_nyc/gui/qt/installwizard.py:130
+#: electrum_nyc/gui/qt/installwizard.py:131
+msgid "Back"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:813
+#: electrum_nyc/gui/qt/history_list.py:334
+#: electrum_nyc/gui/qt/address_list.py:92
+#: electrum_nyc/gui/qt/address_list.py:93 electrum_nyc/gui/kivy/main.kv:392
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:52
+#: electrum_nyc/gui/kivy/uix/ui_screens/status.kv:33
+#: electrum_nyc/gui/stdio.py:108 electrum_nyc/gui/stdio.py:120
+#: electrum_nyc/gui/text.py:109 electrum_nyc/gui/text.py:142
+msgid "Balance"
+msgstr ""
+
+#: electrum_nyc/gui/text.py:69
+msgid "Banner"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2914
+msgid "Base unit"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2911
+msgid "Base unit of your wallet."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2849
+msgid "Batch RBF transactions"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:655
+msgid "Before reporting a bug, upgrade to the most recent version of NYCFlash Electrum Wallet (latest release or git HEAD), and include the version number in your report."
+msgstr ""
+
+#: electrum_nyc/plugins/audio_modem/qt.py:50
+msgid "Bit rate [kbps]: "
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:313
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:47
+msgid "Blockchain"
+msgstr ""
+
+#: electrum_nyc/plugins/coldcard/qt.py:153
+msgid "Bootloader"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:466 electrum_nyc/plugins/safe_t/qt.py:352
+#: electrum_nyc/plugins/trezor/qt.py:479
+msgid "Bootloader Hash"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:744
+msgid "Bottom"
+msgstr ""
+
+#: electrum_nyc/i18n.py:67
+msgid "Brasilian"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:127
+msgid "Broadcast"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1751
+msgid "Broadcasting transaction..."
+msgstr ""
+
+#: electrum_nyc/plugins/coldcard/qt.py:152
+msgid "Build Date"
+msgstr ""
+
+#: electrum_nyc/i18n.py:47
+msgid "Bulgarian"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3344
+msgid "Bump Fee"
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:366
+msgid "CSV"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:452
+msgid "Calibration sheet"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:736
+msgid "Calibration values:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3340
+#: electrum_nyc/gui/kivy/uix/dialogs/tx_dialog.py:139
+msgid "Can't bump fee: unknown fee for original transaction."
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:513
+msgid "Can't plot history."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:217
+#: electrum_nyc/plugins/keepkey/qt.py:83 electrum_nyc/plugins/trezor/qt.py:71
+#: electrum_nyc/gui/qt/installwizard.py:91
+#: electrum_nyc/gui/qt/installwizard.py:131
+#: electrum_nyc/gui/qt/installwizard.py:608 electrum_nyc/gui/qt/util.py:178
+msgid "Cancel"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/ledger.py:283
+#: electrum_nyc/plugins/ledger/ledger.py:296
+#: electrum_nyc/plugins/ledger/ledger.py:494
+msgid "Cancelled by user"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:491
+msgid "Cannot add this cosigner:"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:954
+msgid "Cannot broadcast transaction"
+msgstr ""
+
+#: electrum_nyc/wallet.py:865 electrum_nyc/wallet.py:896
+msgid "Cannot bump fee"
+msgstr ""
+
+#: electrum_nyc/gui/qt/__init__.py:243
+msgid "Cannot create window for wallet"
+msgstr ""
+
+#: electrum_nyc/gui/qt/__init__.py:225 electrum_nyc/gui/qt/__init__.py:275
+msgid "Cannot load wallet"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:234
+msgid "Cannot read file"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2309
+msgid "Cannot sign messages with this type of address:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:328
+msgid "Capital Gains"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:501
+msgid "Capital gains"
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:377
+#, python-brace-format
+msgid "Chain split detected at block {0}"
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_list.py:62
+msgid "Change"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:350 electrum_nyc/plugins/safe_t/qt.py:230
+#: electrum_nyc/plugins/trezor/qt.py:357
+msgid "Change PIN"
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:61
+msgid "Change Password"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3528
+msgid "Change the value of the selected name or transfer ownership"
+msgstr ""
+
+#: electrum_nyc/plugins/safe_t/qt.py:399 electrum_nyc/plugins/trezor/qt.py:526
+msgid "Change..."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:1075
+msgid "Changing PIN code."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3419
+msgid "Check name availability..."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:305
+msgid "Check this box to request a new secret. You will need to retype your seed."
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:23
+#: electrum_nyc/plugins/safe_t/clientbase.py:25
+#: electrum_nyc/plugins/trezor/clientbase.py:25
+msgid "Check your {} device to continue"
+msgstr ""
+
+#: electrum_nyc/gui/qt/update_checker.py:91
+msgid "Checking for updates..."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3286
+msgid "Child Pays for Parent"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:598
+msgid "Child pays for parent"
+msgstr ""
+
+#: electrum_nyc/i18n.py:79
+msgid "Chinese Simplified"
+msgstr ""
+
+#: electrum_nyc/i18n.py:80
+msgid "Chinese Traditional"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:401 electrum_nyc/plugins/safe_t/qt.py:278
+#: electrum_nyc/plugins/trezor/qt.py:405
+msgid "Choose Homescreen"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/installwizard.py:1044
+msgid "Choose PIN code"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:581
+msgid "Choose Seed type"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:336
+msgid "Choose a backup file:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:30
+msgid "Choose a password to encrypt your wallet keys."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:129
+msgid "Choose a server"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3020
+msgid ""
+"Choose coin (UTXO) selection method.  The following are available:\n"
+"\n"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/server.kv:43
+msgid "Choose from peers"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:248
+msgid "Choose how to initialize your Digital Bitbox:"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/keepkey.py:182
+#: electrum_nyc/plugins/safe_t/safe_t.py:166
+#: electrum_nyc/plugins/trezor/trezor.py:177
+msgid ""
+"Choose how you want to initialize your {}.\n"
+"\n"
+"The first two methods are secure as no secret information is entered into your computer.\n"
+"\n"
+"For the last two methods you input secrets on your keyboard and upload them to your {}, and so you should only do those on a computer you know to be trustworthy and free of malware."
+msgstr ""
+
+#: electrum_nyc/plugins/safe_t/clientbase.py:24
+#: electrum_nyc/plugins/trezor/clientbase.py:24
+msgid "Choose on your {} device where to enter your passphrase"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:650
+msgid "Choose the number of signatures needed to unlock funds in your wallet:"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:362
+msgid "Choose the type of addresses in your wallet."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2937
+msgid "Choose which online block explorer to use for functions that open a web browser"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:144
+msgid "Choose your chain"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:177
+msgid "Choose..."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1297
+#: electrum_nyc/gui/kivy/uix/ui_screens/send.kv:116
+msgid "Clear"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:522 electrum_nyc/plugins/safe_t/qt.py:430
+#: electrum_nyc/plugins/trezor/qt.py:557
+msgid "Clear the session after the specified period of inactivity.  Once a session has timed out, your PIN and passphrase (if enabled) must be re-entered to use the device."
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:33
+msgid "Click Pair button to begin pairing a mobile phone."
+msgstr ""
+
+#: electrum_nyc/gui/qt/console.py:68
+msgid "Click here to hide this message."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/screens.py:238
+msgid "Clipboard is empty"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:142
+#: electrum_nyc/gui/qt/main_window.py:2373
+#: electrum_nyc/gui/qt/main_window.py:2442 electrum_nyc/gui/qt/util.py:154
+#: electrum_nyc/gui/qt/__init__.py:149 electrum_nyc/gui/qt/qrcodewidget.py:123
+#: electrum_nyc/gui/qt/update_checker.py:61
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:82
+#: electrum_nyc/gui/kivy/uix/ui_screens/about.kv:54
+msgid "Close"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:191
+msgid "Co&ins"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:109
+msgid "Code"
+msgstr ""
+
+#: electrum_nyc/gui/qt/uno_list.py:130 electrum_nyc/gui/qt/utxo_list.py:135
+msgid "Coin is frozen"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3022
+#: electrum_nyc/gui/kivy/uix/dialogs/settings.py:153
+msgid "Coin selection"
+msgstr ""
+
+#: electrum_nyc/plugins/coldcard/qt.py:98
+msgid "Coldcard Status"
+msgstr ""
+
+#: electrum_nyc/plugins/coldcard/__init__.py:6
+msgid "Coldcard Wallet"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2969
+msgid "Color theme"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:193
+msgid "Con&sole"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:192
+msgid "Con&tacts"
+msgstr ""
+
+#: electrum_nyc/gui/qt/uno_list.py:156
+msgid "Configure"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3525
+msgid "Configure Name..."
+msgstr ""
+
+#: electrum_nyc/gui/qt/configure_name_dialog.py:63
+msgid "Configure New Name"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:429 electrum_nyc/plugins/safe_t/qt.py:317
+#: electrum_nyc/plugins/trezor/qt.py:444
+msgid "Confirm Device Wipe"
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:87
+msgid "Confirm Passphrase:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:102
+msgid "Confirm Password:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:432
+#: electrum_nyc/gui/kivy/uix/dialogs/installwizard.py:992
+msgid "Confirm Seed"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:621
+msgid "Confirm Seed Extension"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:380 electrum_nyc/plugins/safe_t/qt.py:258
+#: electrum_nyc/plugins/trezor/qt.py:385
+msgid "Confirm Toggle Passphrase Protection"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/ledger.py:418
+msgid "Confirm Transaction on your Ledger device..."
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:16
+#: electrum_nyc/plugins/safe_t/clientbase.py:17
+#: electrum_nyc/plugins/trezor/clientbase.py:18
+msgid "Confirm internal entropy on your {} device to begin"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/password_dialog.py:134
+msgid "Confirm new PIN"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:19
+#: electrum_nyc/plugins/safe_t/clientbase.py:20
+#: electrum_nyc/plugins/trezor/clientbase.py:21
+msgid "Confirm on your {} device the message to sign"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:185
+#: electrum_nyc/plugins/safe_t/clientbase.py:187
+#: electrum_nyc/plugins/trezor/clientbase.py:152
+msgid "Confirm on your {} device to change your PIN"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:178
+#: electrum_nyc/plugins/safe_t/clientbase.py:180
+#: electrum_nyc/plugins/trezor/clientbase.py:145
+msgid "Confirm on your {} device to change your home screen"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:183
+#: electrum_nyc/plugins/safe_t/clientbase.py:185
+#: electrum_nyc/plugins/trezor/clientbase.py:150
+msgid "Confirm on your {} device to disable PIN protection"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:167
+#: electrum_nyc/plugins/safe_t/clientbase.py:169
+#: electrum_nyc/plugins/trezor/clientbase.py:133
+msgid "Confirm on your {} device to disable passphrases"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:169
+#: electrum_nyc/plugins/safe_t/clientbase.py:171
+#: electrum_nyc/plugins/trezor/clientbase.py:135
+msgid "Confirm on your {} device to enable passphrases"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:187
+#: electrum_nyc/plugins/safe_t/clientbase.py:189
+#: electrum_nyc/plugins/trezor/clientbase.py:154
+msgid "Confirm on your {} device to set a PIN"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:18
+#: electrum_nyc/plugins/safe_t/clientbase.py:19
+#: electrum_nyc/plugins/trezor/clientbase.py:20
+msgid "Confirm on your {} that you want to wipe it clean"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:174
+#: electrum_nyc/plugins/safe_t/clientbase.py:176
+#: electrum_nyc/plugins/trezor/clientbase.py:141
+msgid "Confirm the new label on your {} device"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:20
+#: electrum_nyc/plugins/safe_t/clientbase.py:21
+#: electrum_nyc/plugins/trezor/clientbase.py:22
+msgid "Confirm the total amount spent and the transaction fee on your {} device"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:15
+#: electrum_nyc/plugins/safe_t/clientbase.py:16
+#: electrum_nyc/plugins/trezor/clientbase.py:17
+msgid "Confirm the transaction output on your {} device"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:22
+#: electrum_nyc/plugins/safe_t/clientbase.py:23
+#: electrum_nyc/plugins/trezor/clientbase.py:23
+msgid "Confirm wallet address on your {} device"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/status.kv:36
+msgid "Confirmed"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/ledger.py:460
+#: electrum_nyc/plugins/ledger/ledger.py:484
+msgid "Confirmed. Signing Transaction..."
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:73
+msgid "Connected node"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:55
+msgid "Connected nodes are on the same chain"
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:370
+#, python-brace-format
+msgid "Connected to {0} nodes."
+msgstr ""
+
+#: electrum_nyc/wallet.py:835
+msgid "Connecting..."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:16
+msgid "Connections with Electrum servers"
+msgstr ""
+
+#: electrum_nyc/network.py:180 electrum_nyc/network.py:188
+#: electrum_nyc/network.py:196
+msgid "Consider trying to connect to a different server, or updating Electrum-NYC."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:575 electrum_nyc/gui/text.py:69
+msgid "Contacts"
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:160 electrum_nyc/gui/qt/qrcodewidget.py:115
+#: electrum_nyc/gui/kivy/uix/ui_screens/receive.kv:124
+msgid "Copy"
+msgstr ""
+
+#: electrum_nyc/gui/qt/request_list.py:156
+msgid "Copy URI"
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:165
+msgid "Copy and Close"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/send.kv:36
+msgid "Copy and paste the recipient address using the Paste button, or use the camera to scan a QR code."
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:620
+msgid "Copy to clipboard"
+msgstr ""
+
+#: electrum_nyc/gui/qt/request_list.py:155
+#: electrum_nyc/gui/qt/history_list.py:582
+#: electrum_nyc/gui/qt/contact_list.py:89 electrum_nyc/gui/qt/utxo_list.py:129
+#: electrum_nyc/gui/qt/invoice_list.py:110
+#: electrum_nyc/gui/qt/address_list.py:200
+msgid "Copy {}"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:197
+msgid "Cosign with hardware device"
+msgstr ""
+
+#: electrum_nyc/plugins/cosigner_pool/__init__.py:2
+msgid "Cosigner Pool"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2481
+msgid "Could not decode QR code"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:248
+msgid "Could not retrieve Terms of Service:"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:511
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:524
+msgid "Could not sign message"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:488
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:501
+msgid "Could not sign message."
+msgstr ""
+
+#: electrum_nyc/gui/qt/exception_window.py:103
+msgid "Crash report"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:115
+msgid "Create a new Revealer"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:522
+#: electrum_nyc/base_wizard.py:184
+msgid "Create a new seed"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:227
+msgid "Create a wallet using the current seed"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:232
+msgid "Create keystore from a master key"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:123
+msgid "Create new wallet"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:519
+msgid "Create or restore"
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:214
+msgid "Critical Error"
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:104
+msgid "Current Password:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3347
+msgid "Current fee"
+msgstr ""
+
+#: electrum_nyc/gui/qt/fee_slider.py:38
+msgid "Current rate"
+msgstr ""
+
+#: electrum_nyc/gui/qt/update_checker.py:49
+msgid "Current version: {}"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:402
+#: electrum_nyc/gui/qt/history_list.py:429
+msgid "Custom"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:389
+msgid "Custom secret"
+msgstr ""
+
+#: electrum_nyc/i18n.py:48
+msgid "Czech"
+msgstr ""
+
+#: electrum_nyc/i18n.py:49
+msgid "Danish"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2966
+msgid "Dark"
+msgstr ""
+
+#: electrum_nyc/gui/qt/__init__.py:150
+msgid "Dark/Light"
+msgstr ""
+
+#: electrum_nyc/gui/qt/configure_name_dialog.py:76
+msgid "Data:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/request_list.py:52
+#: electrum_nyc/gui/qt/history_list.py:331
+#: electrum_nyc/gui/kivy/uix/dialogs/tx_dialog.py:114
+#: electrum_nyc/gui/stdio.py:108 electrum_nyc/gui/text.py:109
+msgid "Date"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:253
+msgid "Date: {}"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:299
+msgid "Debug message"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2438
+msgid "Decrypt"
+msgstr ""
+
+#: electrum_nyc/i18n.py:45
+msgid "Default"
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:240
+msgid "Default Servers"
+msgstr ""
+
+#: electrum_nyc/gui/qt/request_list.py:158
+#: electrum_nyc/gui/qt/main_window.py:549
+#: electrum_nyc/gui/qt/main_window.py:2008
+#: electrum_nyc/gui/qt/contact_list.py:97
+#: electrum_nyc/gui/qt/invoice_list.py:114
+#: electrum_nyc/gui/kivy/uix/ui_screens/status.kv:81
+#: electrum_nyc/gui/kivy/uix/dialogs/requests.py:126
+msgid "Delete"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2003
+#: electrum_nyc/gui/kivy/uix/dialogs/invoices.py:158
+msgid "Delete invoice?"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/requests.py:146
+msgid "Delete request"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2221
+msgid "Delete wallet file?"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:1023
+msgid "Delete wallet?"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/settings.py:139
+msgid "Denomination"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:247
+#: electrum_nyc/gui/qt/request_list.py:55
+#: electrum_nyc/gui/qt/main_window.py:894
+#: electrum_nyc/gui/qt/main_window.py:1161
+#: electrum_nyc/gui/qt/history_list.py:332
+#: electrum_nyc/gui/qt/invoice_list.py:51
+#: electrum_nyc/gui/kivy/uix/ui_screens/send.kv:72
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:49
+#: electrum_nyc/gui/kivy/uix/ui_screens/receive.kv:108
+#: electrum_nyc/gui/stdio.py:108 electrum_nyc/gui/text.py:109
+#: electrum_nyc/gui/text.py:179
+msgid "Description"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1159
+msgid "Description of the transaction (not mandatory)."
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:589 electrum_nyc/gui/qt/utxo_list.py:123
+#: electrum_nyc/gui/qt/invoice_list.py:111
+#: electrum_nyc/gui/qt/address_list.py:201
+#: electrum_nyc/gui/kivy/uix/dialogs/addresses.py:124
+msgid "Details"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/about.kv:35
+msgid "Developers"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:465 electrum_nyc/plugins/safe_t/qt.py:351
+#: electrum_nyc/plugins/trezor/qt.py:478
+msgid "Device ID"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:461
+#: electrum_nyc/plugins/keepkey/qt.py:486 electrum_nyc/plugins/safe_t/qt.py:347
+#: electrum_nyc/plugins/safe_t/qt.py:371 electrum_nyc/plugins/trezor/qt.py:474
+#: electrum_nyc/plugins/trezor/qt.py:498
+msgid "Device Label"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:130
+msgid "Device communication error. Please unplug and replug your Digital Bitbox."
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/ledger.py:200
+msgid "Device not in Bitcoin mode"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/__init__.py:5
+msgid "Digital Bitbox wallet"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:194
+msgid "Digital Revealer ({}_{}) saved as PNG and PDF at:"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:544 electrum_nyc/plugins/safe_t/qt.py:452
+#: electrum_nyc/plugins/trezor/qt.py:579
+msgid "Disable PIN"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:348 electrum_nyc/plugins/safe_t/qt.py:228
+#: electrum_nyc/plugins/trezor/qt.py:355
+msgid "Disable Passphrases"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:349 electrum_nyc/plugins/safe_t/qt.py:229
+#: electrum_nyc/plugins/trezor/qt.py:356
+msgid "Disabled"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:753
+msgid "Disconnected"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1295
+msgid "Display the details of your transaction before signing it."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/about.kv:41
+msgid "Distributed by Electrum Technologies GmbH"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:291
+msgid "Do not pair"
+msgstr ""
+
+#: electrum_nyc/gui/qt/console.py:66
+msgid "Do not paste code here that you don't understand. Executing the wrong code could lead to your coins being irreversibly lost."
+msgstr ""
+
+#: electrum_nyc/gui/qt/seed_dialog.py:52
+msgid "Do not store it electronically."
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/__init__.py:5
+msgid "Do you have something to hide ?"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:520
+#: electrum_nyc/base_wizard.py:182
+msgid "Do you want to create a new seed, or to restore a wallet using an existing seed?"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:319
+msgid "Do you want to delete '{}'?"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:304
+msgid "Do you want to delete the old file"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:580
+msgid "Do you want to launch the wizard again?"
+msgstr ""
+
+#: electrum_nyc/plugins/cosigner_pool/qt.py:218
+msgid "Do you want to open it now?"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1907
+msgid "Do you want to remove {} from your wallet?"
+msgstr ""
+
+#: electrum_nyc/base_crash_reporter.py:58
+msgid "Do you want to send this report?"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1577
+msgid "Do you wish to continue?"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:46
+msgid "Due to a bug, old versions of NYCFlash Electrum Wallet will NOT be creating the same wallet as newer versions or other software."
+msgstr ""
+
+#: electrum_nyc/i18n.py:65
+msgid "Dutch"
+msgstr ""
+
+#: electrum_nyc/util.py:97
+msgid "Dynamic fee estimates not available"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2818
+msgid "ETA"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:133
+msgid "Each revealer should be used only once."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2827
+msgid "Edit fees manually"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:588
+#: electrum_nyc/gui/qt/contact_list.py:95
+#: electrum_nyc/gui/qt/address_list.py:203
+msgid "Edit {}"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/server.kv:9
+msgid "Electrum requests your transaction history from a single server. The returned history is checked against blockchain headers sent by other nodes, using Simple Payment Verification (SPV)."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:285
+msgid "Electrum-NYC App"
+msgstr ""
+
+#: electrum_nyc/plugin.py:498
+msgid ""
+"Electrum-NYC cannot pair with your {}.\n"
+"\n"
+"Before you request newyorkcoins to be sent to addresses in this wallet, ensure you can pair with your device, or that you have its seed (and passphrase, if any).  Otherwise all newyorkcoins you receive will be unspendable."
+msgstr ""
+
+#: electrum_nyc/plugins/email_requests/__init__.py:3
+msgid "Email"
+msgstr ""
+
+#: electrum_nyc/plugins/email_requests/qt.py:208
+msgid "Email settings"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:249 electrum_nyc/plugins/safe_t/qt.py:123
+#: electrum_nyc/plugins/trezor/qt.py:229
+msgid "Enable PIN protection"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:348 electrum_nyc/plugins/safe_t/qt.py:228
+#: electrum_nyc/plugins/trezor/qt.py:355
+msgid "Enable Passphrases"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3045
+msgid "Enable output value rounding"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:283 electrum_nyc/plugins/safe_t/qt.py:157
+#: electrum_nyc/plugins/trezor/qt.py:250
+msgid "Enable passphrases"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:246
+msgid "Enable update check"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:349 electrum_nyc/plugins/safe_t/qt.py:229
+#: electrum_nyc/plugins/trezor/qt.py:356
+msgid "Enabled"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2434
+msgid "Encrypt"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:269
+msgid "Encrypt custom secret"
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:125
+#: electrum_nyc/gui/qt/password_dialog.py:207
+msgid "Encrypt wallet file"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:250
+msgid "Encrypt {}'s seed"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2409
+msgid "Encrypt/decrypt Message"
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_list.py:209
+msgid "Encrypt/decrypt message"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2429
+msgid "Encrypted"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/ledger.py:266
+#: electrum_nyc/plugins/coldcard/coldcard.py:319
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:469
+msgid "Encryption and decryption are currently not supported for {}"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/keepkey.py:33
+#: electrum_nyc/plugins/safe_t/safe_t.py:34
+#: electrum_nyc/plugins/trezor/trezor.py:59
+msgid "Encryption and decryption are not implemented by {}"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:489
+msgid "End"
+msgstr ""
+
+#: electrum_nyc/i18n.py:53
+msgid "English"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:174 electrum_nyc/plugins/safe_t/qt.py:57
+#: electrum_nyc/plugins/trezor/qt.py:149
+#: electrum_nyc/gui/kivy/main_window.py:822
+msgid "Enter PIN"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:552
+msgid "Enter PIN code"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:109
+#: electrum_nyc/plugins/ledger/auth2fa.py:142
+msgid "Enter PIN:"
+msgstr ""
+
+#: electrum_nyc/plugins/hw_wallet/qt.py:121
+#: electrum_nyc/gui/qt/password_dialog.py:61
+msgid "Enter Passphrase"
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:61
+#: electrum_nyc/gui/qt/password_dialog.py:292
+msgid "Enter Password"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:425
+#: electrum_nyc/gui/kivy/uix/dialogs/installwizard.py:767
+msgid "Enter Seed"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/screens.py:133
+msgid "Enter Transaction Label"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:497
+msgid "Enter a filename for the copy of your wallet"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:221 electrum_nyc/plugins/safe_t/qt.py:97
+#: electrum_nyc/plugins/trezor/qt.py:204
+msgid "Enter a label to name your device:"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:204
+msgid "Enter a list of NewYorkCoin addresses (this will create a watching-only wallet), or a list of private keys."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1927
+msgid "Enter a list of outputs in the 'Pay to' field."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3406
+msgid "Enter a name to be registered via NewYorkCoin."
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:47
+#: electrum_nyc/plugins/safe_t/clientbase.py:49
+#: electrum_nyc/plugins/trezor/clientbase.py:237
+msgid "Enter a new PIN for your {}:"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:184
+msgid "Enter a new password below."
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:63
+#: electrum_nyc/plugins/safe_t/clientbase.py:68
+#: electrum_nyc/plugins/trezor/clientbase.py:253
+msgid "Enter a passphrase to generate this wallet.  Each time you use this wallet your {} will prompt you for the passphrase.  If you forget the passphrase you cannot access the newyorkcoins in the wallet."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2738
+msgid "Enter addresses"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:193
+msgid "Enter cosigner key"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:194
+msgid "Enter cosigner seed"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:961
+msgid "Enter description"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/password_dialog.py:129
+msgid "Enter new PIN"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:148
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:151
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:163
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:166
+msgid "Enter password:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2747
+msgid "Enter private keys"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2655
+msgid "Enter private keys:"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:257 electrum_nyc/plugins/safe_t/qt.py:131
+msgid "Enter the master private key beginning with xprv:"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:68
+#: electrum_nyc/plugins/safe_t/clientbase.py:73
+#: electrum_nyc/plugins/trezor/clientbase.py:258
+msgid "Enter the passphrase to unlock this wallet:"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:141
+msgid "Enter the password used when the backup was created:"
+msgstr ""
+
+#: electrum_nyc/plugins/trezor/qt.py:38
+msgid ""
+"Enter the recovery words by pressing the buttons according to what the device shows on its display.  You can also use your NUMPAD.\n"
+"Press BACKSPACE to go back a choice or word.\n"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:100
+msgid "Enter the seed for your 2-factor wallet:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:414
+msgid "Enter their master private key (xprv) if you want to be able to sign for them."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/wallets.py:60
+msgid "Enter wallet name"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:255 electrum_nyc/plugins/safe_t/qt.py:129
+msgid "Enter your BIP39 mnemonic:"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:194
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:204
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:209
+msgid "Enter your Digital Bitbox password:"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:270 electrum_nyc/plugins/safe_t/qt.py:144
+msgid "Enter your PIN (digits 1-9):"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:1098
+msgid "Enter your PIN code in order to decrypt your private key"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:1048
+msgid "Enter your PIN code in order to decrypt your seed"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/tx_dialog.py:164
+msgid "Enter your PIN code in order to sign this transaction"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:1029
+msgid "Enter your PIN code to confirm deletion of {}"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/screens.py:298
+msgid "Enter your PIN code to proceed"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:1075
+msgid "Enter your current PIN:"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:52
+#: electrum_nyc/plugins/safe_t/clientbase.py:54
+#: electrum_nyc/plugins/trezor/clientbase.py:242
+msgid "Enter your current {} PIN:"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/installwizard.py:657
+msgid "Enter your email address:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:223
+msgid "Enter your password or choose another file."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1665
+msgid "Enter your password to proceed"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:229
+msgid "Erase the Digital Bitbox"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/kivy.py:69
+#: electrum_nyc/plugins/trustedcoin/kivy.py:71
+#: electrum_nyc/plugins/trustedcoin/kivy.py:84
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:661
+#: electrum_nyc/gui/qt/installwizard.py:266
+#: electrum_nyc/gui/qt/installwizard.py:270
+#: electrum_nyc/gui/qt/installwizard.py:277
+#: electrum_nyc/gui/qt/installwizard.py:284 electrum_nyc/gui/qt/util.py:210
+#: electrum_nyc/gui/qt/__init__.py:224 electrum_nyc/gui/qt/__init__.py:242
+#: electrum_nyc/gui/qt/__init__.py:274
+msgid "Error"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1028
+#: electrum_nyc/gui/kivy/uix/screens.py:401
+msgid "Error adding payment request"
+msgstr ""
+
+#: electrum_nyc/gui/qt/uno_list.py:209
+msgid "Error adding renewal for "
+msgstr ""
+
+#: electrum_nyc/gui/qt/uno_list.py:197
+msgid "Error broadcasting renewal for "
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3551
+msgid "Error broadcasting the following queued transactions (you'll need to manually broadcast them): "
+msgstr ""
+
+#: electrum_nyc/gui/qt/configure_name_dialog.py:195
+msgid "Error broadcasting update for "
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/kivy.py:82
+msgid "Error connecting to server"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:113
+#: electrum_nyc/plugins/labels/labels.py:22
+msgid "Error connecting to {} server"
+msgstr ""
+
+#: electrum_nyc/gui/qt/configure_name_dialog.py:179
+#: electrum_nyc/gui/qt/configure_name_dialog.py:183
+#: electrum_nyc/gui/qt/configure_name_dialog.py:188
+msgid "Error creating update for "
+msgstr ""
+
+#: electrum_nyc/plugins/cosigner_pool/qt.py:229
+msgid "Error decrypting message"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:130
+msgid "Error getting TrustedCoin account info."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2522
+msgid "Error getting transaction from network"
+msgstr ""
+
+#: electrum_nyc/gui/qt/qrtextedit.py:52
+msgid "Error opening file"
+msgstr ""
+
+#: electrum_nyc/gui/qt/configure_name_dialog.py:131
+#: electrum_nyc/gui/qt/configure_name_dialog.py:135
+#: electrum_nyc/gui/qt/configure_name_dialog.py:139
+#: electrum_nyc/gui/qt/configure_name_dialog.py:150
+msgid "Error registering "
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:265
+msgid "Error scanning devices"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/ledger.py:532
+#: electrum_nyc/plugins/coldcard/coldcard.py:368
+#: electrum_nyc/plugins/coldcard/coldcard.py:586
+msgid "Error showing address"
+msgstr ""
+
+#: electrum_nyc/plugins/labels/qt.py:63
+msgid "Error synchronising labels"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:485
+msgid "Error: duplicate master public key"
+msgstr ""
+
+#: electrum_nyc/i18n.py:52
+msgid "Esperanto"
+msgstr ""
+
+#: electrum_nyc/gui/qt/fee_slider.py:40
+msgid "Estimate"
+msgstr ""
+
+#: electrum_nyc/gui/qt/__init__.py:152
+msgid "Exit NYCFlash Electrum Wallet"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:498
+msgid "Expenditures"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:46
+msgid "Expiration"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:914
+msgid "Expiration date of your request."
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:51
+#: electrum_nyc/gui/kivy/uix/dialogs/invoices.py:88
+#: electrum_nyc/gui/kivy/uix/dialogs/requests.py:92
+msgid "Expired"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:916
+msgid "Expired requests have to be deleted manually from your list, in order to free the corresponding NewYorkCoin addresses."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1990
+#: electrum_nyc/gui/qt/invoice_list.py:49
+msgid "Expires"
+msgstr ""
+
+#: electrum_nyc/gui/qt/uno_list.py:61
+msgid "Expires In"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:139
+#: electrum_nyc/gui/qt/main_window.py:578
+#: electrum_nyc/gui/qt/main_window.py:581
+#: electrum_nyc/gui/qt/main_window.py:2555
+#: electrum_nyc/gui/qt/history_list.py:639
+msgid "Export"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:631
+msgid "Export History"
+msgstr ""
+
+#: electrum_nyc/gui/qt/contact_list.py:84
+msgid "Export file"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:87
+msgid "Export private key"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2542
+msgid "Exposing a single private key can compromise your entire wallet!"
+msgstr ""
+
+#: electrum_nyc/gui/qt/seed_dialog.py:63
+msgid "Extend this seed with custom words"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/ledger.py:601
+#: electrum_nyc/plugins/keepkey/keepkey.py:268
+#: electrum_nyc/plugins/coldcard/coldcard.py:662
+#: electrum_nyc/plugins/safe_t/safe_t.py:264
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:727
+#: electrum_nyc/plugins/trezor/trezor.py:268
+msgid "Failed to create a client for this device."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:278
+msgid "Failed to decrypt using this hardware device."
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:196
+#: electrum_nyc/gui/qt/transaction_dialog.py:199
+#: electrum_nyc/gui/kivy/main_window.py:427
+msgid "Failed to display QR code."
+msgstr ""
+
+#: electrum_nyc/util.py:118
+msgid "Failed to export to file."
+msgstr ""
+
+#: electrum_nyc/util.py:110
+msgid "Failed to import from file."
+msgstr ""
+
+#: electrum_nyc/plugins/cosigner_pool/qt.py:181
+msgid "Failed to send transaction to cosigning pool"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2129
+msgid "Failed to update password"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2177
+msgid "False"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:268
+#: electrum_nyc/gui/qt/main_window.py:1197
+#: electrum_nyc/gui/kivy/uix/ui_screens/send.kv:90 electrum_nyc/gui/text.py:181
+msgid "Fee"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2816
+msgid "Fee estimation"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3316
+msgid "Fee:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3154
+msgid "Fees"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3157
+#: electrum_nyc/gui/qt/address_list.py:87
+msgid "Fiat"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3147
+msgid "Fiat currency"
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:387
+msgid "File"
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_list.py:72
+msgid "Filter:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3358
+msgid "Final"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:492
+msgid "Final balance"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:584
+msgid "Find"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:464
+#: electrum_nyc/plugins/coldcard/qt.py:151
+#: electrum_nyc/plugins/safe_t/qt.py:350 electrum_nyc/plugins/trezor/qt.py:477
+msgid "Firmware Version"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/ledger.py:34
+msgid "Firmware version (or \"Bitcoin\" app) too old for Segwit support. Please update at"
+msgstr ""
+
+#: electrum_nyc/plugins/trezor/qt.py:289
+msgid "Firmware version too old."
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/ledger.py:32
+msgid "Firmware version too old. Please update at"
+msgstr ""
+
+#: electrum_nyc/gui/qt/fee_slider.py:40
+msgid "Fixed rate"
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:88
+msgid "Follow this branch"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/__init__.py:6
+#: electrum_nyc/plugins/trustedcoin/qt.py:169
+#: electrum_nyc/plugins/revealer/__init__.py:7
+msgid "For more information, visit"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:247
+msgid "For security reasons we advise that you always use the latest version of NYCFlash Electrum Wallet."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:53
+msgid "Fork detected at block {}"
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:363
+msgid "Format"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1929
+msgid "Format: address, amount"
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_list.py:217
+msgid "Freeze"
+msgstr ""
+
+#: electrum_nyc/gui/qt/utxo_list.py:140
+msgid "Freeze Address"
+msgstr ""
+
+#: electrum_nyc/gui/qt/utxo_list.py:157
+msgid "Freeze Addresses"
+msgstr ""
+
+#: electrum_nyc/gui/qt/utxo_list.py:132
+msgid "Freeze Coin"
+msgstr ""
+
+#: electrum_nyc/gui/qt/utxo_list.py:153
+msgid "Freeze Coins"
+msgstr ""
+
+#: electrum_nyc/i18n.py:56
+msgid "French"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1166
+#: electrum_nyc/gui/qt/history_list.py:417
+msgid "From"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:641
+#, python-brace-format
+msgid "From {0} cosigners"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:242
+msgid "Full 2FA enabled. This is not supported yet."
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_list.py:66
+#: electrum_nyc/gui/kivy/uix/dialogs/addresses.py:120
+msgid "Funded"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3156
+msgid "General"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:250
+msgid "Generate a new random wallet"
+msgstr ""
+
+#: electrum_nyc/i18n.py:50
+msgid "German"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:296
+msgid "Google Authenticator code:"
+msgstr ""
+
+#: electrum_nyc/i18n.py:51
+msgid "Greek"
+msgstr ""
+
+#: electrum_nyc/plugins/greenaddress_instant/qt.py:79
+msgid ""
+"GreenAddress requires your signature \n"
+"to verify that transaction is instant.\n"
+"Please enter your password to sign a\n"
+"verification request."
+msgstr ""
+
+#: electrum_nyc/plugin.py:449
+msgid "Handler not found for"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:247
+msgid "Hardware Keystore"
+msgstr ""
+
+#: electrum_nyc/gui/qt/utxo_list.py:50 electrum_nyc/gui/qt/network_dialog.py:73
+msgid "Height"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:857
+msgid "Hello World"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:589
+msgid "Here is your master public key."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:588
+msgid "Hide"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:87
+msgid "Hide private key"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/status.kv:74
+msgid "Hide seed"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:294
+msgid "Hide {}"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:178
+#: electrum_nyc/gui/qt/address_dialog.py:87 electrum_nyc/gui/text.py:69
+msgid "History"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/about.kv:25
+msgid "Homepage"
+msgstr ""
+
+#: electrum_nyc/plugins/safe_t/qt.py:398 electrum_nyc/plugins/trezor/qt.py:525
+msgid "Homescreen"
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:146
+#: electrum_nyc/gui/kivy/uix/ui_screens/server.kv:19
+#: electrum_nyc/gui/kivy/uix/ui_screens/proxy.kv:19
+msgid "Host"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:606
+msgid "How do you want to connect to a server? "
+msgstr ""
+
+#: electrum_nyc/plugins/cosigner_pool/qt.py:207
+msgid "However, hardware wallets do not support message decryption, which makes them not compatible with the current design of cosigner pool."
+msgstr ""
+
+#: electrum_nyc/gui/qt/seed_dialog.py:75
+msgid "However, we do not generate BIP39 seeds, because they do not meet our safety standard."
+msgstr ""
+
+#: electrum_nyc/i18n.py:57
+msgid "Hungarian"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:523
+#: electrum_nyc/base_wizard.py:185
+msgid "I already have a seed"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:304
+msgid "I have lost my Google Authenticator account"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3158
+msgid "Identity"
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:230
+msgid "If auto-connect is enabled, NYCFlash Electrum Wallet will always use a server that is on the longest blockchain."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3049
+msgid "If enabled, at most 100 satoshis might be lost due to this, per transaction."
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:231
+msgid "If it is disabled, you have to choose a server you want to use. NYCFlash Electrum Wallet will warn you if your server is lagging."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:365
+msgid "If you are not sure what this is, leave this field unchanged."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:218
+msgid "If you are online, click on \"{}\" to continue."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2840
+msgid "If you check this box, your transactions will be marked as non-final,"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2853
+msgid "If you check this box, your unconfirmed transactions will be consolidated into a single transaction."
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:547 electrum_nyc/plugins/safe_t/qt.py:455
+#: electrum_nyc/plugins/trezor/qt.py:582
+msgid "If you disable your PIN, anyone with physical access to your {} device can spend your newyorkcoins."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:423
+msgid "If you do not know what this is, leave this field empty."
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:34 electrum_nyc/plugins/safe_t/qt.py:34
+#: electrum_nyc/plugins/trezor/qt.py:34
+msgid "If you forget a passphrase you will be unable to access any newyorkcoins in the wallet behind it.  A passphrase is not a PIN. Only change this if you are sure you understand it."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/installwizard.py:727
+msgid "If you forget your PIN or lose your device, your seed phrase will be the only way to recover your funds."
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:727
+msgid "If you have an old printer, or want optimal precision"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/installwizard.py:620
+msgid "If you have lost your Google Authenticator account, you can request a new secret. You will need to retype your seed."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:112
+msgid "If you have lost your second factor, you need to restore your wallet from seed in order to request a new code."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:132
+msgid "If you keep experiencing network problems, try using a Tor proxy."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:435
+msgid "If you lose your seed, your money will be permanently lost."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:279
+msgid "If you use a passphrase, make sure it is correct."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1066
+msgid "If you want to create new addresses, use a deterministic wallet instead."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:297
+msgid "If your device is not detected on Windows, go to \"Settings\", \"Devices\", \"Connected devices\", and do \"Remove device\". Then, plug your device again."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2223
+msgid "If your wallet contains funds, make sure you have saved its seed."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:577
+#: electrum_nyc/gui/qt/main_window.py:580
+#: electrum_nyc/gui/qt/main_window.py:2717
+msgid "Import"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:203
+msgid "Import NewYorkCoin Addresses"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:131
+msgid "Import NewYorkCoin addresses or private keys"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:562
+#: electrum_nyc/gui/qt/main_window.py:2738
+msgid "Import addresses"
+msgstr ""
+
+#: electrum_nyc/gui/qt/contact_list.py:83
+msgid "Import file"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:292
+msgid "Import pairing from the Digital Bitbox desktop app"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2745
+msgid "Import private keys"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2543
+msgid "In particular, DO NOT use 'redeem private key' services proposed by third parties."
+msgstr ""
+
+#: electrum_nyc/plugins/trezor/qt.py:42
+msgid ""
+"In seedless mode, the mnemonic seed words are never shown to the user.\n"
+"There is no backup, and the user has a proof of this.\n"
+"This is an advanced feature, only suggested to be used in redundant multisig setups."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3005
+msgid "In some cases, use up to 3 change addresses in order to break up large coin amounts and obfuscate the recipient address."
+msgstr ""
+
+#: electrum_nyc/simple_config.py:390
+msgid "In the next block"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:495
+msgid "Income"
+msgstr ""
+
+#: electrum_nyc/util.py:102
+msgid "Incorrect password"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:202
+msgid "Incorrect password entered."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:712
+msgid "Incorrect seed"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:594
+msgid "Increase fee"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3346
+msgid "Increase your transaction's fee to improve its position in mempool."
+msgstr ""
+
+#: electrum_nyc/i18n.py:59
+msgid "Indonesian"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:584 electrum_nyc/plugins/safe_t/qt.py:492
+#: electrum_nyc/plugins/trezor/qt.py:619 electrum_nyc/gui/qt/main_window.py:480
+#: electrum_nyc/gui/qt/util.py:218
+msgid "Information"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:486
+msgid "Initial balance"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/qt.py:85
+msgid "Initialization of Ledger HW devices is currently disabled."
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/keepkey.py:209
+#: electrum_nyc/plugins/safe_t/safe_t.py:193
+#: electrum_nyc/plugins/trezor/trezor.py:202
+msgid "Initialize Device"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:469 electrum_nyc/plugins/safe_t/qt.py:354
+#: electrum_nyc/plugins/trezor/qt.py:481
+msgid "Initialized"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3303
+msgid "Input amount"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2501
+msgid "Input raw transaction"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:284
+msgid "Inputs"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:121
+msgid "Install Wizard"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2957
+msgid "Install the zbar package to enable this."
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:455
+msgid "Instructions:"
+msgstr ""
+
+#: electrum_nyc/util.py:92
+msgid "Insufficient funds"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1947
+msgid "Invalid Address"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1593 electrum_nyc/gui/stdio.py:176
+#: electrum_nyc/gui/text.py:345
+msgid "Invalid Amount"
+msgstr ""
+
+#: electrum_nyc/gui/stdio.py:181 electrum_nyc/gui/text.py:350
+msgid "Invalid Fee"
+msgstr ""
+
+#: electrum_nyc/util.py:850
+msgid "Invalid JSON code."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1569
+msgid "Invalid Lines found:"
+msgstr ""
+
+#: electrum_nyc/plugins/hw_wallet/plugin.py:74
+#: electrum_nyc/gui/qt/main_window.py:1590
+#: electrum_nyc/gui/kivy/uix/screens.py:254
+msgid "Invalid NewYorkCoin Address"
+msgstr ""
+
+#: electrum_nyc/gui/stdio.py:171 electrum_nyc/gui/text.py:340
+msgid "Invalid NewYorkCoin address"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2299
+#: electrum_nyc/gui/qt/main_window.py:2327 electrum_nyc/wallet.py:1148
+msgid "Invalid NewYorkCoin address."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:919
+#: electrum_nyc/gui/kivy/uix/dialogs/tx_dialog.py:174
+msgid "Invalid PIN"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2403
+msgid "Invalid Public key"
+msgstr ""
+
+#: electrum_nyc/gui/qt/configure_name_dialog.py:122
+#: electrum_nyc/gui/qt/configure_name_dialog.py:168
+msgid "Invalid address "
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/screens.py:259
+msgid "Invalid amount"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1821
+msgid "Invalid newyorkcoin URI:"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/kivy.py:67
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:337
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:693
+msgid "Invalid one-time password."
+msgstr ""
+
+#: electrum_nyc/plugins/coldcard/coldcard.py:191
+msgid "Invalid xpub magic. Make sure your {} device is set to the correct chain."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1976
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:17
+msgid "Invoice"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/screens.py:227
+msgid "Invoice saved"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2000
+msgid "Invoice saved as "
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:579
+#: electrum_nyc/gui/qt/main_window.py:1355
+#: electrum_nyc/gui/kivy/uix/ui_screens/send.kv:101
+msgid "Invoices"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:34
+msgid "It also contains your master public key that allows watching your addresses."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2535
+msgid "It cannot be \"backed up\" by simply exporting these private keys."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3383
+msgid "It conflicts with current history."
+msgstr ""
+
+#: electrum_nyc/plugins/cosigner_pool/__init__.py:5
+msgid "It sends and receives partially signed transactions from/to your cosigner wallet."
+msgstr ""
+
+#: electrum_nyc/i18n.py:60
+msgid "Italian"
+msgstr ""
+
+#: electrum_nyc/i18n.py:61
+msgid "Japanese"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:59
+msgid "KeepKey Seed Recovery"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/__init__.py:6
+msgid "KeepKey wallet"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1175
+msgid "Keyboard shortcut: type \"!\" to send all your coins."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:180
+msgid "Keystore"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2190
+msgid "Keystore type"
+msgstr ""
+
+#: electrum_nyc/i18n.py:62
+msgid "Kyrgyz"
+msgstr ""
+
+#: electrum_nyc/gui/qt/utxo_list.py:48 electrum_nyc/gui/qt/address_list.py:91
+msgid "Label"
+msgstr ""
+
+#: electrum_nyc/plugins/labels/qt.py:34
+msgid "Label Settings"
+msgstr ""
+
+#: electrum_nyc/plugins/labels/__init__.py:3
+msgid "LabelSync"
+msgstr ""
+
+#: electrum_nyc/plugins/labels/__init__.py:6
+msgid "Labels, transactions IDs and addresses are encrypted before they are sent to the remote server."
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:468 electrum_nyc/plugins/safe_t/qt.py:353
+#: electrum_nyc/plugins/trezor/qt.py:480
+#: electrum_nyc/gui/qt/main_window.py:2772
+#: electrum_nyc/gui/kivy/uix/dialogs/settings.py:131
+msgid "Language"
+msgstr ""
+
+#: electrum_nyc/gui/qt/update_checker.py:50
+#: electrum_nyc/gui/qt/update_checker.py:82
+msgid "Latest version: {}"
+msgstr ""
+
+#: electrum_nyc/i18n.py:63
+msgid "Latvian"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:31
+msgid "Leave this field empty if you want to disable encryption."
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/qt.py:55
+msgid "Ledger Status"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:48
+msgid "Ledger Wallet Authentication"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/__init__.py:6
+msgid "Ledger wallet"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:592
+msgid "Legacy"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:530
+msgid "Legacy 2FA"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/keepkey.py:192
+#: electrum_nyc/plugins/safe_t/safe_t.py:176
+#: electrum_nyc/plugins/trezor/trezor.py:187
+msgid "Let the device generate a completely new seed randomly"
+msgstr ""
+
+#: electrum_nyc/plugins/hw_wallet/plugin.py:111
+msgid "Library version for '{}' is incompatible."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/about.kv:19
+msgid "Licence"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2965
+msgid "Light"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1569
+msgid "Line #"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:251
+msgid "Load a wallet from the micro SD card"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:228
+msgid "Load a wallet from the micro SD card (the current seed is overwritten)"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2501
+msgid "Load transaction"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:344
+msgid "Loading backup..."
+msgstr ""
+
+#: electrum_nyc/wallet.py:79 electrum_nyc/wallet.py:377
+msgid "Local"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2515
+msgid "Lookup transaction"
+msgstr ""
+
+#: electrum_nyc/simple_config.py:388
+msgid "Low fee"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/ledger.py:602
+#: electrum_nyc/plugins/keepkey/keepkey.py:269
+#: electrum_nyc/plugins/coldcard/coldcard.py:663
+#: electrum_nyc/plugins/safe_t/safe_t.py:265
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:728
+#: electrum_nyc/plugins/trezor/trezor.py:269
+msgid "Make sure it is in the correct state."
+msgstr ""
+
+#: electrum_nyc/plugins/hw_wallet/plugin.py:124
+msgid "Make sure you install it with python3"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:478
+msgid "Make sure you own the seed phrase or the private keys, before you request NewYorkCoins to be sent to this wallet."
+msgstr ""
+
+#: electrum_nyc/plugins/coldcard/qt.py:154
+msgid "Master Fingerprint"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2211
+#: electrum_nyc/gui/qt/installwizard.py:595
+#: electrum_nyc/gui/kivy/main_window.py:641
+#: electrum_nyc/gui/kivy/main_window.py:643
+#: electrum_nyc/gui/kivy/uix/ui_screens/status.kv:58
+#: electrum_nyc/gui/kivy/uix/ui_screens/status.kv:61
+#: electrum_nyc/gui/kivy/uix/dialogs/installwizard.py:890
+#: electrum_nyc/gui/kivy/uix/dialogs/installwizard.py:894
+msgid "Master Public Key"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2208
+msgid "Master Public Keys"
+msgstr ""
+
+#: electrum_nyc/plugins/trezor/qt.py:274
+msgid "Matrix"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1187
+msgid "Max"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3331
+msgid "Max fee exceeded"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1985
+msgid "Memo"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2818
+msgid "Mempool"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2813
+msgid "Mempool based: fee rate is targeting a depth in the memory pool"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/tx_dialog.py:117
+msgid "Mempool depth"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2348
+#: electrum_nyc/gui/qt/main_window.py:2416
+msgid "Message"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:83
+msgid "Method:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1651
+#: electrum_nyc/gui/kivy/uix/screens.py:289
+msgid "Mining fee"
+msgstr ""
+
+#: electrum_nyc/plugins/hw_wallet/plugin.py:123
+msgid "Missing libraries for {}."
+msgstr ""
+
+#: electrum_nyc/base_crash_reporter.py:66
+msgid "Missing report URL."
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:178
+msgid "Mobile - Not paired"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:180
+msgid "Mobile - {}"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:295
+msgid "Mobile pairing options"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:221
+msgid "More info at: {}"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:652
+msgid "Multi-Signature Wallet"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:130
+msgid "Multi-signature wallet"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:111
+#: electrum_nyc/plugins/ledger/auth2fa.py:149
+msgid "NOT DEVICE PIN - see above"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:192
+msgid "NYCFlash Electrum Wallet"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3220
+msgid "NYCFlash Electrum Wallet Plugins"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:599
+msgid "NYCFlash Electrum Wallet communicates with remote servers to get information about your transactions and addresses. The servers all fulfill the same purpose only differing in hardware. In most cases you simply want to let NYCFlash Electrum Wallet pick one at random.  However if you prefer feel free to select a server manually."
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:297
+msgid "NYCFlash Electrum Wallet connects to several nodes in order to download block headers and find out the longest blockchain."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:600
+msgid "NYCFlash Electrum Wallet preferences"
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:306
+msgid "NYCFlash Electrum Wallet sends your wallet addresses to a single server, in order to receive your transaction history."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:506
+msgid "NYCFlash Electrum Wallet was unable to copy your wallet file to the specified location."
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:63
+msgid "NYCFlash Electrum Wallet was unable to deserialize the transaction:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2496
+msgid "NYCFlash Electrum Wallet was unable to open your transaction file"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2461
+msgid "NYCFlash Electrum Wallet was unable to parse your transaction"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2608
+msgid "NYCFlash Electrum Wallet was unable to produce a private key-export."
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:651
+msgid "NYCFlash Electrum Wallet was unable to produce a transaction export."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:641
+msgid "NYCFlash Electrum Wallet's focus is speed, with low resource usage and simplifying NewYorkCoin."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2162
+#: electrum_nyc/gui/qt/contact_list.py:48 electrum_nyc/gui/qt/uno_list.py:59
+msgid "Name"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:482 electrum_nyc/plugins/safe_t/qt.py:367
+#: electrum_nyc/plugins/trezor/qt.py:494
+msgid "Name this {}.  If you have multiple devices their labels help distinguish them."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3416
+#: electrum_nyc/gui/qt/main_window.py:3461
+msgid "Name to register: "
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2082
+#: electrum_nyc/gui/qt/network_dialog.py:49 electrum_nyc/gui/kivy/main.kv:451
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:3
+#: electrum_nyc/gui/text.py:155
+msgid "Network"
+msgstr ""
+
+#: electrum_nyc/interface.py:156
+msgid "Network request timed out."
+msgstr ""
+
+#: electrum_nyc/gui/qt/request_list.py:78
+#: electrum_nyc/gui/qt/exception_window.py:80 electrum_nyc/gui/qt/util.py:58
+#: electrum_nyc/gui/qt/invoice_list.py:76
+#: electrum_nyc/gui/kivy/uix/dialogs/invoices.py:128
+msgid "Never"
+msgstr ""
+
+#: electrum_nyc/gui/qt/seed_dialog.py:50
+msgid "Never disclose your seed."
+msgstr ""
+
+#: electrum_nyc/gui/qt/seed_dialog.py:51
+msgid "Never type it on a website."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:930
+#: electrum_nyc/gui/kivy/uix/ui_screens/receive.kv:139
+msgid "New"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2152
+#: electrum_nyc/gui/qt/main_window.py:2154
+msgid "New Contact"
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:101
+msgid "New Password:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/contact_list.py:82
+msgid "New contact"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3348
+msgid "New fee:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3401
+msgid "New name:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:692
+msgid "New transaction: {}"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/receive.kv:71
+msgid "NewYorkCoin Address"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1587
+msgid "NewYorkCoin Address is None"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:886
+msgid "NewYorkCoin address where the payment should be received. Note that each payment request uses a different NewYorkCoin address."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1194
+msgid "NewYorkCoin transactions are in general not free. A transaction fee is paid by the sender of the funds."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:218
+#: electrum_nyc/plugins/revealer/qt.py:127
+#: electrum_nyc/gui/qt/installwizard.py:132
+msgid "Next"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:347 electrum_nyc/plugins/safe_t/qt.py:227
+#: electrum_nyc/plugins/trezor/qt.py:354
+msgid "No"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/invoices.py:125
+msgid "No Amount"
+msgstr ""
+
+#: electrum_nyc/util.py:175
+msgid "No Data"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/send.kv:72
+msgid "No Description"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:203
+msgid "No Wallet"
+msgstr ""
+
+#: electrum_nyc/exchange_rate.py:676
+msgid "No data"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:636
+msgid "No donation address for this server"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:292
+msgid "No exceptions encountered."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:53
+msgid "No fork detected"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:295
+msgid "No hardware device detected."
+msgstr ""
+
+#: electrum_nyc/wallet.py:127
+msgid "No inputs found. (Note that inputs need to be confirmed)"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2191
+msgid "No keystore"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1019
+msgid "No message or amount"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1064
+msgid "No more addresses in your wallet."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1582
+msgid "No outputs"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:979
+msgid "No saved invoices."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:991
+msgid "No saved requests."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:321
+msgid "No wallet loaded."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3065
+#: electrum_nyc/gui/qt/history_list.py:398
+#: electrum_nyc/gui/qt/network_dialog.py:359
+#: electrum_nyc/gui/kivy/main_window.py:117
+#: electrum_nyc/gui/kivy/uix/dialogs/settings.py:159
+#: electrum_nyc/gui/kivy/uix/dialogs/settings.py:217
+#: electrum_nyc/gui/kivy/uix/dialogs/fx_dialog.py:115
+#: electrum_nyc/gui/kivy/uix/dialogs/fx_dialog.py:116
+#: electrum_nyc/gui/kivy/uix/dialogs/fx_dialog.py:127
+msgid "None"
+msgstr ""
+
+#: electrum_nyc/i18n.py:64
+msgid "Norwegian Bokmal"
+msgstr ""
+
+#: electrum_nyc/gui/qt/exception_window.py:84
+msgid "Not Now"
+msgstr ""
+
+#: electrum_nyc/wallet.py:78
+msgid "Not Verified"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/screens.py:180
+msgid "Not a NewYorkCoin URI"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:829
+#: electrum_nyc/gui/qt/main_window.py:831
+#: electrum_nyc/gui/qt/network_dialog.py:370
+#: electrum_nyc/gui/kivy/main_window.py:954
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:14
+#: electrum_nyc/gui/stdio.py:126 electrum_nyc/gui/text.py:148
+msgid "Not connected"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1326
+#: electrum_nyc/gui/kivy/uix/screens.py:278
+msgid "Not enough funds"
+msgstr ""
+
+#: electrum_nyc/wallet.py:141 electrum_nyc/wallet.py:143
+msgid "Not enough funds on address."
+msgstr ""
+
+#: electrum_nyc/wallet.py:366
+msgid "Not verified"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1174
+msgid "Note that if you have frozen some of your addresses, the available funds will be lower than your total balance."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2842
+msgid "Note that some merchants do not accept non-final transactions until they are confirmed."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:422
+msgid "Note that this is NOT your encryption password."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:80
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:96
+msgid "Note that your coins are not locked in this service.  You may withdraw your funds at any time and at no cost, without the remote server, by using the 'restore wallet' option with your wallet seed."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:35
+#: electrum_nyc/gui/qt/password_dialog.py:278
+msgid "Note: If you enable this setting, you will need your hardware device to open your wallet."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3393
+msgid "Note: this is an offline transaction, if you want the network to see it, you need to broadcast it."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/__init__.py:95
+msgid "Nothing set !"
+msgstr ""
+
+#: electrum_nyc/plot.py:15
+msgid "Nothing to plot."
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:474
+msgid "Nothing to summarize."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2793
+msgid "Number of zeros displayed after the decimal point. For example, if this is set to 2, \"1.\" will be displayed as \"1.00\""
+msgstr ""
+
+#: electrum_nyc/plugins/audio_modem/qt.py:63 electrum_nyc/gui/qt/util.py:172
+#: electrum_nyc/gui/kivy/uix/ui_screens/server.kv:57
+#: electrum_nyc/gui/kivy/uix/ui_screens/proxy.kv:64
+msgid "OK"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:255
+msgid "OR"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:795 electrum_nyc/gui/qt/__init__.py:184
+#: electrum_nyc/gui/kivy/main_window.py:741 electrum_nyc/gui/text.py:136
+msgid "Offline"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/ledger.py:365
+#: electrum_nyc/plugins/keepkey/keepkey.py:53
+#: electrum_nyc/plugins/safe_t/safe_t.py:54
+#: electrum_nyc/plugins/trezor/trezor.py:78
+msgid "Offline signing with {} is not supported for legacy inputs."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:298
+msgid "On Linux, you might have to add a new permission to your udev rules."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1928
+msgid "One output per line."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:39
+msgid "One-server mode"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2938
+msgid "Online Block Explorer"
+msgstr ""
+
+#: electrum_nyc/plugins/hw_wallet/plugin.py:145
+msgid "Only OP_RETURN scripts, with one constant push, are supported."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:40
+msgid "Only connect to a single server"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:572 electrum_nyc/plugins/safe_t/qt.py:480
+#: electrum_nyc/plugins/trezor/qt.py:607
+msgid "Only wipe a device if you have the recovery seed written down and the device wallet(s) are empty, otherwise the newyorkcoins will be lost forever."
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:732
+msgid "Open calibration pdf"
+msgstr ""
+
+#: electrum_nyc/plugins/cosigner_pool/qt.py:176
+msgid "Open your cosigner wallet to retrieve it."
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:767
+msgid "Open {} file"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2864
+msgid "OpenAlias"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2860
+msgid "OpenAlias record, used to receive coins and to sign payment requests."
+msgstr ""
+
+#: electrum_nyc/gui/qt/seed_dialog.py:134
+msgid "Options"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/keepkey.py:155
+#: electrum_nyc/plugins/safe_t/safe_t.py:139
+#: electrum_nyc/plugins/trezor/trezor.py:272
+msgid "Outdated {} firmware for device labelled {}. Please download the updated firmware from {}"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3306
+msgid "Output amount"
+msgstr ""
+
+#: electrum_nyc/gui/qt/utxo_list.py:51
+msgid "Output point"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:326
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:62
+msgid "Outputs"
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:209
+msgid "Overview"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:499 electrum_nyc/plugins/safe_t/qt.py:384
+#: electrum_nyc/plugins/trezor/qt.py:511
+msgid "PIN Protection"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:1079
+msgid "PIN codes do not match"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/installwizard.py:1040
+msgid "PIN mismatch"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:504 electrum_nyc/plugins/safe_t/qt.py:389
+#: electrum_nyc/plugins/trezor/qt.py:516
+msgid "PIN protection is strongly recommended.  A PIN is your only protection against someone stealing your newyorkcoins if they obtain physical access to your {}."
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:462 electrum_nyc/plugins/safe_t/qt.py:348
+#: electrum_nyc/plugins/trezor/qt.py:475
+msgid "PIN set"
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:50
+#: electrum_nyc/gui/kivy/uix/dialogs/invoices.py:87
+msgid "Paid"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:86
+#: electrum_nyc/plugins/ledger/auth2fa.py:186
+msgid "Pair"
+msgstr ""
+
+#: electrum_nyc/wallet.py:384
+msgid "Partially signed"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:1062
+msgid "Passphrase"
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:87
+msgid "Passphrase:"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:463 electrum_nyc/plugins/safe_t/qt.py:349
+#: electrum_nyc/plugins/trezor/qt.py:476
+msgid "Passphrases"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:23 electrum_nyc/plugins/safe_t/qt.py:23
+#: electrum_nyc/plugins/trezor/qt.py:23
+msgid "Passphrases allow you to access new wallets, each hidden behind a particular case-sensitive passphrase."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2076
+#: electrum_nyc/gui/qt/installwizard.py:187
+#: electrum_nyc/gui/qt/password_dialog.py:299
+#: electrum_nyc/gui/qt/network_dialog.py:263
+#: electrum_nyc/gui/kivy/uix/ui_screens/proxy.kv:47
+msgid "Password"
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:152
+msgid "Password Strength"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2131
+msgid "Password is disabled, this wallet is not protected"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:147
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:162
+msgid "Password must have at least 4 characters."
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:150
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:165
+msgid "Password must have less than 64 characters."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2131
+msgid "Password was updated successfully"
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:101
+msgid "Password:"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/send.kv:105
+msgid "Paste"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/send.kv:121
+msgid "Pay"
+msgstr ""
+
+#: electrum_nyc/gui/qt/invoice_list.py:113
+msgid "Pay Now"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1150
+#: electrum_nyc/gui/qt/contact_list.py:96 electrum_nyc/gui/text.py:178
+msgid "Pay to"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1932
+msgid "Pay to many"
+msgstr ""
+
+#: electrum_nyc/gui/qt/qrwindow.py:39
+msgid "Payment Request"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/screens.py:328
+#: electrum_nyc/gui/kivy/uix/screens.py:362
+msgid "Payment received"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1560
+#: electrum_nyc/gui/qt/main_window.py:1713
+#: electrum_nyc/gui/kivy/main_window.py:333
+#: electrum_nyc/gui/kivy/uix/screens.py:245
+msgid "Payment request has expired"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1744
+#: electrum_nyc/gui/kivy/main_window.py:939 electrum_nyc/gui/stdio.py:216
+#: electrum_nyc/gui/text.py:379
+msgid "Payment sent."
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:49
+#: electrum_nyc/gui/kivy/uix/dialogs/invoices.py:85
+#: electrum_nyc/gui/kivy/uix/dialogs/requests.py:89
+msgid "Pending"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:514
+msgid "Perhaps some dependencies are missing..."
+msgstr ""
+
+#: electrum_nyc/i18n.py:55
+msgid "Persian"
+msgstr ""
+
+#: electrum_nyc/base_crash_reporter.py:57
+msgid "Please briefly describe what led to the error (optional):"
+msgstr ""
+
+#: electrum_nyc/plugins/email_requests/qt.py:251
+msgid "Please check your connection and credentials."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/crash_reporter.py:123
+msgid "Please check your network connection."
+msgstr ""
+
+#: electrum_nyc/plugins/hw_wallet/qt.py:159
+msgid "Please check your {} device"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:613
+msgid "Please confirm"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:413
+msgid "Please enter the master public key (xpub) of your cosigner."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:105
+#: electrum_nyc/plugins/trustedcoin/kivy.py:58
+msgid "Please enter your Google Authenticator code"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/cmdline.py:40
+msgid "Please enter your Google Authenticator code:"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:234
+msgid "Please enter your e-mail address"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1000
+#: electrum_nyc/gui/qt/password_dialog.py:291
+msgid "Please enter your password"
+msgstr ""
+
+#: electrum_nyc/plugins/cosigner_pool/qt.py:212
+msgid "Please enter your password to decrypt it."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:426
+msgid "Please enter your seed phrase in order to restore your wallet."
+msgstr ""
+
+#: electrum_nyc/plugins/coldcard/qt.py:111
+msgid "Please initialize your Coldcard while disconnected."
+msgstr ""
+
+#: electrum_nyc/plugin.py:540
+msgid "Please insert your {}"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:586
+msgid "Please note that websites and other wallets may not support these addresses yet."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/installwizard.py:1020
+msgid "Please paste your cosigners master public key, or scan it using the camera button."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:653
+msgid "Please report any bugs as issues on github:<br/>"
+msgstr ""
+
+#: electrum_nyc/gui/qt/exception_window.py:101
+msgid "Please report this issue manually."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3189
+msgid "Please restart NYCFlash Electrum Wallet to activate the new GUI settings"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/installwizard.py:993
+msgid "Please retype your seed phrase, to confirm that you properly saved it"
+msgstr ""
+
+#: electrum_nyc/gui/qt/seed_dialog.py:44
+#, python-brace-format
+msgid "Please save these {0} words on paper (order is important). "
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/screens.py:251
+msgid "Please scan a NewYorkCoin address or a payment request"
+msgstr ""
+
+#: electrum_nyc/plugin.py:557
+msgid "Please select which {} device to use:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:590
+msgid "Please share it with your cosigners."
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:52
+msgid "Please sign this transaction in order to save it"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/kivy.py:108 electrum_nyc/base_wizard.py:327
+msgid "Please try again."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:624
+msgid "Please type it here."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/installwizard.py:766
+msgid "Please type your seed phrase using the virtual keyboard."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/screens.py:413
+msgid "Please use the existing requests first."
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:255
+msgid "Please wait"
+msgstr ""
+
+#: electrum_nyc/gui/qt/update_checker.py:92
+msgid "Please wait while NYCFlash Electrum Wallet checks for available updates."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:135
+#: electrum_nyc/gui/kivy/uix/dialogs/password_dialog.py:125
+#: electrum_nyc/gui/stdio.py:206 electrum_nyc/gui/text.py:369
+#: electrum_nyc/wallet.py:827
+msgid "Please wait..."
+msgstr ""
+
+#: electrum_nyc/i18n.py:66
+msgid "Polish"
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:146
+#: electrum_nyc/gui/kivy/uix/ui_screens/server.kv:31
+#: electrum_nyc/gui/kivy/uix/ui_screens/proxy.kv:28
+msgid "Port"
+msgstr ""
+
+#: electrum_nyc/i18n.py:68
+msgid "Portuguese"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:257
+msgid "Position in mempool: {} from tip"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:600
+#: electrum_nyc/gui/qt/main_window.py:1258
+#: electrum_nyc/gui/qt/main_window.py:2079
+#: electrum_nyc/gui/qt/main_window.py:2762
+msgid "Preferences"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:227
+msgid "Press 'Next' to choose device to decrypt."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:219
+msgid "Press 'Next' to create this wallet, or choose another file."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:232
+msgid "Press 'Next' to create/focus window."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:229
+msgid "Press 'Next' to open this wallet."
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:138
+msgid "Press Enter"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:616
+msgid "Press again to exit"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1294
+msgid "Preview"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:73
+msgid "Printer Calibration"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:55
+msgid "Private Key"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2270
+#: electrum_nyc/gui/qt/main_window.py:2275
+#: electrum_nyc/gui/qt/address_list.py:206
+msgid "Private key"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2537
+msgid "Private keys"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2617
+msgid "Private keys exported."
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:222
+msgid "Proceed at your own risk."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1670
+msgid "Proceed?"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/__init__.py:4
+msgid "Provides support for Digital Bitbox hardware wallet"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/__init__.py:4
+msgid "Provides support for KeepKey hardware wallet"
+msgstr ""
+
+#: electrum_nyc/plugins/safe_t/__init__.py:4
+msgid "Provides support for Safe-T mini hardware wallet"
+msgstr ""
+
+#: electrum_nyc/plugins/trezor/__init__.py:4
+msgid "Provides support for Trezor hardware wallet"
+msgstr ""
+
+#: electrum_nyc/plugins/audio_modem/__init__.py:4
+msgid "Provides support for air-gapped transaction signing."
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:211
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:27
+#: electrum_nyc/gui/kivy/uix/ui_screens/proxy.kv:3
+msgid "Proxy"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:28
+msgid "Proxy configuration"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/proxy.kv:11
+msgid "Proxy mode"
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:286
+msgid "Proxy settings apply to all connections: with NYCFlash Electrum Wallet servers, but also with third-party services."
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:261
+msgid "Proxy user"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/screens.py:139
+msgid "Pruned transaction outputs"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2424
+msgid "Public key"
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_dialog.py:70
+msgid "Public keys"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2253
+msgid "QR code"
+msgstr ""
+
+#: electrum_nyc/gui/qt/qrcodewidget.py:113
+msgid "QR code copied to clipboard"
+msgstr ""
+
+#: electrum_nyc/gui/qt/qrcodewidget.py:108
+msgid "QR code saved to file"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/question.py:51
+msgid "Question"
+msgstr ""
+
+#: electrum_nyc/gui/text.py:155
+msgid "Quit"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:185
+msgid "REMEMBER THE PASSWORD!"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/tx_dialog.py:185
+msgid "Raw Transaction"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:186
+msgid "Re-Pair"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:49
+#: electrum_nyc/plugins/safe_t/clientbase.py:51
+#: electrum_nyc/plugins/trezor/clientbase.py:239
+msgid ""
+"Re-enter the new PIN for your {}.\n"
+"\n"
+"NOTE: the positions of the numbers have changed!"
+msgstr ""
+
+#: electrum_nyc/gui/qt/qrtextedit.py:41 electrum_nyc/gui/qt/qrtextedit.py:74
+msgid "Read QR code"
+msgstr ""
+
+#: electrum_nyc/gui/qt/qrtextedit.py:39
+msgid "Read file"
+msgstr ""
+
+#: electrum_nyc/plugins/audio_modem/qt.py:83
+msgid "Read from microphone"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:243
+msgid "Ready to encrypt for revealer {}"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:180 electrum_nyc/gui/kivy/main.kv:396
+#: electrum_nyc/gui/text.py:69
+msgid "Receive"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/history.kv:24
+#: electrum_nyc/gui/kivy/uix/dialogs/requests.py:91
+msgid "Received"
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_list.py:62
+msgid "Receiving"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:887
+msgid "Receiving address"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/send.kv:34
+msgid "Recipient"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/screens.py:251
+msgid "Recipient not specified."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1148
+msgid "Recipient of the funds."
+msgstr ""
+
+#: electrum_nyc/gui/qt/configure_name_dialog.py:65
+msgid "Reconfigure Name"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/keepkey.py:193
+#: electrum_nyc/plugins/safe_t/safe_t.py:177
+#: electrum_nyc/plugins/trezor/trezor.py:188
+msgid "Recover from a seed you have previously written down"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2280
+#: electrum_nyc/gui/qt/address_dialog.py:82
+msgid "Redeem Script"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3439
+msgid "Register name..."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1487
+#: electrum_nyc/gui/qt/history_list.py:581
+msgid "Remove"
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_list.py:211
+msgid "Remove from wallet"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1957
+msgid "Remove {} from your list of contacts?"
+msgstr ""
+
+#: electrum_nyc/gui/qt/uno_list.py:150
+msgid "Renew"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3530
+msgid "Renew Name"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3533
+msgid "Renew the selected name with its current value (nothing will happen if the name was updated in the last 12 blocks)"
+msgstr ""
+
+#: electrum_nyc/gui/qt/exception_window.py:60
+msgid "Report contents"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/crash_reporter.py:125
+msgid "Report sent"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:658
+msgid "Reporting Bugs"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:17
+msgid "Request"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:37
+msgid "Request amount"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/screens.py:387
+msgid "Request copied to clipboard"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:919
+msgid "Request expires"
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_list.py:204
+msgid "Request payment"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:727
+msgid "Request rejected by server"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1056
+msgid "Request saved successfully"
+msgstr ""
+
+#: electrum_nyc/plugins/email_requests/qt.py:199
+msgid "Request sent."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/screens.py:417
+msgid "Request was saved."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:899
+msgid "Requested amount"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:134
+#: electrum_nyc/plugins/trustedcoin/kivy.py:107
+msgid "Requesting account info from TrustedCoin server..."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1979
+#: electrum_nyc/gui/qt/invoice_list.py:50
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:40
+msgid "Requestor"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:944
+#: electrum_nyc/gui/kivy/uix/ui_screens/receive.kv:119
+msgid "Requests"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:638
+#, python-brace-format
+msgid "Require {0} signatures"
+msgstr ""
+
+#: electrum_nyc/plugins/trezor/qt.py:534
+msgid "Required package 'PIL' is not available - Please install it or use the Trezor website instead."
+msgstr ""
+
+#: electrum_nyc/plugins/safe_t/qt.py:407
+msgid "Required package 'PIL' is not available - Please install it."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3275
+msgid "Requires"
+msgstr ""
+
+#: electrum_nyc/plugins/safe_t/qt.py:400 electrum_nyc/plugins/trezor/qt.py:527
+msgid "Reset"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:602
+msgid "Restore 2FA wallet"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:591
+msgid "Restore two-factor Wallet"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:722
+msgid "Revealer - Printer calibration settings"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/__init__.py:3
+msgid "Revealer Backup Utility"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:112
+#: electrum_nyc/plugins/revealer/qt.py:242
+msgid "Revealer Secret Backup Plugin"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:220
+msgid "Revealers starting with 0 are not secure due to a vulnerability."
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:739
+msgid "Right side"
+msgstr ""
+
+#: electrum_nyc/i18n.py:69
+msgid "Romanian"
+msgstr ""
+
+#: electrum_nyc/i18n.py:70
+msgid "Russian"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2902
+msgid "SSL certificate"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2889
+msgid "SSL certificate used to sign payment requests."
+msgstr ""
+
+#: electrum_nyc/plugins/safe_t/__init__.py:6
+msgid "Safe-T mini wallet"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:130
+#: electrum_nyc/gui/qt/main_window.py:927
+#: electrum_nyc/gui/qt/main_window.py:2001
+#: electrum_nyc/gui/qt/qrcodewidget.py:119
+msgid "Save"
+msgstr ""
+
+#: electrum_nyc/plugins/coldcard/qt.py:46
+msgid "Save PSBT"
+msgstr ""
+
+#: electrum_nyc/gui/qt/request_list.py:157
+msgid "Save as BIP70 file"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1995
+msgid "Save invoice to file"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:51
+msgid "Save transaction offline"
+msgstr ""
+
+#: electrum_nyc/plugins/labels/__init__.py:5
+msgid "Save your wallet labels on a remote server, and synchronize them across multiple devices where you use Electrum."
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:34
+msgid "Scan this QR code with your Ledger Wallet phone app to pair it with this Ledger device.<br>To complete pairing you will need your security card to answer a challenge."
+msgstr ""
+
+#: electrum_nyc/plugins/trezor/qt.py:267
+msgid "Scrambled words"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2185
+#: electrum_nyc/gui/qt/main_window.py:2274
+msgid "Script type"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:387
+msgid "Script type and Derivation path"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:176
+msgid "Security Card Challenge"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2080
+#: electrum_nyc/gui/qt/seed_dialog.py:208
+#: electrum_nyc/gui/kivy/main_window.py:1060
+msgid "Seed"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:82
+msgid "Seed Entered"
+msgstr ""
+
+#: electrum_nyc/gui/qt/seed_dialog.py:168
+msgid "Seed Type"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2187
+msgid "Seed available"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:416
+msgid "Seed extension"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:591
+msgid "Segwit"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:529
+msgid "Segwit 2FA"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:585
+msgid "Segwit wallets use bech32 addresses, defined in BIP173."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:315
+msgid "Select a device"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:452
+msgid "Select date"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2551
+msgid "Select file to export your private keys to"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:635
+msgid "Select file to export your wallet transactions to"
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:781
+msgid "Select file to save your {}"
+msgstr ""
+
+#: electrum_nyc/plugins/trezor/qt.py:263
+msgid "Select recovery type:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:221
+msgid "Select server automatically"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:605
+msgid "Select server manually"
+msgstr ""
+
+#: electrum_nyc/plugins/coldcard/qt.py:71
+msgid "Select where to save the PSBT file"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1052
+msgid "Select where to save your payment request"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:226
+msgid "Select where to save your signed transaction"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2771
+msgid "Select which language is used in the GUI (after restart)."
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:240 electrum_nyc/plugins/safe_t/qt.py:114
+#: electrum_nyc/plugins/trezor/qt.py:217
+msgid "Select your seed length:"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:34
+msgid "Select your server automatically"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2489
+msgid "Select your transaction file"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:179
+#: electrum_nyc/gui/qt/main_window.py:1296 electrum_nyc/gui/kivy/main.kv:388
+#: electrum_nyc/gui/text.py:69
+msgid "Send"
+msgstr ""
+
+#: electrum_nyc/gui/qt/exception_window.py:75
+msgid "Send Bug Report"
+msgstr ""
+
+#: electrum_nyc/plugins/email_requests/__init__.py:4
+msgid "Send and receive payment request with an email account"
+msgstr ""
+
+#: electrum_nyc/plugins/email_requests/qt.py:136
+msgid "Send and receive payment requests via email"
+msgstr ""
+
+#: electrum_nyc/plugins/cosigner_pool/qt.py:146
+msgid "Send to cosigner"
+msgstr ""
+
+#: electrum_nyc/plugins/audio_modem/qt.py:90
+msgid "Send to speaker"
+msgstr ""
+
+#: electrum_nyc/plugins/email_requests/qt.py:174
+msgid "Send via e-mail"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:951
+msgid "Sending"
+msgstr ""
+
+#: electrum_nyc/plugins/cosigner_pool/qt.py:192
+msgid "Sending transaction to cosigning pool..."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/history.kv:24
+msgid "Sent"
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:210
+#: electrum_nyc/gui/qt/network_dialog.py:236
+#: electrum_nyc/gui/qt/network_dialog.py:307
+#: electrum_nyc/gui/kivy/uix/ui_screens/server.kv:3
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:21
+msgid "Server"
+msgstr ""
+
+#: electrum_nyc/plugins/email_requests/qt.py:212
+msgid "Server hosting your email account"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:809
+msgid "Server is lagging ({} blocks)"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:749
+msgid "Server lagging"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:157
+msgid "Server not reachable."
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:240
+msgid "Server peers"
+msgstr ""
+
+#: electrum_nyc/network.py:814
+msgid "Server returned unexpected transaction ID."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:22
+msgid "Server used to query your history."
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:513 electrum_nyc/plugins/safe_t/qt.py:421
+#: electrum_nyc/plugins/trezor/qt.py:548
+msgid "Session Timeout"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:350 electrum_nyc/plugins/safe_t/qt.py:230
+#: electrum_nyc/plugins/trezor/qt.py:357
+msgid "Set a PIN"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3047
+msgid "Set the value of the change output so that it has similar precision to the other outputs."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:32
+msgid "Set wallet file encryption."
+msgstr ""
+
+#: electrum_nyc/plugins/audio_modem/qt.py:44
+#: electrum_nyc/plugins/keepkey/qt.py:585 electrum_nyc/plugins/safe_t/qt.py:493
+#: electrum_nyc/plugins/labels/qt.py:29
+#: electrum_nyc/plugins/email_requests/qt.py:205
+#: electrum_nyc/plugins/trezor/qt.py:620 electrum_nyc/gui/kivy/main.kv:454
+#: electrum_nyc/gui/text.py:155
+msgid "Settings"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/screens.py:382
+msgid "Share NewYorkCoin Request"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/screens.py:266
+msgid "Should this transaction be replaceable?"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:588
+#: electrum_nyc/gui/kivy/uix/dialogs/requests.py:126
+msgid "Show"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3150
+msgid "Show Fiat balance for addresses"
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_dialog.py:61
+msgid "Show QR Code"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:106
+#: electrum_nyc/gui/qt/qrtextedit.py:15 electrum_nyc/gui/qt/qrtextedit.py:29
+msgid "Show as QR code"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3149
+msgid "Show capital gains in history"
+msgstr ""
+
+#: electrum_nyc/plugins/trezor/qt.py:239
+msgid "Show expert settings"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2829
+msgid "Show fee edit box in send tab."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3148
+msgid "Show history rates"
+msgstr ""
+
+#: electrum_nyc/plugins/coldcard/qt.py:33
+msgid "Show on Coldcard"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/qt.py:34
+msgid "Show on Ledger"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:211 electrum_nyc/plugins/safe_t/qt.py:87
+#: electrum_nyc/plugins/hw_wallet/qt.py:240
+#: electrum_nyc/plugins/digitalbitbox/qt.py:39
+#: electrum_nyc/plugins/trezor/qt.py:185
+msgid "Show on {}"
+msgstr ""
+
+#: electrum_nyc/gui/qt/exception_window.py:57
+msgid "Show report contents"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/status.kv:74
+msgid "Show seed"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:294
+msgid "Show {}"
+msgstr ""
+
+#: electrum_nyc/gui/qt/__init__.py:148
+msgid "Show/Hide"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/ledger.py:520
+#: electrum_nyc/plugins/coldcard/coldcard.py:578
+msgid "Showing address ..."
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:124
+#: electrum_nyc/gui/qt/main_window.py:2365
+msgid "Sign"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2341
+msgid "Sign/verify Message"
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_list.py:208
+msgid "Sign/verify message"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1987
+#: electrum_nyc/gui/qt/main_window.py:2359
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:43
+msgid "Signature"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2336
+msgid "Signature verified"
+msgstr ""
+
+#: electrum_nyc/wallet.py:380
+msgid "Signed"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:980
+msgid "Signed invoices are saved automatically when you scan them."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/tx_dialog.py:167
+msgid "Signing"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:625
+msgid "Signing large transaction. Please be patient ..."
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:491
+msgid "Signing message ..."
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:630
+#: electrum_nyc/gui/qt/main_window.py:1703
+msgid "Signing transaction..."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2288
+msgid "Signing with an address actually means signing with the corresponding private key, and verifying with the corresponding public key. The address you have entered does not have a unique public key, so these operations cannot be performed."
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:267
+msgid "Size:"
+msgstr ""
+
+#: electrum_nyc/i18n.py:71
+msgid "Slovak"
+msgstr ""
+
+#: electrum_nyc/i18n.py:72
+msgid "Slovenian"
+msgstr ""
+
+#: electrum_nyc/base_crash_reporter.py:53
+msgid "Something went wrong while executing Electrum-NYC."
+msgstr ""
+
+#: electrum_nyc/base_crash_reporter.py:54
+msgid "Sorry!"
+msgstr ""
+
+#: electrum_nyc/gui/qt/update_checker.py:72
+msgid "Sorry, but we were unable to check for updates. Please try again later."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3151
+msgid "Source"
+msgstr ""
+
+#: electrum_nyc/i18n.py:54
+msgid "Spanish"
+msgstr ""
+
+#: electrum_nyc/gui/qt/utxo_list.py:113
+msgid "Spend"
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_list.py:223
+msgid "Spend from"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3036
+msgid "Spend only confirmed coins"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3037
+msgid "Spend only confirmed inputs."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:128
+msgid "Standard wallet"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:483
+msgid "Start"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:644
+msgid "Startup times are instant because it operates in conjunction with high-performance servers that handle the most complicated parts of the NewYorkCoin system."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2818
+msgid "Static"
+msgstr ""
+
+#: electrum_nyc/gui/qt/request_list.py:57 electrum_nyc/gui/qt/uno_list.py:62
+#: electrum_nyc/gui/qt/network_dialog.py:301
+#: electrum_nyc/gui/qt/invoice_list.py:53
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:34
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:15
+msgid "Status"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:249
+msgid "Status:"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:83
+#: electrum_nyc/plugins/safe_t/clientbase.py:91
+#: electrum_nyc/plugins/trezor/clientbase.py:287
+msgid "Step {}/24.  Enter seed word as explained on your {}:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2132
+#: electrum_nyc/gui/qt/main_window.py:3189
+#: electrum_nyc/gui/qt/main_window.py:3395
+msgid "Success"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:479
+msgid "Summary"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:174
+msgid "Summary Text PIN (requires dongle replugging)"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:174
+msgid "Summary Text PIN is Disabled"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:467
+msgid "Supported Coins"
+msgstr ""
+
+#: electrum_nyc/i18n.py:73
+msgid "Swedish"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2673
+msgid "Sweep"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2649
+msgid "Sweep private keys"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:806
+#: electrum_nyc/gui/kivy/main_window.py:747 electrum_nyc/gui/stdio.py:117
+#: electrum_nyc/gui/text.py:139
+msgid "Synchronizing..."
+msgstr ""
+
+#: electrum_nyc/i18n.py:74
+msgid "Tamil"
+msgstr ""
+
+#: electrum_nyc/gui/qt/fee_slider.py:38
+msgid "Target"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:227
+msgid "Terms of Service"
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:624
+msgid "Text copied to clipboard"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:429
+msgid "Text copied to clipboard."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:838
+msgid ""
+"Text copied to clipboard.\n"
+"Tap again to display it as QR code."
+msgstr ""
+
+#: electrum_nyc/i18n.py:75
+msgid "Thai"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3491
+msgid "That name is invalid (probably exceeded the 255-byte limit) and therefore cannot be registered."
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:225
+msgid "The Digital Bitbox is already seeded. Choose an option:"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:55
+#: electrum_nyc/plugins/safe_t/clientbase.py:57
+#: electrum_nyc/plugins/trezor/clientbase.py:247
+msgid "The PIN cannot be longer than 9 characters."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1195
+msgid "The amount of fee can be decided freely by the sender. However, transactions with low fees take more time to be processed."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1173
+msgid "The amount will be displayed in red if you do not have enough funds in your wallet."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1160
+msgid "The description is not sent to the recipient of the funds. It is stored in your wallet file, and displayed in the 'History' tab."
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/keepkey.py:231
+#: electrum_nyc/plugins/safe_t/safe_t.py:224
+#: electrum_nyc/plugins/trezor/qt.py:199
+#: electrum_nyc/plugins/trezor/trezor.py:230
+msgid "The device was disconnected."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1661
+#: electrum_nyc/gui/kivy/uix/screens.py:297
+msgid "The fee for this transaction seems unusually high."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:316
+msgid ""
+"The file '{}' contains an incompletely created wallet.\n"
+"Do you want to complete its creation now?"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:307
+#: electrum_nyc/gui/qt/installwizard.py:321
+msgid "The file was removed"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2725
+msgid "The following addresses were added"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2861
+msgid "The following alias providers are available:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2730
+msgid "The following inputs could not be imported"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:917
+msgid "The newyorkcoin address never expires and will always be part of this NYCFlash Electrum Wallet wallet."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:83
+msgid "The next step will generate the seed of your wallet.  This seed will NOT be saved in your computer, and it must be stored on paper.  To be safe from malware, you may want to do this on an offline computer, and move your wallet later to an online computer."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2292
+msgid "The operation is undefined. Not just in NYCFlash Electrum Wallet, but in general."
+msgstr ""
+
+#: electrum_nyc/network.py:187
+msgid "The server returned an error when broadcasting the transaction."
+msgstr ""
+
+#: electrum_nyc/network.py:204
+msgid "The server returned an error."
+msgstr ""
+
+#: electrum_nyc/network.py:179
+msgid "The server returned an unexpected transaction ID when broadcasting the transaction."
+msgstr ""
+
+#: electrum_nyc/network.py:833
+msgid "The transaction was rejected because it contains multiple OP_RETURN outputs."
+msgstr ""
+
+#: electrum_nyc/network.py:827
+msgid "The transaction was rejected because it is too large (in bytes)."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:584
+msgid "The type of addresses used by your wallet will depend on your seed."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:299
+msgid ""
+"The wallet '{}' contains multiple accounts, which are no longer supported since NYCFlash Electrum Wallet 2.7.\n"
+"\n"
+"Do you want to split your wallet into multiple files?"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:288
+#: electrum_nyc/gui/kivy/uix/dialogs/installwizard.py:644
+msgid "Then, enter your Google Authenticator code:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/update_checker.py:84
+msgid "There is a new update available"
+msgstr ""
+
+#: electrum_nyc/gui/qt/exception_window.py:99
+msgid "There was a problem with the automatic reporting:"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:91
+msgid "Therefore, two-factor authentication is disabled."
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:298
+msgid "This blockchain is used to verify the transactions sent by your transaction server."
+msgstr ""
+
+#: electrum_nyc/plugins/greenaddress_instant/qt.py:73
+msgid "This feature is not available for watch-only wallets."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:218
+msgid "This file does not exist."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:231
+msgid "This file is already open in memory."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:226
+msgid "This file is encrypted using a hardware device."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:222
+msgid "This file is encrypted with a password."
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:783
+msgid "This function is only available after pairing your {} with a mobile device."
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:786
+msgid "This function is only available for p2pkh keystores when using {}."
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/ledger.py:635
+#: electrum_nyc/plugins/coldcard/coldcard.py:700
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:780
+msgid "This function is only available for standard wallets when using {}."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:915
+msgid "This information is seen by the recipient if you send them a signed payment request."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2530
+msgid "This is a watching-only wallet"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2302
+#: electrum_nyc/gui/qt/main_window.py:2382
+msgid "This is a watching-only wallet."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:1085
+msgid "This is a watching-only wallet. It does not contain private keys."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:45
+msgid "This is discouraged."
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:312
+msgid "This is the height of your local copy of the blockchain."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3007
+msgid "This may result in higher transactions fees."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:477
+msgid "This means you will not be able to spend NewYorkCoins with it."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3048
+msgid "This might improve your privacy somewhat."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1000
+msgid "This payment request will be signed."
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/__init__.py:6
+msgid "This plug-in allows you to create a visually encrypted backup of your wallet seeds, or of custom alphanumeric secrets."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/__init__.py:5
+msgid "This plugin adds two-factor authentication to your wallet."
+msgstr ""
+
+#: electrum_nyc/plugins/cosigner_pool/__init__.py:4
+msgid "This plugin facilitates the use of multi-signatures wallets."
+msgstr ""
+
+#: electrum_nyc/gui/qt/seed_dialog.py:45
+msgid "This seed will allow you to recover your wallet in case of computer failure."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:92
+msgid "This service uses a multi-signature wallet, where you own 2 of 3 keys.  The third key is stored on a remote server that signs transactions on your behalf. A small fee will be charged on each transaction that uses the remote server."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2913
+msgid "This setting affects the Send tab, and all balance related fields."
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:177
+msgid "This transaction is not saved. Close anyway?"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1635
+msgid "This transaction requires a higher fee, or it will not be propagated by your current server"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/ledger.py:608
+#: electrum_nyc/plugins/keepkey/keepkey.py:279
+#: electrum_nyc/plugins/coldcard/coldcard.py:670
+#: electrum_nyc/plugins/safe_t/safe_t.py:275
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:756
+#: electrum_nyc/plugins/trezor/trezor.py:287
+msgid "This type of script is not supported with {}."
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:265
+msgid "This version supports a maximum of {} characters."
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:291
+#: electrum_nyc/gui/qt/main_window.py:2240
+msgid "This wallet has no seed"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/installwizard.py:619
+msgid "This wallet is already registered with TrustedCoin. To finalize wallet creation, please enter your Google Authenticator Code."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:168
+msgid "This wallet is protected by TrustedCoin's two-factor authentication."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/status.kv:66
+msgid "This wallet is watching-only"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:476
+msgid "This wallet is watching-only."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:90
+msgid "This wallet was restored from seed, and it contains two master private keys."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2854
+msgid "This will save fees."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:587
+msgid "Thus, you might want to keep using a non-segwit wallet in order to be able to receive newyorkcoins during the transition period."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2812
+msgid "Time based: fee rate is based on average confirmation time estimates"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:418
+msgid "To"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:493
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:628
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:632
+msgid "To cancel, briefly touch the blinking light or wait for the timeout."
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:321
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:346
+msgid "To cancel, briefly touch the light or wait for the timeout."
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:492
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:626
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:631
+msgid "To continue, touch the Digital Bitbox's blinking light for 3 seconds."
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:320
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:345
+msgid "To continue, touch the Digital Bitbox's light for 3 seconds."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:235
+msgid "To create a spending wallet, please enter a master private key (xprv/yprv/zprv)."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:234
+msgid "To create a watching-only wallet, please enter your master public key (xpub/ypub/zpub)."
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:113
+msgid "To encrypt your backup, first we need to load some noise."
+msgstr ""
+
+#: electrum_nyc/base_crash_reporter.py:55
+msgid "To help us diagnose and fix the problem, you can send us a bug report that contains useful debug information:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:436
+msgid "To make sure that you have properly saved your seed, please retype it here."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1256
+msgid "To somewhat protect your privacy, NYCFlash Electrum Wallet tries to create change with similar precision to other outputs."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:296
+msgid "To trigger a rescan, press 'Next'."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:326
+msgid "To try to fix this, we will now re-pair with your device."
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:213
+msgid "Toggle Encryption"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:77
+#: electrum_nyc/plugins/safe_t/clientbase.py:82
+#: electrum_nyc/plugins/trezor/clientbase.py:265
+msgid "Too long passphrase ({} > 50 chars)."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3300
+msgid "Total size"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:97
+msgid "Transaction"
+msgstr ""
+
+#: electrum_nyc/gui/qt/uno_list.py:157
+msgid "Transaction Details"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2515
+#: electrum_nyc/gui/qt/history_list.py:565
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:66
+#: electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv:69
+msgid "Transaction ID"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:102
+msgid "Transaction ID:"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:32
+msgid "Transaction accepted by mobile phone. Waiting for confirmation."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3392
+msgid "Transaction added to wallet history."
+msgstr ""
+
+#: electrum_nyc/network.py:832
+msgid "Transaction could not be broadcast due to dust outputs."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3382
+msgid "Transaction could not be saved."
+msgstr ""
+
+#: electrum_nyc/plugins/coldcard/qt.py:76
+#: electrum_nyc/gui/qt/transaction_dialog.py:230
+msgid "Transaction exported successfully"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:197
+msgid "Transaction is too large in size."
+msgstr ""
+
+#: electrum_nyc/address_synchronizer.py:54
+msgid "Transaction is unrelated to this wallet."
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:262
+#: electrum_nyc/gui/kivy/uix/dialogs/tx_dialog.py:124
+msgid "Transaction unrelated to your wallet"
+msgstr ""
+
+#: electrum_nyc/network.py:826
+msgid "Transaction uses non-standard version."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2501
+msgid "Transaction:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3155
+msgid "Transactions"
+msgstr ""
+
+#: electrum_nyc/plugins/cosigner_pool/__init__.py:6
+msgid "Transactions are encrypted and stored on a remote server."
+msgstr ""
+
+#: electrum_nyc/gui/qt/configure_name_dialog.py:79
+msgid "Transfer to:"
+msgstr ""
+
+#: electrum_nyc/plugins/trezor/qt.py:51
+msgid "Trezor Matrix Recovery"
+msgstr ""
+
+#: electrum_nyc/plugins/trezor/__init__.py:6
+msgid "Trezor wallet"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2177
+msgid "True"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:97
+msgid "TrustedCoin"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:294
+msgid "TrustedCoin (2FA) fee for the next batch of transactions"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:161
+msgid "TrustedCoin Information"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:182
+msgid "TrustedCoin charges a small fee to co-sign transactions. The fee depends on how many prepaid transactions you buy. An extra output is added to your transaction every time you run out of prepaid transactions."
+msgstr ""
+
+#: electrum_nyc/plugin.py:546
+msgid "Try to connect again?"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:656
+msgid "Try to explain not only what the bug is, but how it occurs."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1636
+msgid "Try to raise your transaction fee, or use a server with a lower relay fee."
+msgstr ""
+
+#: electrum_nyc/i18n.py:76
+msgid "Turkish"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/__init__.py:3
+msgid "Two Factor Authentication"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:72
+msgid "Two-factor authentication is a service provided by TrustedCoin.  It uses a multi-signature wallet, where you own 2 of 3 keys.  The third key is stored on a remote server that signs transactions on your behalf.  To use this service, you will need a smartphone with Google Authenticator installed."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/trustedcoin.py:90
+msgid "Two-factor authentication is a service provided by TrustedCoin. To use it, you must have a separate device with Google Authenticator."
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_list.py:94
+msgid "Tx"
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_list.py:89
+msgid "Type"
+msgstr ""
+
+#: electrum_nyc/plugins/coldcard/qt.py:155
+msgid "USB Serial"
+msgstr ""
+
+#: electrum_nyc/i18n.py:77
+msgid "Ukrainian"
+msgstr ""
+
+#: electrum_nyc/plugins/email_requests/qt.py:250
+msgid ""
+"Unable to connect to mail server:\n"
+" {}"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:506
+msgid "Unable to create backup"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2611
+msgid "Unable to create csv"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:652
+msgid "Unable to export history"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2496
+msgid "Unable to read file or no transaction found"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/crash_reporter.py:123
+msgid "Unable to send report"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/status.kv:41 electrum_nyc/wallet.py:76
+#: electrum_nyc/wallet.py:368
+msgid "Unconfirmed"
+msgstr ""
+
+#: electrum_nyc/wallet.py:77
+msgid "Unconfirmed parent"
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:207
+msgid "Unexpected error occurred."
+msgstr ""
+
+#: electrum_nyc/crypto.py:132
+msgid "Unexpected password hash version"
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_list.py:219
+msgid "Unfreeze"
+msgstr ""
+
+#: electrum_nyc/gui/qt/utxo_list.py:144
+msgid "Unfreeze Address"
+msgstr ""
+
+#: electrum_nyc/gui/qt/utxo_list.py:159
+msgid "Unfreeze Addresses"
+msgstr ""
+
+#: electrum_nyc/gui/qt/utxo_list.py:136
+msgid "Unfreeze Coin"
+msgstr ""
+
+#: electrum_nyc/gui/qt/utxo_list.py:155
+msgid "Unfreeze Coins"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:243
+#: electrum_nyc/gui/kivy/uix/dialogs/invoices.py:86
+#: electrum_nyc/gui/kivy/uix/dialogs/requests.py:90 electrum_nyc/util.py:592
+msgid "Unknown"
+msgstr ""
+
+#: electrum_nyc/network.py:948
+msgid "Unknown error"
+msgstr ""
+
+#: electrum_nyc/network.py:195
+msgid "Unknown error when broadcasting the transaction."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/status.kv:45
+msgid "Unmatured"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:503
+msgid "Unrealized gains"
+msgstr ""
+
+#: electrum_nyc/wallet.py:384
+msgid "Unsigned"
+msgstr ""
+
+#: electrum_nyc/crypto.py:143
+msgid "Unsupported password hash version"
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_list.py:66
+#: electrum_nyc/gui/kivy/uix/dialogs/addresses.py:120
+msgid "Unused"
+msgstr ""
+
+#: electrum_nyc/gui/qt/update_checker.py:31
+msgid "Update Check"
+msgstr ""
+
+#: electrum_nyc/gui/qt/uno_list.py:105
+msgid "Update Pending"
+msgstr ""
+
+#: electrum_nyc/gui/qt/update_checker.py:71
+msgid "Update check failed"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:258
+msgid "Update to NYCFlash Electrum Wallet {} is available"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:149
+msgid "Upgrading wallet format..."
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/keepkey.py:194
+#: electrum_nyc/plugins/safe_t/safe_t.py:178
+msgid "Upload a BIP39 mnemonic to generate the seed"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/keepkey.py:195
+#: electrum_nyc/plugins/safe_t/safe_t.py:179
+msgid "Upload a master private key"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/addresses.py:124
+msgid "Use"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2837
+msgid "Use Replace-By-Fee"
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:279
+msgid "Use Tor Proxy"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:189
+msgid "Use a hardware device"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:186
+msgid "Use a master key"
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:85
+#: electrum_nyc/gui/qt/network_dialog.py:156
+msgid "Use as server"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2983
+msgid "Use change addresses"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3002
+msgid "Use multiple change addresses"
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:250
+msgid "Use proxy"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2890
+msgid "Use setconfig to set ssl_chain and ssl_privkey."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/installwizard.py:1015
+msgid "Use the camera button to scan a QR code."
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:249
+msgid "Use this dialog to add a password to your wallet."
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:255
+msgid "Use this dialog to change your password."
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:279
+msgid "Use this dialog to toggle encryption."
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_list.py:66
+#: electrum_nyc/gui/kivy/uix/dialogs/addresses.py:120
+msgid "Used"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/proxy.kv:38
+msgid "Username"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:646
+msgid "Uses icons from the Icons8 icon pack (icons8.com)."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2993
+msgid "Using change addresses makes it more difficult for other people to track your transactions."
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:326 electrum_nyc/gui/qt/uno_list.py:60
+msgid "Value"
+msgstr ""
+
+#: electrum_nyc/plugins/greenaddress_instant/qt.py:106
+msgid "Verification failed!"
+msgstr ""
+
+#: electrum_nyc/plugins/greenaddress_instant/qt.py:104
+msgid "Verification successful!"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:48
+msgid "Verified block headers"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2369
+msgid "Verify"
+msgstr ""
+
+#: electrum_nyc/plugins/greenaddress_instant/qt.py:43
+msgid "Verify GA instant"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:30
+msgid "Verify the address below.<br>Type the character from your security card corresponding to the <u><b>BOLD</b></u> character."
+msgstr ""
+
+#: electrum_nyc/plugin.py:544
+msgid "Verify the cable is connected and that no other application is using it."
+msgstr ""
+
+#: electrum_nyc/plugins/greenaddress_instant/qt.py:87
+msgid "Verifying..."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:640
+#: electrum_nyc/gui/kivy/uix/ui_screens/about.kv:13
+msgid "Version"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2958
+msgid "Video Device"
+msgstr ""
+
+#: electrum_nyc/i18n.py:78
+msgid "Vietnamese"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:600
+msgid "View invoice"
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:602
+#: electrum_nyc/gui/qt/contact_list.py:100
+#: electrum_nyc/gui/qt/address_list.py:214
+msgid "View on block explorer"
+msgstr ""
+
+#: electrum_nyc/gui/qt/seed_dialog.py:48
+msgid "WARNING"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2541
+msgid "WARNING: ALL your private keys are secret."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2534
+msgid "WARNING: This is a multi-signature wallet."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1575
+msgid "WARNING: the alias \"{}\" could not be validated via an additional security check, DNSSEC, and thus may not be correct."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:36
+msgid "WIF keys are typed in NYCFlash Electrum Wallet, based on script type."
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:31
+msgid "Waiting for authentication on your mobile phone"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:174
+msgid "Wallet"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2170
+msgid "Wallet Information"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/status.kv:27
+msgid "Wallet Name"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:504
+msgid "Wallet backup created"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:291
+msgid "Wallet change address"
+msgstr ""
+
+#: electrum_nyc/wallet.py:181
+msgid "Wallet file corruption detected. Please restore your wallet from seed, and compare the addresses in both files"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2235
+msgid "Wallet file not found: {}"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2181
+msgid "Wallet name"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:288
+msgid "Wallet receive address"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2233
+#: electrum_nyc/gui/kivy/main_window.py:1043
+msgid "Wallet removed: {}"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2183
+msgid "Wallet type"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/status.kv:30
+msgid "Wallet type:"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:129
+msgid "Wallet with two-factor authentication"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main.kv:448
+msgid "Wallets"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:133
+#: electrum_nyc/plugins/revealer/qt.py:186
+#: electrum_nyc/plugins/revealer/qt.py:219
+#: electrum_nyc/gui/qt/transaction_dialog.py:177
+#: electrum_nyc/gui/qt/transaction_dialog.py:274
+#: electrum_nyc/gui/qt/main_window.py:1661
+#: electrum_nyc/gui/qt/installwizard.py:42 electrum_nyc/gui/qt/util.py:206
+#: electrum_nyc/gui/qt/seed_dialog.py:73
+#: electrum_nyc/gui/kivy/uix/screens.py:297
+msgid "Warning"
+msgstr ""
+
+#: electrum_nyc/gui/qt/console.py:65
+msgid "Warning!"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1070
+msgid ""
+"Warning: The next address will not be recovered automatically if you restore your wallet from seed; you may need to add it manually.\n"
+"\n"
+"This occurs because you have too many unused addresses in your wallet. To avoid this situation, use the existing addresses first.\n"
+"\n"
+"Create anyway?"
+msgstr ""
+
+#: electrum_nyc/plugins/virtualkeyboard/__init__.py:4
+msgid "Warning: do not use this if it makes you pick a weaker password."
+msgstr ""
+
+#: electrum_nyc/gui/qt/seed_dialog.py:77
+msgid "We do not guarantee that BIP39 imports will always be supported in NYCFlash Electrum Wallet."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:324
+msgid "We encountered an error while connecting to your device:"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:125
+msgid "What kind of wallet do you want to create?"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:565 electrum_nyc/plugins/safe_t/qt.py:473
+#: electrum_nyc/plugins/trezor/qt.py:600
+msgid "Wipe Device"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:568 electrum_nyc/plugins/safe_t/qt.py:476
+#: electrum_nyc/plugins/trezor/qt.py:603
+msgid "Wipe the device, removing all data from it.  The firmware is left unchanged."
+msgstr ""
+
+#: electrum_nyc/simple_config.py:392
+msgid "Within {} blocks"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:248
+msgid "Would you like to be notified when there is a newer version of NYCFlash Electrum Wallet available?"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/clientbase.py:17
+#: electrum_nyc/plugins/safe_t/clientbase.py:18
+#: electrum_nyc/plugins/trezor/clientbase.py:19
+msgid "Write down the seed word shown on your {}"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/password_dialog.py:141
+msgid "Wrong PIN"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:473 electrum_nyc/base_wizard.py:481
+msgid "Wrong key type"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2338
+msgid "Wrong signature"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:347 electrum_nyc/plugins/safe_t/qt.py:227
+#: electrum_nyc/plugins/trezor/qt.py:354
+msgid "Yes"
+msgstr ""
+
+#: electrum_nyc/gui/qt/update_checker.py:89
+msgid "You are already on the latest version of NYCFlash Electrum Wallet."
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:378
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:54
+msgid "You are following branch"
+msgstr ""
+
+#: electrum_nyc/crypto.py:134
+msgid "You are most likely using an outdated version of Electrum-NYC. Please update."
+msgstr ""
+
+#: electrum_nyc/plugins/labels/labels.py:166
+#: electrum_nyc/plugins/labels/labels.py:170
+msgid "You are offline."
+msgstr ""
+
+#: electrum_nyc/gui/qt/__init__.py:184
+msgid "You are using NYCFlash Electrum Wallet in offline mode; restart NYCFlash Electrum Wallet if you want to get connected"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1065
+msgid "You are using a non-deterministic wallet, which cannot create new addresses."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1258
+msgid "You can disable this setting in '{}'."
+msgstr ""
+
+#: electrum_nyc/gui/qt/update_checker.py:86
+msgid "You can download the new version from {}."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:364
+msgid "You can override the suggested derivation path."
+msgstr ""
+
+#: electrum_nyc/plugins/safe_t/qt.py:410 electrum_nyc/plugins/trezor/qt.py:537
+msgid "You can set the homescreen on your device to personalize it.  You must choose a {} x {} monochrome black and white image."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1645
+msgid "You can't broadcast a transaction without a live network connection."
+msgstr ""
+
+#: electrum_nyc/plugins/digitalbitbox/digitalbitbox.py:186
+msgid "You cannot access your coins or a backup without the password."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:642
+msgid "You do not need to perform regular backups, because your wallet can be recovered from a secret phrase that you can memorize or write on paper."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:43
+msgid "You have multiple consecutive whitespaces or leading/trailing whitespaces in your passphrase."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:981
+msgid "You may also save unsigned requests or contact addresses using the save button."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1149
+msgid "You may enter a NewYorkCoin address, a label from your list of contacts (a list of completions will be proposed), or an alias (email-like address that forwards to a NewYorkCoin address)"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:418
+msgid "You may extend your seed with custom words."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1930
+msgid "You may load a CSV file using the file icon."
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:274
+msgid "You might have an incompatible library."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:213
+msgid "You need to be online in order to complete the creation of your wallet.  If you generated your seed on an offline computer, click on \"{}\" to close this window, move your wallet file to an online computer, and reopen it with Electrum."
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:26 electrum_nyc/plugins/safe_t/qt.py:26
+#: electrum_nyc/plugins/trezor/qt.py:26
+msgid "You need to create a separate Electrum-NYC wallet for each passphrase you use as they each generate different addresses.  Changing your passphrase does not lose other wallets, each is still accessible behind its own passphrase."
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:31 electrum_nyc/plugins/safe_t/qt.py:31
+#: electrum_nyc/plugins/trezor/qt.py:31
+msgid "You should enable PIN protection.  Your PIN is the only protection for your newyorkcoins if your device is lost or stolen."
+msgstr ""
+
+#: electrum_nyc/plugins/safe_t/safe_t.py:213
+#: electrum_nyc/plugins/trezor/trezor.py:220
+msgid ""
+"You will be asked to enter 24 words regardless of your seed's actual length.  If you enter a word incorrectly or misspell it, you cannot change it or go back - you will need to start again from the beginning.\n"
+"\n"
+"So please enter the words carefully!"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/auth2fa.py:24
+msgid "Your Ledger Wallet wants to tell you a one-time PIN code.<br><br>For best security you should unplug your device, open a text editor on another computer, put your cursor into it, and plug your device into that computer. It will output a summary of the transaction being signed and a one-time PIN.<br><br>Verify the transaction summary and type the PIN code here.<br><br>Before pressing enter, plug the device back into this computer.<br>"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/ledger.py:50
+msgid "Your Ledger is locked. Please unlock it."
+msgstr ""
+
+#: electrum_nyc/gui/kivy/main_window.py:1078
+msgid "Your PIN code was updated"
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:304
+msgid "Your accounts have been moved to"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:390 electrum_nyc/plugins/safe_t/qt.py:268
+#: electrum_nyc/plugins/trezor/qt.py:395
+msgid "Your current Electrum-NYC wallet can only be used with an empty passphrase.  You must create a separate wallet with the install wizard for other passphrases as each one generates a new set of addresses."
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/keepkey.py:327
+#: electrum_nyc/plugins/safe_t/safe_t.py:323
+msgid "Your device firmware is too old"
+msgstr ""
+
+#: electrum_nyc/plugins/ledger/ledger.py:534
+msgid "Your device might not have support for this functionality."
+msgstr ""
+
+#: electrum_nyc/plugins/labels/qt.py:59
+msgid "Your labels have been synchronised."
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:252
+msgid "Your newyorkcoins are password protected. However, your wallet file is not encrypted."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:3514
+msgid "Your registered names (pending and unconfirmed names have blank expiration):"
+msgstr ""
+
+#: electrum_nyc/gui/qt/seed_dialog.py:142
+msgid "Your seed extension is"
+msgstr ""
+
+#: electrum_nyc/base_wizard.py:419 electrum_nyc/base_wizard.py:623
+msgid "Your seed extension must be saved together with your seed."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:434
+msgid "Your seed is important!"
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:378
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:54
+msgid "Your server is on branch"
+msgstr ""
+
+#: electrum_nyc/plugins/cosigner_pool/qt.py:175
+msgid "Your transaction was sent to the cosigning pool."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:33
+msgid "Your wallet file does not contain secrets, mostly just metadata. "
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:275
+msgid "Your wallet file is NOT encrypted."
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:277
+msgid "Your wallet file is encrypted."
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:212
+msgid "Your wallet file is: {}."
+msgstr ""
+
+#: electrum_nyc/gui/qt/installwizard.py:443
+#: electrum_nyc/gui/qt/seed_dialog.py:211
+msgid "Your wallet generation seed is:"
+msgstr ""
+
+#: electrum_nyc/plugins/trustedcoin/qt.py:206
+msgid "Your wallet has {} prepaid transactions."
+msgstr ""
+
+#: electrum_nyc/gui/qt/history_list.py:654
+msgid "Your wallet history has been successfully exported."
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:248
+msgid "Your wallet is not protected."
+msgstr ""
+
+#: electrum_nyc/gui/qt/password_dialog.py:254
+msgid "Your wallet is password protected and encrypted."
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:790
+#, python-brace-format
+msgid "Your {0} were exported to '{1}'"
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:775
+msgid "Your {} were successfully imported"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2794
+msgid "Zeros after decimal point"
+msgstr ""
+
+#: electrum_nyc/gui/text.py:183
+msgid "[Clear]"
+msgstr ""
+
+#: electrum_nyc/gui/text.py:182
+msgid "[Send]"
+msgstr ""
+
+#: electrum_nyc/gui/stdio.py:52
+msgid "[b] - print server banner"
+msgstr ""
+
+#: electrum_nyc/gui/stdio.py:51
+msgid "[c] - display contacts"
+msgstr ""
+
+#: electrum_nyc/gui/stdio.py:45
+msgid "[h] - displays this help text"
+msgstr ""
+
+#: electrum_nyc/gui/stdio.py:46
+msgid "[i] - display transaction history"
+msgstr ""
+
+#: electrum_nyc/gui/stdio.py:47
+msgid "[o] - enter payment order"
+msgstr ""
+
+#: electrum_nyc/gui/stdio.py:48
+msgid "[p] - print stored payment order"
+msgstr ""
+
+#: electrum_nyc/gui/stdio.py:53
+msgid "[q] - quit"
+msgstr ""
+
+#: electrum_nyc/gui/stdio.py:50
+msgid "[r] - show own receipt addresses"
+msgstr ""
+
+#: electrum_nyc/gui/stdio.py:49
+msgid "[s] - send stored payment order"
+msgstr ""
+
+#: electrum_nyc/wallet.py:1437
+msgid "address already in wallet"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2841
+msgid "and you will have the possibility, while they are unconfirmed, to replace them with transactions that pay higher fees."
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1330
+msgid "are frozen"
+msgstr ""
+
+#: electrum_nyc/gui/qt/network_dialog.py:367
+#: electrum_nyc/gui/qt/network_dialog.py:379
+msgid "blocks"
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_list.py:153
+msgid "change"
+msgstr ""
+
+#: electrum_nyc/gui/qt/contact_list.py:68
+#: electrum_nyc/gui/qt/contact_list.py:71
+msgid "contacts"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2204
+msgid "cosigner"
+msgstr ""
+
+#: electrum_nyc/wallet.py:896
+msgid "could not find suitable outputs"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:274
+msgid "high fee"
+msgstr ""
+
+#: electrum_nyc/plugin.py:558 electrum_nyc/base_wizard.py:309
+msgid "initialized"
+msgstr ""
+
+#: electrum_nyc/wallet.py:1434
+msgid "invalid address"
+msgstr ""
+
+#: electrum_nyc/wallet.py:1514
+msgid "invalid private key"
+msgstr ""
+
+#: electrum_nyc/gui/qt/invoice_list.py:92
+#: electrum_nyc/gui/qt/invoice_list.py:95
+msgid "invoices"
+msgstr ""
+
+#: electrum_nyc/gui/qt/util.py:369
+msgid "json"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2641
+#: electrum_nyc/gui/qt/main_window.py:2646
+msgid "labels"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:134
+msgid "more information at <a href=\"https://revealer.cc/faq\">https://revealer.cc/faq</a>"
+msgstr ""
+
+#: electrum_nyc/wallet.py:1517
+msgid "not implemented type"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:124
+msgid "or type an existing revealer code below and click 'next':"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:1775
+msgid "please wait..."
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:728
+msgid "print the calibration pdf and follow the instructions "
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:829
+msgid "proxy enabled"
+msgstr ""
+
+#: electrum_nyc/gui/qt/address_list.py:156
+msgid "receiving"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:65
+msgid "secret backup utility"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:392
+msgid "seed"
+msgstr ""
+
+#: electrum_nyc/wallet.py:865
+msgid "transaction is final"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:255
+msgid "type a custom alphanumerical secret below:"
+msgstr ""
+
+#: electrum_nyc/gui/qt/transaction_dialog.py:268
+#: electrum_nyc/gui/kivy/uix/dialogs/tx_dialog.py:131
+#: electrum_nyc/wallet.py:613
+msgid "unknown"
+msgstr ""
+
+#: electrum_nyc/commands.py:1286
+msgid "unknown parser {!r} (choices: {})"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:465
+msgid "watching only"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:2176
+msgid "watching-only"
+msgstr ""
+
+#: electrum_nyc/plugin.py:558 electrum_nyc/base_wizard.py:309
+msgid "wiped"
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:187
+msgid "your seed extension will <b>not</b> be included in the encrypted backup."
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:439 electrum_nyc/plugins/safe_t/qt.py:327
+#: electrum_nyc/plugins/trezor/qt.py:454
+msgid "{:2d} minutes"
+msgstr ""
+
+#: electrum_nyc/plugins/safe_t/qt.py:118 electrum_nyc/plugins/trezor/qt.py:222
+msgid "{:d} words"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:317
+#: electrum_nyc/plugins/coldcard/qt.py:120
+#: electrum_nyc/plugins/safe_t/qt.py:194 electrum_nyc/plugins/trezor/qt.py:321
+msgid "{} Settings"
+msgstr ""
+
+#: electrum_nyc/wallet.py:364
+msgid "{} confirmations"
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/ui_screens/network.kv:14
+msgid "{} connections."
+msgstr ""
+
+#: electrum_nyc/plugins/revealer/qt.py:179
+msgid "{} encrypted for Revealer {}_{} saved as PNG and PDF at: "
+msgstr ""
+
+#: electrum_nyc/gui/kivy/uix/dialogs/tx_dialog.py:118
+msgid "{} from tip"
+msgstr ""
+
+#: electrum_nyc/plugins/greenaddress_instant/qt.py:104
+msgid "{} is covered by GreenAddress instant confirmation"
+msgstr ""
+
+#: electrum_nyc/plugins/greenaddress_instant/qt.py:106
+msgid "{} is not covered by GreenAddress instant confirmation"
+msgstr ""
+
+#: electrum_nyc/gui/qt/main_window.py:685
+msgid "{} new transactions: Total amount received in the new transactions {}"
+msgstr ""
+
+#: electrum_nyc/plugins/keepkey/qt.py:244
+msgid "{} words"
+msgstr ""
