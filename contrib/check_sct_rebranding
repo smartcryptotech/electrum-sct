@@ -17,8 +17,8 @@ for i in **/*.py; do
 
     # 'b"Bitcoin seed"' is the BIP32 root preimage
     # main_window.py contains 'bitcoin' in its console namespace
-    # Payment Protocol is a known possible bug: https://github.com/newyorkcoin/electrum-nyc/issues/108
-    # Ledger rebranding is a known bug: https://github.com/newyorkcoin/electrum-nyc/issues/105
+    # Payment Protocol is a known possible bug: https://github.com/CryptoLover705/electrum-sct/issues/108
+    # Ledger rebranding is a known bug: https://github.com/CryptoLover705/electrum-sct/issues/105
     if ./contrib/print_python_strings "$i" "bitcoin" \
         | grep -v "'b\"Bitcoin seed\"'" \
         | grep -v "main_window.py.*\"'bitcoin'\"" \
@@ -76,9 +76,9 @@ if grep -r $EXCEPTIONS "from electrum import" ./; then
     exit 1
 fi
 
-# Locale rebranding is a known bug: https://github.com/newyorkcoin/electrum-nyc/issues/109
-# Issue 4994 has no NewYorkCoin equivalent.
-# The localization button SVG is a known bug: https://github.com/newyorkcoin/electrum-nyc/issues/114
+# Locale rebranding is a known bug: https://github.com/CryptoLover705/electrum-sct/issues/109
+# Issue 4994 has no SmartCryptoTech equivalent.
+# The localization button SVG is a known bug: https://github.com/CryptoLover705/electrum-sct/issues/114
 if grep -r $EXCEPTIONS "electrum/" ./ \
     | grep -v "./contrib/deterministic-build/electrum-locale/locale/" \
     | grep -v "https://github.com/spesmilo/electrum/issues/4994" \
@@ -90,7 +90,7 @@ if grep -r $EXCEPTIONS "electrum/" ./ \
     exit 1
 fi
 
-# Locale rebranding is a known bug: https://github.com/newyorkcoin/electrum-nyc/issues/109
+# Locale rebranding is a known bug: https://github.com/CryptoLover705/electrum-sct/issues/109
 if grep -r $EXCEPTIONS "electrum\\\\" ./ \
     | grep -v "./contrib/deterministic-build/electrum-locale/locale/"; then
     echo "Rebranding needed"
