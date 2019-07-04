@@ -1,22 +1,22 @@
 # If you want Electrum to appear in a Linux app launcher ("start menu"), install this by doing:
-# sudo desktop-file-install electrum-nyc.desktop
+# sudo desktop-file-install electrum-sct.desktop
 
 [Desktop Entry]
-Comment=Lightweight NewYorkCoin Client
-Exec=sh -c "PATH=\"\\$HOME/.local/bin:\\$PATH\"; electrum-nyc %u"
-GenericName[en_US]=NewYorkCoin Wallet
-GenericName=NewYorkCoin Wallet
-Icon=electrum_nyc
-Name[en_US]=Electrum NewYorkCoin Wallet
-Name=Electrum NewYorkCoin Wallet
+Comment=Lightweight SmartCryptoTech Client
+Exec=sh -c "PATH=\"\\$HOME/.local/bin:\\$PATH\"; electrum-sct %u"
+GenericName[en_US]=SmartCryptoTech Wallet
+GenericName=SmartCryptoTech Wallet
+Icon=electrum_sct
+Name[en_US]=Electrum SmartCryptoTech Wallet
+Name=Electrum SmartCryptoTech Wallet
 Categories=Finance;Network;
 StartupNotify=true
-StartupWMClass=electrum-nyc
+StartupWMClass=electrum-sct
 Terminal=false
 Type=Application
-MimeType=x-scheme-handler/newyorkcoin;
+MimeType=x-scheme-handler/smartcryptotech;
 Actions=Testnet;
 
 [Desktop Action Testnet]
-Exec=sh -c "PATH=\"\\$HOME/.local/bin:\\$PATH\"; electrum-nyc --testnet %u"
+Exec=sh -c "PATH=\"\\$HOME/.local/bin:\\$PATH\"; electrum-sct --testnet %u"
 Name=Testnet mode
