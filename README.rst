@@ -6,7 +6,7 @@ Electrum-SCT - Lightweight SmartCryptoTech client
   Licence: GNU GPLv3+ for Electrum-DOGE components; CC BY 4.0 for SmartCryptoTech logo, MIT Licence for all other components
   Author: The SmartCryptoTech developers; based on Electrum by Thomas Voegtlin and Electrum-DOGE by The Electrum-DOGE contributors
   Language: Python (>= 3.6)
-  Homepage: https://www.newyorkcoin.org/ ; original Electrum Homepage at https://electrum.org/
+  Homepage: https://www.smartcryptotech.org/ ; original Electrum Homepage at https://electrum.org/
 
 
 .. image:: https://travis-ci.org/CryptoLover705/electrum-sct.svg?branch=master
