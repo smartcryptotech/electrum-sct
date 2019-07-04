@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NAME_ROOT=electrum-nyc
+NAME_ROOT=electrum-sc
 
 # These settings probably don't need any change
 export WINEPREFIX=/opt/wine64
@@ -18,7 +18,7 @@ set -e
 mkdir -p tmp
 cd tmp
 
-pushd $WINEPREFIX/drive_c/electrum-nyc
+pushd $WINEPREFIX/drive_c/electrum-sct
 
 # Load electrum-locale for this release
 git submodule init
@@ -34,7 +34,7 @@ if ! which msgfmt > /dev/null 2>&1; then
     exit 1
 fi
 for i in ./locale/*; do
-    dir=$WINEPREFIX/drive_c/electrum-nyc/electrum_nyc/$i/LC_MESSAGES
+    dir=$WINEPREFIX/drive_c/electrum-nyc/electrum_sct/$i/LC_MESSAGES
     mkdir -p $dir
     msgfmt --output-file=$dir/electrum.mo $i/electrum.po || true
 done
@@ -43,14 +43,14 @@ popd
 find -exec touch -d '2000-11-11T11:11:11+00:00' {} +
 popd
 
-cp $WINEPREFIX/drive_c/electrum-nyc/LICENCE .
+cp $WINEPREFIX/drive_c/electrum-sct/LICENCE .
 
 # Install frozen dependencies
 $PYTHON -m pip install -r ../../deterministic-build/requirements.txt
 
 $PYTHON -m pip install -r ../../deterministic-build/requirements-hw.txt
 
-pushd $WINEPREFIX/drive_c/electrum-nyc
+pushd $WINEPREFIX/drive_c/electrum-sct
 $PYTHON -m pip install .
 popd
 
@@ -71,8 +71,8 @@ popd
 wine "$WINEPREFIX/drive_c/Program Files (x86)/NSIS/makensis.exe" /DPRODUCT_VERSION=$VERSION electrum.nsi
 
 cd dist
-mv electrum-nyc-setup.exe $NAME_ROOT-$VERSION-setup.exe
+mv electrum-sct-setup.exe $NAME_ROOT-$VERSION-setup.exe
 cd ..
 
 echo "Done."
-sha256sum dist/electrum-nyc*exe
+sha256sum dist/electrum-sct*exe
