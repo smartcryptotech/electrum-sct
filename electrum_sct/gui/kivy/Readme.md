@@ -1,6 +1,6 @@
 # Kivy GUI
 
-The Kivy GUI is used with Electrum-NYC on Android devices.
+The Kivy GUI is used with Electrum-SCT on Android devices.
 To generate an APK file, follow these instructions.
 
 ## Android binary with Docker
@@ -21,7 +21,7 @@ folder.
 2. Build image
 
     ```
-    $ sudo docker build -t electrum-android-builder-img electrum_nyc/gui/kivy/tools
+    $ sudo docker build -t electrum-android-builder-img electrum_sct/gui/kivy/tools
     ```
 
 3. Build locale files
@@ -65,7 +65,7 @@ You probably need to clear the cache: `rm -rf .buildozer/android/platform/build/
 Assuming `adb` is installed:
 ```
 $ adb -d install -r bin/Electrum-*-debug.apk
-$ adb shell monkey -p org.newyorkcoin.electrum_nyc.electrum_nyc 1
+$ adb shell monkey -p org.newyorkcoin.electrum_sct.electrum_sct 1
 ```
 
 
@@ -85,6 +85,6 @@ See `log_level` in `buildozer.spec`
 ### Kivy can be run directly on Linux Desktop. How?
 Install Kivy.
 
-Build atlas: `(cd electrum_nyc/gui/kivy/; make theming)`
+Build atlas: `(cd electrum_sct/gui/kivy/; make theming)`
 
-Run electrum-nyc with the `-g` switch: `electrum-nyc -g kivy`
+Run electrum-sct with the `-g` switch: `electrum-sct -g kivy`
