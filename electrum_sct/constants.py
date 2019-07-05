@@ -43,12 +43,12 @@ class AbstractNet:
 
     @classmethod
     def max_checkpoint(cls) -> int:
-        # NewYorkCoin: We can't actually fully use the last checkpoint, because
+        # SmartCryptoTech: We can't actually fully use the last checkpoint, because
         # verifying the chunk following the last checkpoint requires having the
         # chunk for the last checkpoint, because of the timewarp hardfork.  So
         # we artificially return one fewer checkpoint than is available.
         #
-        # It should be noted that this hack causes Electrum-NYC to need at
+        # It should be noted that this hack causes Electrum-SCT to need at
         # least 2 checkpoints, whereas upstream Electrum only needs 1.
         #return max(0, len(cls.CHECKPOINTS) * 2016 - 1)
         return max(0, (len(cls.CHECKPOINTS)-1) * 2016 - 1)
@@ -57,10 +57,10 @@ class AbstractNet:
 class BitcoinMainnet(AbstractNet):
 
     TESTNET = False
-    WIF_PREFIX = 0xbc
+    WIF_PREFIX = 0x40
     ADDRTYPE_P2PKH = 60
     ADDRTYPE_P2SH = 22
-    SEGWIT_HRP = "nyc"
+    SEGWIT_HRP = "sct"
     GENESIS = "5597f25c062a3038c7fd815fe46c67dedfcb3c839fbc8e01ed4044540d08fe48"
     DEFAULT_PORTS = {'t': '50001', 's': '50002'}
     DEFAULT_SERVERS = read_json('servers.json', {})
