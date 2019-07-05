@@ -143,156 +143,29 @@ class ExchangeBase(PrintError):
         return sorted([str(a) for (a, b) in rates.items() if b is not None and len(a)==3])
 
 
-# Doesn't support NewYorkCoin.
+# Doesn't support SmartCryptoTech.
 """
-class BitcoinAverage(ExchangeBase):
-    # note: historical rates used to be freely available
-    # but this is no longer the case. see #5188
-
+class AltMarkets(ExchangeBase):
+    
     async def get_rates(self, ccy):
-        json = await self.get_json('apiv2.bitcoinaverage.com', '/indices/global/ticker/short')
+        json = await self.get_json('https://altmarkets.io/api/v2/tickers/sctbtc', '/indices/global/ticker/short')
         return dict([(r.replace("BTC", ""), Decimal(json[r]['last']))
                      for r in json if r != 'timestamp'])
 
 """
 
 
-# Doesn't support NewYorkCoin.
-"""
-class Bitcointoyou(ExchangeBase):
-
-    async def get_rates(self, ccy):
-        json = await self.get_json('bitcointoyou.com', "/API/ticker.aspx")
-        return {'BRL': Decimal(json['ticker']['last'])}
-
-"""
-
-# Doesn't support NewYorkCoin.
-"""
-class BitcoinVenezuela(ExchangeBase):
-
-    async def get_rates(self, ccy):
-        json = await self.get_json('api.bitcoinvenezuela.com', '/')
-        rates = [(r, json['BTC'][r]) for r in json['BTC']
-                 if json['BTC'][r] is not None]  # Giving NULL for LTC
-        return dict(rates)
-
-    def history_ccys(self):
-        return ['ARS', 'EUR', 'USD', 'VEF']
-
-    async def request_history(self, ccy):
-        json = await self.get_json('api.bitcoinvenezuela.com',
-                             "/historical/index.php?coin=BTC")
-        return json[ccy +'_BTC']
-"""
-
-
-# Doesn't support NewYorkCoin.
-"""
-class Bitbank(ExchangeBase):
-
-    async def get_rates(self, ccy):
-        json = await self.get_json('public.bitbank.cc', '/btc_jpy/ticker')
-        return {'JPY': Decimal(json['data']['last'])}
-"""
-
-
-# Doesn't support NewYorkCoin.
-"""
-class BitFlyer(ExchangeBase):
-
-    async def get_rates(self, ccy):
-        json = await self.get_json('bitflyer.jp', '/api/echo/price')
-        return {'JPY': Decimal(json['mid'])}
-"""
-
-
-# Doesn't support NewYorkCoin.
-"""
-class Bitmarket(ExchangeBase):
-
-    async def get_rates(self, ccy):
-        json = await self.get_json('www.bitmarket.pl', '/json/BTCPLN/ticker.json')
-        return {'PLN': Decimal(json['last'])}
-"""
-
-
-# Doesn't support NewYorkCoin.
-"""
-class BitPay(ExchangeBase):
-
-    async def get_rates(self, ccy):
-        json = await self.get_json('bitpay.com', '/api/rates')
-        return dict([(r['code'], Decimal(r['rate'])) for r in json])
-"""
-
-
-# Doesn't support NewYorkCoin.
-"""
-class Bitso(ExchangeBase):
-
-    async def get_rates(self, ccy):
-        json = await self.get_json('api.bitso.com', '/v2/ticker')
-        return {'MXN': Decimal(json['last'])}
-"""
-
-
-# Doesn't support NewYorkCoin.
-"""
-class BitStamp(ExchangeBase):
-
-    async def get_currencies(self):
-        return ['USD', 'EUR']
-
-    async def get_rates(self, ccy):
-        if ccy in CURRENCIES[self.name()]:
-            json = await self.get_json('www.bitstamp.net', f'/api/v2/ticker/btc{ccy.lower()}/')
-            return {ccy: Decimal(json['last'])}
-        return {}
-"""
-
-
-# Doesn't support NewYorkCoin.
-"""
-class Bitvalor(ExchangeBase):
-
-    async def get_rates(self,ccy):
-        json = await self.get_json('api.bitvalor.com', '/v1/ticker.json')
-        return {'BRL': Decimal(json['ticker_1h']['total']['last'])}
-"""
-
-
-# Doesn't support NewYorkCoin.
-"""
-class BlockchainInfo(ExchangeBase):
-
-    async def get_rates(self, ccy):
-        json = await self.get_json('blockchain.info', '/ticker')
-        return dict([(r, Decimal(json[r]['15m'])) for r in json])
-"""
-
-
-# Doesn't support NewYorkCoin.
-"""
-class Coinbase(ExchangeBase):
-
-    async def get_rates(self, ccy):
-        json = await self.get_json('api.coinbase.com',
-                             '/v2/exchange-rates?currency=BTC')
-        return {ccy: Decimal(rate) for (ccy, rate) in json["data"]["rates"].items()}
-"""
-
 
 class CoinCap(ExchangeBase):
 
     async def get_rates(self, ccy):
-        # CoinCap rates API is broken for NewYorkCoin.  Use history API instead.
+        # CoinCap rates API is broken for SmartCryptoTech.  Use history API instead.
         """
-        json = await self.get_json('api.coincap.io', '/v2/rates/newyorkcoin/')
+        json = await self.get_json('api.coincap.io', '/v2/rates/smartcryptotech/')
         return {'USD': Decimal(json['data']['rateUsd'])}
         """
         history = await self.get_json('api.coincap.io',
-                                      '/v2/assets/newyorkcoin/history?interval=d1&limit=2000')
+                                      '/v2/assets/smartcryptotech/history?interval=d1&limit=2000')
         return {'USD': Decimal(json['data'][-1]['priceUsd'])}
 
     def history_ccys(self):
@@ -302,53 +175,53 @@ class CoinCap(ExchangeBase):
         # Currently 2000 days is the maximum in 1 API call
         # (and history starts on 2017-03-23)
         history = await self.get_json('api.coincap.io',
-                                      '/v2/assets/newyorkcoin/history?interval=d1&limit=2000')
+                                      '/v2/assets/smartcryptotech/history?interval=d1&limit=2000')
         return dict([(datetime.utcfromtimestamp(h['time']/1000).strftime('%Y-%m-%d'), h['priceUsd'])
                      for h in history['data']])
 
 
-# Doesn't support NewYorkCoin.
-"""
-class CoinDesk(ExchangeBase):
+# # Doesn't support NewYorkCoin.
+# """
+# class CoinDesk(ExchangeBase):
 
-    async def get_currencies(self):
-        dicts = await self.get_json('api.coindesk.com',
-                              '/v1/bpi/supported-currencies.json')
-        return [d['currency'] for d in dicts]
+#     async def get_currencies(self):
+#         dicts = await self.get_json('api.coindesk.com',
+#                               '/v1/bpi/supported-currencies.json')
+#         return [d['currency'] for d in dicts]
 
-    async def get_rates(self, ccy):
-        json = await self.get_json('api.coindesk.com',
-                             '/v1/bpi/currentprice/%s.json' % ccy)
-        result = {ccy: Decimal(json['bpi'][ccy]['rate_float'])}
-        return result
+#     async def get_rates(self, ccy):
+#         json = await self.get_json('api.coindesk.com',
+#                              '/v1/bpi/currentprice/%s.json' % ccy)
+#         result = {ccy: Decimal(json['bpi'][ccy]['rate_float'])}
+#         return result
 
-    def history_starts(self):
-        return { 'USD': '2012-11-30', 'EUR': '2013-09-01' }
+#     def history_starts(self):
+#         return { 'USD': '2012-11-30', 'EUR': '2013-09-01' }
 
-    def history_ccys(self):
-        return self.history_starts().keys()
+#     def history_ccys(self):
+#         return self.history_starts().keys()
 
-    async def request_history(self, ccy):
-        start = self.history_starts()[ccy]
-        end = datetime.today().strftime('%Y-%m-%d')
-        # Note ?currency and ?index don't work as documented.  Sigh.
-        query = ('/v1/bpi/historical/close.json?start=%s&end=%s'
-                 % (start, end))
-        json = await self.get_json('api.coindesk.com', query)
-        return json['bpi']
-"""
+#     async def request_history(self, ccy):
+#         start = self.history_starts()[ccy]
+#         end = datetime.today().strftime('%Y-%m-%d')
+#         # Note ?currency and ?index don't work as documented.  Sigh.
+#         query = ('/v1/bpi/historical/close.json?start=%s&end=%s'
+#                  % (start, end))
+#         json = await self.get_json('api.coindesk.com', query)
+#         return json['bpi']
+# """
 
 
 class CoinGecko(ExchangeBase):
 
     async def get_rates(self, ccy):
-        # CoinGecko exchange_rates API is unavailable for NewYorkCoin.  Use coins API instead.
+        # CoinGecko exchange_rates API is unavailable for SmartCryptoTech.  Use coins API instead.
         """
         json = await self.get_json('api.coingecko.com', '/api/v3/exchange_rates')
         return dict([(ccy.upper(), Decimal(d['value']))
                      for ccy, d in json['rates'].items()])
         """
-        json = await self.get_json('api.coingecko.com', '/api/v3/coins/newyorkcoin')
+        json = await self.get_json('api.coingecko.com', '/api/v3/coins/SmartCryptoTech')
         return dict([(ccy.upper(), Decimal(d['value']))
                      for ccy, d in json['market_data']['current_price'].items()])
 
@@ -358,107 +231,107 @@ class CoinGecko(ExchangeBase):
 
     async def request_history(self, ccy):
         history = await self.get_json('api.coingecko.com',
-                                      '/api/v3/coins/newyorkcoin/market_chart?vs_currency=%s&days=max' % ccy)
+                                      '/api/v3/coins/SmartCryptoTech/market_chart?vs_currency=%s&days=max' % ccy)
 
         return dict([(datetime.utcfromtimestamp(h[0]/1000).strftime('%Y-%m-%d'), h[1])
                      for h in history['prices']])
 
 
-"""
-class itBit(ExchangeBase):
+# """
+# class itBit(ExchangeBase):
 
-    async def get_rates(self, ccy):
-        ccys = ['USD', 'EUR', 'SGD']
-        json = await self.get_json('api.itbit.com', '/v1/markets/XBT%s/ticker' % ccy)
-        result = dict.fromkeys(ccys)
-        if ccy in ccys:
-            result[ccy] = Decimal(json['lastPrice'])
-        return result
-"""
-
-
-# Doesn't support NewYorkCoin.
-"""
-class Kraken(ExchangeBase):
-
-    async def get_rates(self, ccy):
-        ccys = ['EUR', 'USD', 'CAD', 'GBP', 'JPY']
-        pairs = ['XBT%s' % c for c in ccys]
-        json = await self.get_json('api.kraken.com',
-                             '/0/public/Ticker?pair=%s' % ','.join(pairs))
-        return dict((k[-3:], Decimal(float(v['c'][0])))
-                     for k, v in json['result'].items())
-"""
+#     async def get_rates(self, ccy):
+#         ccys = ['USD', 'EUR', 'SGD']
+#         json = await self.get_json('api.itbit.com', '/v1/markets/XBT%s/ticker' % ccy)
+#         result = dict.fromkeys(ccys)
+#         if ccy in ccys:
+#             result[ccy] = Decimal(json['lastPrice'])
+#         return result
+# """
 
 
-# Doesn't support NewYorkCoin.
-"""
-class LocalBitcoins(ExchangeBase):
+# # Doesn't support NewYorkCoin.
+# """
+# class Kraken(ExchangeBase):
 
-    async def get_rates(self, ccy):
-        json = await self.get_json('localbitcoins.com',
-                             '/bitcoinaverage/ticker-all-currencies/')
-        return dict([(r, Decimal(json[r]['rates']['last'])) for r in json])
-"""
-
-
-# Doesn't support NewYorkCoin.
-"""
-class MercadoBitcoin(ExchangeBase):
-
-    async def get_rates(self, ccy):
-        json = await self.get_json('api.bitvalor.com', '/v1/ticker.json')
-        return {'BRL': Decimal(json['ticker_1h']['exchanges']['MBT']['last'])}
-"""
+#     async def get_rates(self, ccy):
+#         ccys = ['EUR', 'USD', 'CAD', 'GBP', 'JPY']
+#         pairs = ['XBT%s' % c for c in ccys]
+#         json = await self.get_json('api.kraken.com',
+#                              '/0/public/Ticker?pair=%s' % ','.join(pairs))
+#         return dict((k[-3:], Decimal(float(v['c'][0])))
+#                      for k, v in json['result'].items())
+# """
 
 
-# Doesn't support NewYorkCoin.
-"""
-class NegocieCoins(ExchangeBase):
+# # Doesn't support NewYorkCoin.
+# """
+# class LocalBitcoins(ExchangeBase):
 
-    async def get_rates(self,ccy):
-        json = await self.get_json('api.bitvalor.com', '/v1/ticker.json')
-        return {'BRL': Decimal(json['ticker_1h']['exchanges']['NEG']['last'])}
-"""
-
-# Doesn't support NewYorkCoin.
-"""
-class TheRockTrading(ExchangeBase):
-
-    async def get_rates(self, ccy):
-        json = await self.get_json('api.therocktrading.com',
-                             '/v1/funds/BTCEUR/ticker')
-        return {'EUR': Decimal(json['last'])}
-"""
+#     async def get_rates(self, ccy):
+#         json = await self.get_json('localbitcoins.com',
+#                              '/bitcoinaverage/ticker-all-currencies/')
+#         return dict([(r, Decimal(json[r]['rates']['last'])) for r in json])
+# """
 
 
-# Doesn't support NewYorkCoin.
-"""
-class Winkdex(ExchangeBase):
+# # Doesn't support NewYorkCoin.
+# """
+# class MercadoBitcoin(ExchangeBase):
 
-    async def get_rates(self, ccy):
-        json = await self.get_json('winkdex.com', '/api/v0/price')
-        return {'USD': Decimal(json['price'] / 100.0)}
-
-    def history_ccys(self):
-        return ['USD']
-
-    async def request_history(self, ccy):
-        json = await self.get_json('winkdex.com',
-                             "/api/v0/series?start_time=1342915200")
-        history = json['series'][0]['results']
-        return dict([(h['timestamp'][:10], h['price'] / 100.0)
-                     for h in history])
-"""
+#     async def get_rates(self, ccy):
+#         json = await self.get_json('api.bitvalor.com', '/v1/ticker.json')
+#         return {'BRL': Decimal(json['ticker_1h']['exchanges']['MBT']['last'])}
+# """
 
 
-# Doesn't support NewYorkCoin.
-"""
-class Zaif(ExchangeBase):
-    async def get_rates(self, ccy):
-        json = await self.get_json('api.zaif.jp', '/api/1/last_price/btc_jpy')
-        return {'JPY': Decimal(json['last_price'])}
-"""
+# # Doesn't support NewYorkCoin.
+# """
+# class NegocieCoins(ExchangeBase):
+
+#     async def get_rates(self,ccy):
+#         json = await self.get_json('api.bitvalor.com', '/v1/ticker.json')
+#         return {'BRL': Decimal(json['ticker_1h']['exchanges']['NEG']['last'])}
+# """
+
+# # Doesn't support NewYorkCoin.
+# """
+# class TheRockTrading(ExchangeBase):
+
+#     async def get_rates(self, ccy):
+#         json = await self.get_json('api.therocktrading.com',
+#                              '/v1/funds/BTCEUR/ticker')
+#         return {'EUR': Decimal(json['last'])}
+# """
+
+
+# # Doesn't support NewYorkCoin.
+# """
+# class Winkdex(ExchangeBase):
+
+#     async def get_rates(self, ccy):
+#         json = await self.get_json('winkdex.com', '/api/v0/price')
+#         return {'USD': Decimal(json['price'] / 100.0)}
+
+#     def history_ccys(self):
+#         return ['USD']
+
+#     async def request_history(self, ccy):
+#         json = await self.get_json('winkdex.com',
+#                              "/api/v0/series?start_time=1342915200")
+#         history = json['series'][0]['results']
+#         return dict([(h['timestamp'][:10], h['price'] / 100.0)
+#                      for h in history])
+# """
+
+
+# # Doesn't support NewYorkCoin.
+# """
+# class Zaif(ExchangeBase):
+#     async def get_rates(self, ccy):
+#         json = await self.get_json('api.zaif.jp', '/api/1/last_price/btc_jpy')
+#         return {'JPY': Decimal(json['last_price'])}
+# """
 
 
 def dictinvert(d):
