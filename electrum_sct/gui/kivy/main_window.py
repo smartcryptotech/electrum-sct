@@ -7,16 +7,16 @@ import traceback
 from decimal import Decimal
 import threading
 
-from electrum_nyc.bitcoin import TYPE_ADDRESS
-from electrum_nyc.storage import WalletStorage
-from electrum_nyc.wallet import Wallet, InternalAddressCorruption
-from electrum_nyc.paymentrequest import InvoiceStore
-from electrum_nyc.util import profiler, InvalidPassword, send_exception_to_crash_reporter
-from electrum_nyc.plugin import run_hook
-from electrum_nyc.util import format_satoshis, format_satoshis_plain
-from electrum_nyc.paymentrequest import PR_UNPAID, PR_PAID, PR_UNKNOWN, PR_EXPIRED
-from electrum_nyc import blockchain
-from electrum_nyc.network import Network, TxBroadcastError, BestEffortRequestFailed
+from electrum_sct.bitcoin import TYPE_ADDRESS
+from electrum_sct.storage import WalletStorage
+from electrum_sct.wallet import Wallet, InternalAddressCorruption
+from electrum_sct.paymentrequest import InvoiceStore
+from electrum_sct.util import profiler, InvalidPassword, send_exception_to_crash_reporter
+from electrum_sct.plugin import run_hook
+from electrum_sct.util import format_satoshis, format_satoshis_plain
+from electrum_sct.paymentrequest import PR_UNPAID, PR_PAID, PR_UNKNOWN, PR_EXPIRED
+from electrum_sct import blockchain
+from electrum_sct.network import Network, TxBroadcastError, BestEffortRequestFailed
 from .i18n import _
 
 from kivy.app import App
@@ -32,10 +32,10 @@ from kivy.metrics import inch
 from kivy.lang import Builder
 
 ## lazy imports for factory so that widgets can be used in kv
-#Factory.register('InstallWizard', module='electrum_nyc.gui.kivy.uix.dialogs.installwizard')
-#Factory.register('InfoBubble', module='electrum_nyc.gui.kivy.uix.dialogs')
-#Factory.register('OutputList', module='electrum_nyc.gui.kivy.uix.dialogs')
-#Factory.register('OutputItem', module='electrum_nyc.gui.kivy.uix.dialogs')
+#Factory.register('InstallWizard', module='electrum_sct.gui.kivy.uix.dialogs.installwizard')
+#Factory.register('InfoBubble', module='electrum_sct.gui.kivy.uix.dialogs')
+#Factory.register('OutputList', module='electrum_sct.gui.kivy.uix.dialogs')
+#Factory.register('OutputItem', module='electrum_sct.gui.kivy.uix.dialogs')
 
 from .uix.dialogs.installwizard import InstallWizard
 from .uix.dialogs import InfoBubble, crash_reporter
@@ -51,26 +51,26 @@ util = False
 
 # register widget cache for keeping memory down timeout to forever to cache
 # the data
-Cache.register('electrum_nyc_widgets', timeout=0)
+Cache.register('electrum_sct_widgets', timeout=0)
 
 from kivy.uix.screenmanager import Screen
 from kivy.uix.tabbedpanel import TabbedPanel
 from kivy.uix.label import Label
 from kivy.core.clipboard import Clipboard
 
-Factory.register('TabbedCarousel', module='electrum_nyc.gui.kivy.uix.screens')
+Factory.register('TabbedCarousel', module='electrum_sct.gui.kivy.uix.screens')
 
 # Register fonts without this you won't be able to use bold/italic...
 # inside markup.
 from kivy.core.text import Label
 Label.register('Roboto',
-               'electrum_nyc/gui/kivy/data/fonts/Roboto.ttf',
-               'electrum_nyc/gui/kivy/data/fonts/Roboto.ttf',
-               'electrum_nyc/gui/kivy/data/fonts/Roboto-Bold.ttf',
-               'electrum_nyc/gui/kivy/data/fonts/Roboto-Bold.ttf')
+               'electrum_sct/gui/kivy/data/fonts/Roboto.ttf',
+               'electrum_sct/gui/kivy/data/fonts/Roboto.ttf',
+               'electrum_sct/gui/kivy/data/fonts/Roboto-Bold.ttf',
+               'electrum_sct/gui/kivy/data/fonts/Roboto-Bold.ttf')
 
 
-from electrum_nyc.util import (base_units, NoDynamicFeeEstimates, decimal_point_to_base_unit_name,
+from electrum_sct.util import (base_units, NoDynamicFeeEstimates, decimal_point_to_base_unit_name,
                            base_unit_name_to_decimal_point, NotEnoughFunds, UnknownBaseUnit,
                            DECIMAL_POINT_DEFAULT)
 
@@ -120,7 +120,7 @@ class ElectrumWindow(App):
         from .uix.dialogs.choice_dialog import ChoiceDialog
         protocol = 's'
         def cb2(host):
-            from electrum_nyc import constants
+            from electrum_sct import constants
             pp = servers.get(host, constants.net.DEFAULT_PORTS)
             port = pp.get(protocol, '')
             popup.ids.host.text = host
@@ -160,7 +160,7 @@ class ElectrumWindow(App):
         self.send_screen.set_URI(uri)
 
     def on_new_intent(self, intent):
-        if intent.getScheme() != 'newyorkcoin':
+        if intent.getScheme() != 'smartcryptotech':
             return
         uri = intent.getDataString()
         self.set_URI(uri)
@@ -282,7 +282,7 @@ class ElectrumWindow(App):
 
         App.__init__(self)#, **kwargs)
 
-        title = _('Electrum-NYC App')
+        title = _('Electrum-SCT App')
         self.electrum_config = config = kwargs.get('config', None)
         self.language = config.get('language', 'en')
         self.network = network = kwargs.get('network', None)  # type: Network
@@ -339,17 +339,17 @@ class ElectrumWindow(App):
             self.send_screen.do_clear()
 
     def on_qr(self, data):
-        from electrum_nyc.bitcoin import base_decode, is_address
+        from electrum_sct.bitcoin import base_decode, is_address
         data = data.strip()
         if is_address(data):
             self.set_URI(data)
             return
-        if data.startswith('newyorkcoin:'):
+        if data.startswith('smartcryptotech:'):
             self.set_URI(data)
             return
         # try to decode transaction
-        from electrum_nyc.transaction import Transaction
-        from electrum_nyc.util import bh2u
+        from electrum_sct.transaction import Transaction
+        from electrum_sct.util import bh2u
         try:
             text = bh2u(base_decode(data, None, base=43))
             tx = Transaction(text)
@@ -386,13 +386,13 @@ class ElectrumWindow(App):
         self.receive_screen.screen.address = addr
 
     def show_pr_details(self, req, status, is_invoice):
-        from electrum_nyc.util import format_time
+        from electrum_sct.util import format_time
         requestor = req.get('requestor')
         exp = req.get('exp')
         memo = req.get('memo')
         amount = req.get('amount')
         fund = req.get('fund')
-        popup = Builder.load_file('electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv')
+        popup = Builder.load_file('electrum_sct/gui/kivy/uix/ui_screens/invoice.kv')
         popup.is_invoice = is_invoice
         popup.amount = amount
         popup.requestor = requestor if is_invoice else req.get('address')
@@ -408,10 +408,10 @@ class ElectrumWindow(App):
         popup.open()
 
     def show_addr_details(self, req, status):
-        from electrum_nyc.util import format_time
+        from electrum_sct.util import format_time
         fund = req.get('fund')
         isaddr = 'y'
-        popup = Builder.load_file('electrum_nyc/gui/kivy/uix/ui_screens/invoice.kv')
+        popup = Builder.load_file('electrum_sct/gui/kivy/uix/ui_screens/invoice.kv')
         popup.isaddr = isaddr
         popup.is_invoice = False
         popup.status = status
@@ -471,7 +471,7 @@ class ElectrumWindow(App):
         currentActivity.startActivity(it)
 
     def build(self):
-        return Builder.load_file('electrum_nyc/gui/kivy/main.kv')
+        return Builder.load_file('electrum_sct/gui/kivy/main.kv')
 
     def _pause(self):
         if platform == 'android':
@@ -499,7 +499,7 @@ class ElectrumWindow(App):
         self.fiat_unit = self.fx.ccy if self.fx.is_enabled() else ''
         # default tab
         self.switch_to('history')
-        # bind intent for newyorkcoin: URI scheme
+        # bind intent for smartcryptotech: URI scheme
         if platform == 'android':
             from android import activity
             from jnius import autoclass
@@ -635,7 +635,7 @@ class ElectrumWindow(App):
             d = WalletDialog()
             d.open()
         elif name == 'status':
-            popup = Builder.load_file('electrum_nyc/gui/kivy/uix/ui_screens/'+name+'.kv')
+            popup = Builder.load_file('electrum_sct/gui/kivy/uix/ui_screens/'+name+'.kv')
             master_public_keys_layout = popup.ids.master_public_keys
             for xpub in self.wallet.get_master_public_keys()[1:]:
                 master_public_keys_layout.add_widget(TopLabel(text=_('Master Public Key')))
@@ -645,7 +645,7 @@ class ElectrumWindow(App):
                 master_public_keys_layout.add_widget(ref)
             popup.open()
         else:
-            popup = Builder.load_file('electrum_nyc/gui/kivy/uix/ui_screens/'+name+'.kv')
+            popup = Builder.load_file('electrum_sct/gui/kivy/uix/ui_screens/'+name+'.kv')
             popup.open()
 
     @profiler
@@ -661,13 +661,13 @@ class ElectrumWindow(App):
 
         #setup lazy imports for mainscreen
         Factory.register('AnimatedPopup',
-                         module='electrum_nyc.gui.kivy.uix.dialogs')
+                         module='electrum_sct.gui.kivy.uix.dialogs')
         Factory.register('QRCodeWidget',
-                         module='electrum_nyc.gui.kivy.uix.qrcodewidget')
+                         module='electrum_sct.gui.kivy.uix.qrcodewidget')
 
         # preload widgets. Remove this if you want to load the widgets on demand
-        #Cache.append('electrum_nyc_widgets', 'AnimatedPopup', Factory.AnimatedPopup())
-        #Cache.append('electrum_nyc_widgets', 'QRCodeWidget', Factory.QRCodeWidget())
+        #Cache.append('electrum_sct_widgets', 'AnimatedPopup', Factory.AnimatedPopup())
+        #Cache.append('electrum_sct_widgets', 'QRCodeWidget', Factory.QRCodeWidget())
 
         # load and focus the ui
         self.root.manager = self.root.ids['manager']
@@ -679,7 +679,7 @@ class ElectrumWindow(App):
         self.receive_screen = None
         self.requests_screen = None
         self.address_screen = None
-        self.icon = "electrum_nyc/gui/icons/electrum_nyc.png"
+        self.icon = "electrum_sct/gui/icons/electrum_sct.png"
         self.tabs = self.root.ids['tabs']
 
     def update_interfaces(self, dt):
@@ -761,7 +761,7 @@ class ElectrumWindow(App):
             self.fiat_balance = self.fx.format_amount(c+u+x) + ' [size=22dp]%s[/size]'% self.fx.ccy
 
     def get_max_amount(self):
-        from electrum_nyc.transaction import TxOutput
+        from electrum_sct.transaction import TxOutput
         if run_hook('abort_send', self):
             return ''
         inputs = self.wallet.get_spendable_coins(None, self.electrum_config)
@@ -804,8 +804,8 @@ class ElectrumWindow(App):
                 from plyer import notification
             icon = (os.path.dirname(os.path.realpath(__file__))
                     + '/../../' + self.icon)
-            notification.notify('Electrum-NYC', message,
-                            app_icon=icon, app_name='Electrum-NYC')
+            notification.notify('Electrum-SCT', message,
+                            app_icon=icon, app_name='Electrum-SCT')
         except ImportError:
             Logger.Error('Notification: needs plyer; `sudo python3 -m pip install plyer`')
 
@@ -838,7 +838,7 @@ class ElectrumWindow(App):
             Clock.schedule_once(lambda dt: self.show_info(_('Text copied to clipboard.\nTap again to display it as QR code.')))
 
     def show_error(self, error, width='200dp', pos=None, arrow_pos=None,
-        exit=False, icon='atlas://electrum_nyc/gui/kivy/theming/light/error', duration=0,
+        exit=False, icon='atlas://electrum_sct/gui/kivy/theming/light/error', duration=0,
         modal=False):
         ''' Show an error Message Bubble.
         '''
@@ -850,7 +850,7 @@ class ElectrumWindow(App):
         exit=False, duration=0, modal=False):
         ''' Show an Info Message Bubble.
         '''
-        self.show_error(error, icon='atlas://electrum_nyc/gui/kivy/theming/light/important',
+        self.show_error(error, icon='atlas://electrum_sct/gui/kivy/theming/light/important',
             duration=duration, modal=modal, exit=exit, pos=pos,
             arrow_pos=arrow_pos)
 
@@ -890,7 +890,7 @@ class ElectrumWindow(App):
             info_bubble.show_arrow = False
             img.allow_stretch = True
             info_bubble.dim_background = True
-            info_bubble.background_image = 'atlas://electrum_nyc/gui/kivy/theming/light/card'
+            info_bubble.background_image = 'atlas://electrum_sct/gui/kivy/theming/light/card'
         else:
             info_bubble.fs = False
             info_bubble.icon = icon
