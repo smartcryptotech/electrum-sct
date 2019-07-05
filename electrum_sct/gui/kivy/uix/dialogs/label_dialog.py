@@ -21,8 +21,8 @@ Builder.load_string('''
             pos_hint: {'center_y':.5}
             text:''
             multiline: False
-            background_normal: 'atlas://electrum_nyc/gui/kivy/theming/light/tab_btn'
-            background_active: 'atlas://electrum_nyc/gui/kivy/theming/light/textinput_active'
+            background_normal: 'atlas://electrum_sct/gui/kivy/theming/light/tab_btn'
+            background_active: 'atlas://electrum_sct/gui/kivy/theming/light/textinput_active'
             hint_text_color: self.foreground_color
             foreground_color: 1, 1, 1, 1
             font_size: '16dp'
