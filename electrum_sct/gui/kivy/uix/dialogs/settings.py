@@ -3,21 +3,21 @@ from kivy.factory import Factory
 from kivy.properties import ObjectProperty
 from kivy.lang import Builder
 
-from electrum_nyc.util import base_units_list
-from electrum_nyc.i18n import languages
-from electrum_nyc.gui.kivy.i18n import _
-from electrum_nyc.plugin import run_hook
-from electrum_nyc import coinchooser
+from electrum_sct.util import base_units_list
+from electrum_sct.i18n import languages
+from electrum_sct.gui.kivy.i18n import _
+from electrum_sct.plugin import run_hook
+from electrum_sct import coinchooser
 
 from .choice_dialog import ChoiceDialog
 
 Builder.load_string('''
 #:import partial functools.partial
-#:import _ electrum_nyc.gui.kivy.i18n._
+#:import _ electrum_sct.gui.kivy.i18n._
 
 <SettingsDialog@Popup>
     id: settings
-    title: _('Electrum-NYC Settings')
+    title: _('Electrum-SCT Settings')
     disable_pin: False
     use_encryption: False
     BoxLayout:
@@ -44,7 +44,7 @@ Builder.load_string('''
                 SettingsItem:
                     bu: app.base_unit
                     title: _('Denomination') + ': ' + self.bu
-                    description: _("Base unit for NewYorkCoin amounts.")
+                    description: _("Base unit for SmartCryptoTech amounts.")
                     action: partial(root.unit_dialog, self)
                 CardSeparator
                 SettingsItem:
@@ -178,7 +178,7 @@ class SettingsDialog(Factory.Popup):
                 net_params = net_params._replace(proxy=proxy)
                 network.run_from_another_thread(network.set_parameters(net_params))
                 item.status = self.proxy_status()
-            popup = Builder.load_file('electrum_nyc/gui/kivy/uix/ui_screens/proxy.kv')
+            popup = Builder.load_file('electrum_sct/gui/kivy/uix/ui_screens/proxy.kv')
             popup.ids.mode.text = proxy.get('mode') if proxy else 'None'
             popup.ids.host.text = proxy.get('host') if proxy else ''
             popup.ids.port.text = proxy.get('port') if proxy else ''
