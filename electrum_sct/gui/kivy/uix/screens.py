@@ -18,18 +18,18 @@ from kivy.lang import Builder
 from kivy.factory import Factory
 from kivy.utils import platform
 
-from electrum_nyc.util import profiler, parse_URI, format_time, InvalidPassword, NotEnoughFunds, Fiat
-from electrum_nyc import bitcoin
-from electrum_nyc.transaction import TxOutput
-from electrum_nyc.util import send_exception_to_crash_reporter
-from electrum_nyc.paymentrequest import PR_UNPAID, PR_PAID, PR_UNKNOWN, PR_EXPIRED
-from electrum_nyc.plugin import run_hook
-from electrum_nyc.wallet import InternalAddressCorruption
+from electrum_sct.util import profiler, parse_URI, format_time, InvalidPassword, NotEnoughFunds, Fiat
+from electrum_sct import bitcoin
+from electrum_sct.transaction import TxOutput
+from electrum_sct.util import send_exception_to_crash_reporter
+from electrum_sct.paymentrequest import PR_UNPAID, PR_PAID, PR_UNKNOWN, PR_EXPIRED
+from electrum_sct.plugin import run_hook
+from electrum_sct.wallet import InternalAddressCorruption
 
 from .context_menu import ContextMenu
 
 
-from electrum_nyc.gui.kivy.i18n import _
+from electrum_sct.gui.kivy.i18n import _
 
 class HistoryRecycleView(RecycleView):
     pass
@@ -63,7 +63,7 @@ class CScreen(Factory.Screen):
 
     @profiler
     def load_screen(self):
-        self.screen = Builder.load_file('electrum_nyc/gui/kivy/uix/ui_screens/' + self.kvname + '.kv')
+        self.screen = Builder.load_file('electrum_sct/gui/kivy/uix/ui_screens/' + self.kvname + '.kv')
         self.add_widget(self.screen)
         self.loaded = True
         self.update()
@@ -135,7 +135,7 @@ class HistoryScreen(CScreen):
 
     def get_card(self, tx_hash, tx_mined_status, value, balance):
         status, status_str = self.app.wallet.get_tx_status(tx_hash, tx_mined_status)
-        icon = "atlas://electrum_nyc/gui/kivy/theming/light/" + TX_ICONS[status]
+        icon = "atlas://electrum_sct/gui/kivy/theming/light/" + TX_ICONS[status]
         label = self.app.wallet.get_label(tx_hash) if tx_hash else _('Pruned transaction outputs')
         ri = {}
         ri['screen'] = self
@@ -248,10 +248,10 @@ class SendScreen(CScreen):
         else:
             address = str(self.screen.address)
             if not address:
-                self.app.show_error(_('Recipient not specified.') + ' ' + _('Please scan a NewYorkCoin address or a payment request'))
+                self.app.show_error(_('Recipient not specified.') + ' ' + _('Please scan a SmartCryptoTech address or a payment request'))
                 return
             if not bitcoin.is_address(address):
-                self.app.show_error(_('Invalid NewYorkCoin Address') + ':\n' + address)
+                self.app.show_error(_('Invalid martCryptoTech Address') + ':\n' + address)
                 return
             try:
                 amount = self.app.get_amount(self.screen.amount)
@@ -363,7 +363,7 @@ class ReceiveScreen(CScreen):
         Clock.schedule_once(lambda dt: self.update_qr())
 
     def get_URI(self):
-        from electrum_nyc.util import create_bip21_uri
+        from electrum_sct.util import create_bip21_uri
         amount = self.screen.amount
         if amount:
             a, u = self.screen.amount.split()
@@ -379,7 +379,7 @@ class ReceiveScreen(CScreen):
 
     def do_share(self):
         uri = self.get_URI()
-        self.app.do_share(uri, _("Share NewYorkCoin Request"))
+        self.app.do_share(uri, _("Share martCryptoTech Request"))
 
     def do_copy(self):
         uri = self.get_URI()
