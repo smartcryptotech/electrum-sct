@@ -32,9 +32,9 @@ Qt interface, install the Qt dependencies::
     sudo apt-get install python3-pyqt5
 
 If you downloaded the official package (tar.gz), you can run
-Electrum-NYC from its root directory without installing it on your
+Electrum-SCT from its root directory without installing it on your
 system; all the python dependencies are included in the 'packages'
-directory. To run Electrum-NYC from its root directory, just do::
+directory. To run Electrum-SCT from its root directory, just do::
 
     ./run_electrum_sct
 
@@ -44,7 +44,7 @@ You can also install Electrum-SCT on your system, by running this command::
     python3 -m pip install .[fast]
 
 This will download and install the Python dependencies used by
-Electrum-NYC instead of using the 'packages' directory.
+Electrum-SCT instead of using the 'packages' directory.
 The 'fast' extra contains some optional dependencies that we think
 are often useful but they are not strictly needed.
 
@@ -70,7 +70,7 @@ Run install (this should install dependencies)::
 Compile the protobuf description file::
 
     sudo apt-get install protobuf-compiler
-    protoc --proto_path=electrum_nyc --python_out=electrum_nyc electrum_nyc/paymentrequest.proto
+    protoc --proto_path=electrum_sct --python_out=electrum_sct electrum_sct/paymentrequest.proto
 
 Create translations (optional)::
 
