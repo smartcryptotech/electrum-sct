@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NAME_ROOT=electrum-sc
+NAME_ROOT=electrum-sct
 
 # These settings probably don't need any change
 export WINEPREFIX=/opt/wine64
