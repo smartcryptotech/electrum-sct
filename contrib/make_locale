@@ -25,7 +25,7 @@ print("Found {} files to translate".format(len(files.splitlines())))
 # Generate fresh translation template
 if not os.path.exists('electrum_sct/locale'):
     os.mkdir('electrum_sct/locale')
-cmd = 'xgettext -s --from-code UTF-8 --language Python --no-wrap -f app.fil --output=electrum_nyc/locale/messages.pot'
+cmd = 'xgettext -s --from-code UTF-8 --language Python --no-wrap -f app.fil --output=electrum_sct/locale/messages.pot'
 print('Generate template')
 os.system(cmd)
 
