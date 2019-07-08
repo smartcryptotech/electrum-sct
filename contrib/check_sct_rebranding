@@ -23,7 +23,7 @@ for i in **/*.py; do
         | grep -v "'b\"Bitcoin seed\"'" \
         | grep -v "main_window.py.*\"'bitcoin'\"" \
         | grep -v "org.bitcoin.protocols.payments" \
-        | grep -v "electrum_nyc/plugins/ledger/"; then
+        | grep -v "electrum_sct/plugins/ledger/"; then
         echo "Rebranding needed"
         exit 1
     fi
@@ -59,7 +59,7 @@ for i in **/*.py; do
     fi
 done
 
-EXCEPTIONS="--exclude=check_nyc_rebranding --exclude-dir=.git"
+EXCEPTIONS="--exclude=check_sct_rebranding --exclude-dir=.git"
 
 if grep -r $EXCEPTIONS "import electrum\\." ./; then
     echo "Rebranding needed"
@@ -85,7 +85,7 @@ if grep -r $EXCEPTIONS "electrum/" ./ \
     | grep -v "https://d322cqt584bo4o.cloudfront.net/electrum/localized.svg" \
     | grep -v "./.tox/" \
     | grep -v "CalinsQRReader/README.md" \
-    | grep -v "./Electrum_NYC.egg-info/SOURCES.txt"; then
+    | grep -v "./Electrum_SCT.egg-info/SOURCES.txt"; then
     echo "Rebranding needed"
     exit 1
 fi
