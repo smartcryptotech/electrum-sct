@@ -42,12 +42,12 @@ from PyQt5.QtWidgets import (QApplication, QSystemTrayIcon, QWidget, QMenu,
 from PyQt5.QtCore import QObject, pyqtSignal, QTimer
 import PyQt5.QtCore as QtCore
 
-from electrum_nyc.i18n import _, set_language
-from electrum_nyc.plugin import run_hook
-from electrum_nyc.base_wizard import GoBack
-from electrum_nyc.util import (UserCancelled, PrintError, profiler,
+from electrum_sct.i18n import _, set_language
+from electrum_sct.plugin import run_hook
+from electrum_sct.base_wizard import GoBack
+from electrum_sct.util import (UserCancelled, PrintError, profiler,
                            WalletFileException, BitcoinException, get_new_wallet_name)
-from electrum_nyc.wallet import Wallet, Abstract_Wallet
+from electrum_sct.wallet import Wallet, Abstract_Wallet
 
 from .installwizard import InstallWizard, WalletAlreadyOpenInMemory
 
@@ -113,7 +113,7 @@ class ElectrumGui(PrintError):
         # init tray
         self.dark_icon = self.config.get("dark_icon", False)
         self.tray = QSystemTrayIcon(self.tray_icon(), None)
-        self.tray.setToolTip('NYCFlash Electrum Wallet')
+        self.tray.setToolTip('SCT Electrum Wallet')
         self.tray.activated.connect(self.tray_activated)
         self.build_tray_menu()
         self.tray.show()
@@ -149,7 +149,7 @@ class ElectrumGui(PrintError):
             submenu.addAction(_("Close"), window.close)
         m.addAction(_("Dark/Light"), self.toggle_tray_icon)
         m.addSeparator()
-        m.addAction(_("Exit NYCFlash Electrum Wallet"), self.close)
+        m.addAction(_("Exit SCT Electrum Wallet"), self.close)
 
     def tray_icon(self):
         if self.dark_icon:
@@ -181,7 +181,7 @@ class ElectrumGui(PrintError):
 
     def show_network_dialog(self, parent):
         if not self.daemon.network:
-            parent.show_warning(_('You are using NYCFlash Electrum Wallet in offline mode; restart NYCFlash Electrum Wallet if you want to get connected'), title=_('Offline'))
+            parent.show_warning(_('You are using SCT Electrum Wallet in offline mode; restart SCT Electrum Wallet if you want to get connected'), title=_('Offline'))
             return
         if self.nd:
             self.nd.on_update()
