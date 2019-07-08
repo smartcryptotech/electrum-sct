@@ -111,7 +111,7 @@ Section
   
   ;Files to pack into the installer
   File /r "dist\electrum-sct\*.*"
-  File "c:\electrum-nyc\electrum_sct\gui\icons\electrum_sct.ico"
+  File "c:\electrum-sct\electrum_sct\gui\icons\electrum_sct.ico"
 
   ;Store installation folder
   WriteRegStr HKCU "Software\${PRODUCT_NAME}" "" $INSTDIR
