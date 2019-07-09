@@ -10,11 +10,11 @@ from PyQt5.QtCore import Qt, QThread, pyqtSignal
 from PyQt5.QtWidgets import (QWidget, QVBoxLayout, QLabel, QProgressBar,
                              QHBoxLayout, QPushButton)
 
-from electrum_nyc import version
-from electrum_nyc import constants
-from electrum_nyc import ecc
-from electrum_nyc.i18n import _
-from electrum_nyc.util import PrintError, make_aiohttp_session
+from electrum_sct import version
+from electrum_sct import constants
+from electrum_sct import ecc
+from electrum_sct.i18n import _
+from electrum_sct.util import PrintError, make_aiohttp_session
 
 
 class UpdateCheck(QWidget, PrintError):
@@ -28,7 +28,7 @@ class UpdateCheck(QWidget, PrintError):
     def __init__(self, main_window, latest_version=None):
         self.main_window = main_window
         QWidget.__init__(self)
-        self.setWindowTitle('NYCFlash Electrum Wallet - ' + _('Update Check'))
+        self.setWindowTitle('SmartCryptoTech Electrum Wallet - ' + _('Update Check'))
         self.content = QVBoxLayout()
         self.content.setContentsMargins(*[10]*4)
 
@@ -86,10 +86,10 @@ class UpdateCheck(QWidget, PrintError):
                 self.detail_label.setText(_("You can download the new version from {}.").format(url))
             else:
                 self.heading_label.setText('<h2>' + _("Already up to date") + '</h2>')
-                self.detail_label.setText(_("You are already on the latest version of NYCFlash Electrum Wallet."))
+                self.detail_label.setText(_("You are already on the latest version of SmartCryptoTech Electrum Wallet."))
         else:
             self.heading_label.setText('<h2>' + _("Checking for updates...") + '</h2>')
-            self.detail_label.setText(_("Please wait while NYCFlash Electrum Wallet checks for available updates."))
+            self.detail_label.setText(_("Please wait while SmartCryptoTech Electrum Wallet checks for available updates."))
 
 
 class UpdateCheckThread(QThread, PrintError):
