@@ -72,7 +72,7 @@ class NotificationSession(RPCSession):
         self.in_flight_requests_semaphore = asyncio.Semaphore(100)
         # The default Bitcoin frame size limit of 1 MB doesn't work for
         # AuxPoW-based chains, because those chains' block headers have extra
-        # AuxPoW data.  A limit of 10 MB works fine for NewYorkCoin as of block
+        # AuxPoW data.  A limit of 10 MB works fine for SmartCryptoTech as of block
         # height 418744 (5 MB fails after height 155232); we set a limit of
         # 20 MB so that we have extra wiggle room.
         self.framer.max_size = 20000000
