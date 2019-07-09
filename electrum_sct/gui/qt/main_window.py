@@ -47,14 +47,14 @@ from PyQt5.QtWidgets import (QMessageBox, QComboBox, QSystemTrayIcon, QTabWidget
                              QShortcut, QMainWindow, QCompleter, QInputDialog,
                              QWidget, QMenu, QSizePolicy, QStatusBar)
 
-import electrum_nyc
-from electrum_nyc import (keystore, simple_config, ecc, constants, util, bitcoin, commands,
+import electrum_sct
+from electrum_sct import (keystore, simple_config, ecc, constants, util, bitcoin, commands,
                       coinchooser, paymentrequest)
-from electrum_nyc.bitcoin import COIN, is_address, TYPE_ADDRESS
-from electrum_nyc.plugin import run_hook
-from electrum_nyc.i18n import _
-from electrum_nyc.names import format_name_identifier
-from electrum_nyc.util import (format_time, format_satoshis, format_fee_satoshis,
+from electrum_sct.bitcoin import COIN, is_address, TYPE_ADDRESS
+from electrum_sct.plugin import run_hook
+from electrum_sct.i18n import _
+from electrum_sct.names import format_name_identifier
+from electrum_sct.util import (format_time, format_satoshis, format_fee_satoshis,
                            format_satoshis_plain, NotEnoughFunds, PrintError,
                            UserCancelled, NoDynamicFeeEstimates, profiler,
                            export_meta, import_meta, bh2u, bfh, InvalidPassword,
@@ -62,14 +62,14 @@ from electrum_nyc.util import (format_time, format_satoshis, format_fee_satoshis
                            decimal_point_to_base_unit_name, quantize_feerate,
                            UnknownBaseUnit, DECIMAL_POINT_DEFAULT, UserFacingException,
                            get_new_wallet_name, send_exception_to_crash_reporter)
-from electrum_nyc.transaction import Transaction, TxOutput
-from electrum_nyc.address_synchronizer import AddTransactionException
-from electrum_nyc.wallet import (Multisig_Wallet, CannotBumpFee, Abstract_Wallet,
+from electrum_sct.transaction import Transaction, TxOutput
+from electrum_sct.address_synchronizer import AddTransactionException
+from electrum_sct.wallet import (Multisig_Wallet, CannotBumpFee, Abstract_Wallet,
                              sweep_preparations, InternalAddressCorruption)
-from electrum_nyc.version import ELECTRUM_VERSION
-from electrum_nyc.network import Network, TxBroadcastError, BestEffortRequestFailed
-from electrum_nyc.exchange_rate import FxThread
-from electrum_nyc.simple_config import SimpleConfig
+from electrum_sct.version import ELECTRUM_VERSION
+from electrum_sct.network import Network, TxBroadcastError, BestEffortRequestFailed
+from electrum_sct.exchange_rate import FxThread
+from electrum_sct.simple_config import SimpleConfig
 
 from .exception_window import Exception_Hook
 from .amountedit import AmountEdit, BTCAmountEdit, MyLineEdit, FeerateEdit
@@ -109,7 +109,7 @@ class StatusBarButton(QPushButton):
             self.func()
 
 
-from electrum_nyc.paymentrequest import PR_PAID
+from electrum_sct.paymentrequest import PR_PAID
 
 
 class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
@@ -198,7 +198,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
         if self.config.get("is_maximized"):
             self.showMaximized()
 
-        self.setWindowIcon(read_QIcon("electrum_nyc.png"))
+        self.setWindowIcon(read_QIcon("electrum_sct.png"))
         self.init_menubar()
 
         wrtabs = weakref.proxy(tabs)
@@ -243,9 +243,9 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
         # If the option hasn't been set yet
         if config.get('check_updates') is None:
             choice = QMessageBox.question(self,
-                                 "NYCFlash Electrum Wallet - " + _("Enable update check"),
-                                 _("For security reasons we advise that you always use the latest version of NYCFlash Electrum Wallet.") + " " +
-                                 _("Would you like to be notified when there is a newer version of NYCFlash Electrum Wallet available?"),
+                                 "SmartCryptoTech Electrum Wallet - " + _("Enable update check"),
+                                 _("For security reasons we advise that you always use the latest version of SmartCryptoTech Electrum Wallet.") + " " +
+                                 _("Would you like to be notified when there is a newer version of SmartCryptoTech Electrum Wallet available?"),
                                  QMessageBox.Yes,
                                  QMessageBox.No)
             config.set_key('check_updates', choice == QMessageBox.Yes, save=True)
@@ -457,7 +457,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
             self.setGeometry(100, 100, 840, 400)
 
     def watching_only_changed(self):
-        name = "NYCFlash Electrum Wallet Testnet" if constants.net.TESTNET else "NYCFlash Electrum Wallet"
+        name = "SmartCryptoTech Electrum Wallet Testnet" if constants.net.TESTNET else "SmartCryptoTech Electrum Wallet"
         title = '%s %s  -  %s' % (name, ELECTRUM_VERSION,
                                         self.wallet.basename())
         extra = [self.wallet.storage.get('wallet_type', '?')]
@@ -474,8 +474,8 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
         if self.wallet.is_watching_only():
             msg = ' '.join([
                 _("This wallet is watching-only."),
-                _("This means you will not be able to spend NewYorkCoins with it."),
-                _("Make sure you own the seed phrase or the private keys, before you request NewYorkCoins to be sent to this wallet.")
+                _("This means you will not be able to spend `SmartCryptoTechCoins with it."),
+                _("Make sure you own the seed phrase or the private keys, before you request SmartCryptoTechCoins to be sent to this wallet.")
             ])
             self.show_warning(msg, title=_('Information'))
 
@@ -503,7 +503,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
                 shutil.copy2(path, new_path)
                 self.show_message(_("A copy of your wallet file was created in")+" '%s'" % str(new_path), title=_("Wallet backup created"))
             except BaseException as reason:
-                self.show_critical(_("NYCFlash Electrum Wallet was unable to copy your wallet file to the specified location.") + "\n" + str(reason), title=_("Unable to create backup"))
+                self.show_critical(_("SmartCryptoTech Electrum Wallet was unable to copy your wallet file to the specified location.") + "\n" + str(reason), title=_("Unable to create backup"))
 
     def update_recently_visited(self, filename):
         recent = self.config.get('recently_open', [])
@@ -597,7 +597,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
         tools_menu = menubar.addMenu(_("&Tools"))
 
         # Settings / Preferences are all reserved keywords in macOS using this as work around
-        tools_menu.addAction(_("NYCFlash Electrum Wallet preferences") if sys.platform == 'darwin' else _("Preferences"), self.settings_dialog)
+        tools_menu.addAction(_("SmartCryptoTech Electrum Wallet preferences") if sys.platform == 'darwin' else _("Preferences"), self.settings_dialog)
         tools_menu.addAction(_("&Network"), lambda: self.gui_object.show_network_dialog(self))
         tools_menu.addAction(_("&Plugins"), self.plugins_dialog)
         tools_menu.addSeparator()
@@ -618,7 +618,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
         help_menu = menubar.addMenu(_("&Help"))
         help_menu.addAction(_("&About"), self.show_about)
         help_menu.addAction(_("&Check for updates"), self.show_update_check)
-        help_menu.addAction(_("&Go To NYCFlash.me"), lambda: webbrowser.open("http://nycflash.me"))
+        help_menu.addAction(_("&Go To Smart-Crypto-Tech.co.uk"), lambda: webbrowser.open("https://smart-crypto-tech.co.uk"))
         help_menu.addSeparator()
         help_menu.addAction(_("&Documentation"), lambda: webbrowser.open("http://docs.electrum.org/")).setShortcut(QKeySequence.HelpContents)
         help_menu.addAction(_("&Report Bug"), self.show_report_bug)
@@ -631,18 +631,18 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
         d = self.network.get_donation_address()
         if d:
             host = self.network.get_parameters().host
-            self.pay_to_URI('newyorkcoin:%s?message=donation for %s'%(d, host))
+            self.pay_to_URI('smartcryptotech:%s?message=donation for %s'%(d, host))
         else:
             self.show_error(_('No donation address for this server'))
 
     def show_about(self):
-        QMessageBox.about(self, "NYCFlash Electrum Wallet",
+        QMessageBox.about(self, "SmartCryptoTech Electrum Wallet",
                           (_("Version")+" %s" % ELECTRUM_VERSION + "\n\n" +
-                           _("NYCFlash Electrum Wallet's focus is speed, with low resource usage and simplifying NewYorkCoin.") + " " +
+                           _("SmartCryptoTech Electrum Wallet's focus is speed, with low resource usage and simplifying SmartCryptoTech.") + " " +
                            _("You do not need to perform regular backups, because your wallet can be "
                               "recovered from a secret phrase that you can memorize or write on paper.") + " " +
                            _("Startup times are instant because it operates in conjunction with high-performance "
-                              "servers that handle the most complicated parts of the NewYorkCoin system.") + "\n\n" +
+                              "servers that handle the most complicated parts of the SmartCryptoTech system.") + "\n\n" +
                            _("Uses icons from the Icons8 icon pack (icons8.com).")))
 
     def show_update_check(self, version=None):
@@ -651,11 +651,11 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
     def show_report_bug(self):
         msg = ' '.join([
             _("Please report any bugs as issues on github:<br/>"),
-            "<a href=\"https://github.com/newyorkcoin/electrum-nyc/issues\">https://github.com/newyorkcoin/electrum-nyc/issues</a><br/><br/>",
-            _("Before reporting a bug, upgrade to the most recent version of NYCFlash Electrum Wallet (latest release or git HEAD), and include the version number in your report."),
+            "<a href=\"https://github.com/CryptoLover705/electrum-sct/issues\">https://github.com/CryptoLover705/electrum-sct/issues</a><br/><br/>",
+            _("Before reporting a bug, upgrade to the most recent version of SmartCryptoTech Electrum Wallet (latest release or git HEAD), and include the version number in your report."),
             _("Try to explain not only what the bug is, but how it occurs.")
          ])
-        self.show_message(msg, title="NYCFlash Electrum Wallet - " + _("Reporting Bugs"), rich_text=True)
+        self.show_message(msg, title="SmartCryptoTech Electrum Wallet - " + _("Reporting Bugs"), rich_text=True)
 
     def notify_transactions(self):
         if self.tx_notification_queue.qsize() == 0:
@@ -695,9 +695,9 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
         if self.tray:
             try:
                 # this requires Qt 5.9
-                self.tray.showMessage("NYCFlash Electrum Wallet", message, read_QIcon("electrum_dark_icon"), 20000)
+                self.tray.showMessage("SmartCryptoTech Electrum Wallet", message, read_QIcon("electrum_dark_icon"), 20000)
             except TypeError:
-                self.tray.showMessage("NYCFlash Electrum Wallet", message, QSystemTrayIcon.Information, 20000)
+                self.tray.showMessage("SmartCryptoTech Electrum Wallet", message, QSystemTrayIcon.Information, 20000)
 
 
 
@@ -883,7 +883,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
         self.receive_address_e = ButtonsLineEdit()
         self.receive_address_e.addCopyButton(self.app)
         self.receive_address_e.setReadOnly(True)
-        msg = _('NewYorkCoin address where the payment should be received. Note that each payment request uses a different NewYorkCoin address.')
+        msg = _('SmartCryptoTech address where the payment should be received. Note that each payment request uses a different SmartCryptoTech address.')
         self.receive_address_label = HelpLabel(_('Receiving address'), msg)
         self.receive_address_e.textChanged.connect(self.update_receive_qr)
         self.receive_address_e.setFocusPolicy(Qt.ClickFocus)
@@ -913,8 +913,8 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
         msg = ' '.join([
             _('Expiration date of your request.'),
             _('This information is seen by the recipient if you send them a signed payment request.'),
-            _('Expired requests have to be deleted manually from your list, in order to free the corresponding NewYorkCoin addresses.'),
-            _('The newyorkcoin address never expires and will always be part of this NYCFlash Electrum Wallet wallet.'),
+            _('Expired requests have to be deleted manually from your list, in order to free the corresponding SmartCryptoTech addresses.'),
+            _('The SmartCryptoTech address never expires and will always be part of this SmartCryptoTech Electrum Wallet wallet.'),
         ])
         grid.addWidget(HelpLabel(_('Request expires'), msg), 3, 0)
         grid.addWidget(self.expires_combo, 3, 1)
@@ -1146,7 +1146,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
         self.amount_e = BTCAmountEdit(self.get_decimal_point)
         self.payto_e = PayToEdit(self)
         msg = _('Recipient of the funds.') + '\n\n'\
-              + _('You may enter a NewYorkCoin address, a label from your list of contacts (a list of completions will be proposed), or an alias (email-like address that forwards to a NewYorkCoin address)')
+              + _('You may enter a SmartCryptoTech address, a label from your list of contacts (a list of completions will be proposed), or an alias (email-like address that forwards to a SmartCryptoTech address)')
         payto_label = HelpLabel(_('Pay to'), msg)
         grid.addWidget(payto_label, 1, 0)
         grid.addWidget(self.payto_e, 1, 1, 1, -1)
@@ -1191,7 +1191,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
         hbox.addStretch(1)
         grid.addLayout(hbox, 4, 4)
 
-        msg = _('NewYorkCoin transactions are in general not free. A transaction fee is paid by the sender of the funds.') + '\n\n'\
+        msg = _('SmartCryptoTech transactions are in general not free. A transaction fee is paid by the sender of the funds.') + '\n\n'\
               + _('The amount of fee can be decided freely by the sender. However, transactions with low fees take more time to be processed.') + '\n\n'\
               + _('A suggested fee is automatically added to this field. You may override it. The suggested fee increases with the size of the transaction.')
         self.fee_e_label = HelpLabel(_('Fee'), msg)
@@ -1253,7 +1253,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
 
         def feerounding_onclick():
             text = (self.feerounding_text + '\n\n' +
-                    _('To somewhat protect your privacy, NYCFlash Electrum Wallet tries to create change with similar precision to other outputs.') + ' ' +
+                    _('To somewhat protect your privacy, SmartCryptoTech Electrum Wallet tries to create change with similar precision to other outputs.') + ' ' +
                     _('At most 100 swartz might be lost due to this rounding.') + ' ' +
                     _("You can disable this setting in '{}'.").format(_('Preferences')) + '\n' +
                     _('Also, dust is not kept as change, but added to the fee.')  + '\n' +
@@ -1584,7 +1584,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
 
         for o in outputs:
             if o.address is None:
-                self.show_error(_('NewYorkCoin Address is None'))
+                self.show_error(_('SmartCryptoTech Address is None'))
                 return
             if o.type == TYPE_ADDRESS and not bitcoin.is_address(o.address):
                 self.show_error(_('Invalid NewYorkCoin Address'))
@@ -1818,7 +1818,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
         try:
             out = util.parse_URI(URI, self.on_pr)
         except BaseException as e:
-            self.show_error(_('Invalid newyorkcoin URI:') + '\n' + str(e))
+            self.show_error(_('Invalid smartcryptotech URI:') + '\n' + str(e))
             return
         self.show_send_tab()
         r = out.get('r')
@@ -2094,7 +2094,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
         self.send_button.setVisible(not self.wallet.is_watching_only())
 
     def change_password_dialog(self):
-        from electrum_nyc.storage import STO_EV_XPUB_PW
+        from electrum_sct.storage import STO_EV_XPUB_PW
         if self.wallet.get_available_storage_encryption_version() == STO_EV_XPUB_PW:
             from .password_dialog import ChangePasswordDialogForHW
             d = ChangePasswordDialogForHW(self, self.wallet)
@@ -2289,14 +2289,14 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
                 "private key, and verifying with the corresponding public key. The "
                 "address you have entered does not have a unique public key, so these "
                 "operations cannot be performed.") + '\n\n' + \
-               _('The operation is undefined. Not just in NYCFlash Electrum Wallet, but in general.')
+               _('The operation is undefined. Not just in SmartCryptoTech Electrum Wallet, but in general.')
 
     @protected
     def do_sign(self, address, message, signature, password):
         address  = address.text().strip()
         message = message.toPlainText().strip()
         if not bitcoin.is_address(address):
-            self.show_message(_('Invalid NewYorkCoin address.'))
+            self.show_message(_('Invalid SmartCryptoTech address.'))
             return
         if self.wallet.is_watching_only():
             self.show_message(_('This is a watching-only wallet.'))
@@ -2324,7 +2324,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
         address  = address.text().strip()
         message = message.toPlainText().strip().encode('utf-8')
         if not bitcoin.is_address(address):
-            self.show_message(_('Invalid NewYorkCoin address.'))
+            self.show_message(_('Invalid SmartCryptoTech address.'))
             return
         try:
             # This can throw on invalid base64
@@ -2458,11 +2458,11 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
             tx = tx_from_str(txt)
             return Transaction(tx)
         except BaseException as e:
-            self.show_critical(_("NYCFlash Electrum Wallet was unable to parse your transaction") + ":\n" + str(e))
+            self.show_critical(_("SmartCryptoTech Electrum Wallet was unable to parse your transaction") + ":\n" + str(e))
             return
 
     def read_tx_from_qrcode(self):
-        from electrum_nyc import qrscanner
+        from electrum_sct import qrscanner
         try:
             data = qrscanner.scan_barcode(self.config.get_video_device())
         except BaseException as e:
@@ -2493,7 +2493,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
             with open(fileName, "r") as f:
                 file_content = f.read()
         except (ValueError, IOError, os.error) as reason:
-            self.show_critical(_("NYCFlash Electrum Wallet was unable to open your transaction file") + "\n" + str(reason), title=_("Unable to read file or no transaction found"))
+            self.show_critical(_("SmartCryptoTech Electrum Wallet was unable to open your transaction file") + "\n" + str(reason), title=_("Unable to read file or no transaction found"))
             return
         return self.tx_from_text(file_content)
 
@@ -2547,7 +2547,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
         e.setReadOnly(True)
         vbox.addWidget(e)
 
-        defaultname = 'electrum-nyc-private-keys.csv'
+        defaultname = 'electrum-sct-private-keys.csv'
         select_msg = _('Select file to export your private keys to')
         hbox, filename_e, csv_button = filename_field(self, self.config, defaultname, select_msg)
         vbox.addLayout(hbox)
@@ -2605,7 +2605,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
             self.do_export_privkeys(filename, private_keys, csv_button.isChecked())
         except (IOError, os.error) as reason:
             txt = "\n".join([
-                _("NYCFlash Electrum Wallet was unable to produce a private key-export."),
+                _("SmartCryptoTech Electrum Wallet was unable to produce a private key-export."),
                 str(reason)
             ])
             self.show_critical(txt, title=_("Unable to create csv"))
@@ -2909,7 +2909,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
 
         units = base_units_list
         msg = (_('Base unit of your wallet.')
-               + '\n1 NYC = 1000 mNYC. 1 mNYC = 1000 uNYC. 1 uNYC = 100 swartz.\n'
+               + '\n1 SCT = 1000 mSCT. 1 mSCT = 1000 uSCT. 1 uSCT = 100 swartz.\n'
                + _('This setting affects the Send tab, and all balance related fields.'))
         unit_label = HelpLabel(_('Base unit') + ':', msg)
         unit_combo = QComboBox()
@@ -3186,7 +3186,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
 
         run_hook('close_settings_dialog')
         if self.need_restart:
-            self.show_warning(_('Please restart NYCFlash Electrum Wallet to activate the new GUI settings'), title=_('Success'))
+            self.show_warning(_('Please restart SmartCryptoTech Electrum Wallet to activate the new GUI settings'), title=_('Success'))
 
 
     def closeEvent(self, event):
@@ -3217,7 +3217,7 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
         self.gui_object.close_window(self)
 
     def plugins_dialog(self):
-        self.pluginsdialog = d = WindowModalDialog(self, _('NYCFlash Electrum Wallet Plugins'))
+        self.pluginsdialog = d = WindowModalDialog(self, _('SmartCryptoTech Electrum Wallet Plugins'))
 
         plugins = self.gui_object.plugins
 
@@ -3403,11 +3403,11 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, PrintError):
 
         # TODO: allow hex names
         self.buy_names_new_name_lineedit = QLineEdit()
-        self.buy_names_new_name_lineedit.setToolTip(_("Enter a name to be registered via NewYorkCoin."))
+        self.buy_names_new_name_lineedit.setToolTip(_("Enter a name to be registered via SmartCryptoTech."))
         self.buy_names_new_name_lineedit.textChanged.connect(self.update_buy_names_preview)
         vbox.addWidget(self.buy_names_new_name_lineedit)
 
-        self.buy_names_format_explain_label = QLabel(_("<html><head/><body><p>Use <span style='font-weight:600;'>d/</span> prefix for domain names.  E.g. <span style='font-weight:600;'>d/mysite</span> will register <span style='font-weight:600;'>mysite.bit</span></p><p>See the <a href='https://github.com/newyorkcoin/proposals/blob/master/ifa-0001.md'><span style='text-decoration:underline; color:#0000ff;'>NewYorkCoin Domain Names specification</span></a> for reference.  Other prefixes can be used for miscellaneous purposes (not domain names).</p></body></html>"))
+#         self.buy_names_format_explain_label = QLabel(_("<html><head/><body><p>Use <span style='font-weight:600;'>d/</span> prefix for domain names.  E.g. <span style='font-weight:600;'>d/mysite</span> will register <span style='font-weight:600;'>mysite.bit</span></p><p>See the <a href='https://github.com/newyorkcoin/proposals/blob/master/ifa-0001.md'><span style='text-decoration:underline; color:#0000ff;'>NewYorkCoin Domain Names specification</span></a> for reference.  Other prefixes can be used for miscellaneous purposes (not domain names).</p></body></html>"))
         self.buy_names_format_explain_label.setTextFormat(Qt.RichText)
         self.buy_names_format_explain_label.setWordWrap(True)
         self.buy_names_format_explain_label.setOpenExternalLinks(True)
