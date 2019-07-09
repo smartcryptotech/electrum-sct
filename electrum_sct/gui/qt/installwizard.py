@@ -14,11 +14,11 @@ from PyQt5.QtWidgets import (QWidget, QDialog, QLabel, QHBoxLayout, QMessageBox,
                              QVBoxLayout, QLineEdit, QFileDialog, QPushButton,
                              QGridLayout, QSlider, QScrollArea)
 
-from electrum_nyc.wallet import Wallet, Abstract_Wallet
-from electrum_nyc.storage import WalletStorage
-from electrum_nyc.util import UserCancelled, InvalidPassword, WalletFileException
-from electrum_nyc.base_wizard import BaseWizard, HWD_SETUP_DECRYPT_WALLET, GoBack
-from electrum_nyc.i18n import _
+from electrum_sctwallet import Wallet, Abstract_Wallet
+from electrum_sct.storage import WalletStorage
+from electrum_sct.util import UserCancelled, InvalidPassword, WalletFileException
+from electrum_sct.base_wizard import BaseWizard, HWD_SETUP_DECRYPT_WALLET, GoBack
+from electrum_sct.i18n import _
 
 from .seed_dialog import SeedLayout, KeysLayout
 from .network_dialog import NetworkChoiceLayout
@@ -33,7 +33,7 @@ MSG_HW_STORAGE_ENCRYPTION = _("Set wallet file encryption.") + '\n'\
                           + _("Your wallet file does not contain secrets, mostly just metadata. ") \
                           + _("It also contains your master public key that allows watching your addresses.") + '\n\n'\
                           + _("Note: If you enable this setting, you will need your hardware device to open your wallet.")
-WIF_HELP_TEXT = (_('WIF keys are typed in NYCFlash Electrum Wallet, based on script type.') + '\n\n' +
+WIF_HELP_TEXT = (_('WIF keys are typed in SmartCryptoTech Electrum Wallet, based on script type.') + '\n\n' +
                  _('A few examples') + ':\n' +
                  'p2pkh:TktYN7Gf6FfF...       \t-> N4S65fkQe...\n' +
                  'p2wpkh-p2sh:TktYN7Gf6FfF... \t-> 6FAqBkHpk...\n' +
@@ -43,7 +43,7 @@ MSG_PASSPHRASE_WARN_ISSUE4566 = _("Warning") + ": "\
                               + _("You have multiple consecutive whitespaces or leading/trailing "
                                   "whitespaces in your passphrase.") + " " \
                               + _("This is discouraged.") + " " \
-                              + _("Due to a bug, old versions of NYCFlash Electrum Wallet will NOT be creating the "
+                              + _("Due to a bug, old versions of SmartCryptoTech Electrum Wallet will NOT be creating the "
                                   "same wallet as newer versions or other software.")
 
 
@@ -189,7 +189,7 @@ class InstallWizard(QDialog, MessageBoxMixin, BaseWizard):
         hbox2.addWidget(self.pw_e)
         hbox2.addStretch()
         vbox.addLayout(hbox2)
-        self.set_layout(vbox, title=_('NYCFlash Electrum Wallet'))
+        self.set_layout(vbox, title=_('SmartCryptoTech Electrum Wallet'))
 
         self.temp_storage = WalletStorage(path, manual_upgrades=True)
         wallet_folder = os.path.dirname(self.temp_storage.path)
@@ -296,7 +296,7 @@ class InstallWizard(QDialog, MessageBoxMixin, BaseWizard):
         path = storage.path
         if storage.requires_split():
             self.hide()
-            msg = _("The wallet '{}' contains multiple accounts, which are no longer supported since NYCFlash Electrum Wallet 2.7.\n\n"
+            msg = _("The wallet '{}' contains multiple accounts, which are no longer supported since SmartCryptoTech Electrum Wallet 1.0.\n\n"
                     "Do you want to split your wallet into multiple files?").format(path)
             if not self.question(msg):
                 return
@@ -596,10 +596,10 @@ class InstallWizard(QDialog, MessageBoxMixin, BaseWizard):
         return None
 
     def init_network(self, network):
-        message = _("NYCFlash Electrum Wallet communicates with remote servers to get "
+        message = _("SmartCryptoTech Electrum Wallet communicates with remote servers to get "
                   "information about your transactions and addresses. The "
                   "servers all fulfill the same purpose only differing in "
-                  "hardware. In most cases you simply want to let NYCFlash Electrum Wallet "
+                  "hardware. In most cases you simply want to let SmartCryptoTech Electrum Wallet "
                   "pick one at random.  However if you prefer feel free to "
                   "select a server manually.")
         choices = [_("Auto connect"), _("Select server manually")]
