@@ -39,9 +39,9 @@ from PyQt5.QtWidgets import (QMenu, QHeaderView, QLabel, QMessageBox,
                              QPushButton, QComboBox, QVBoxLayout, QCalendarWidget,
                              QGridLayout)
 
-from electrum_nyc.address_synchronizer import TX_HEIGHT_LOCAL
-from electrum_nyc.i18n import _
-from electrum_nyc.util import (block_explorer_URL, profiler, print_error, TxMinedInfo,
+from electrum_sct.address_synchronizer import TX_HEIGHT_LOCAL
+from electrum_sct.i18n import _
+from electrum_sct.util import (block_explorer_URL, profiler, print_error, TxMinedInfo,
                                OrderedDictWithIndex, PrintError, timestamp_to_datetime)
 
 from .util import (read_QIcon, MONOSPACE_FONT, Buttons, CancelButton, OkButton,
@@ -49,12 +49,12 @@ from .util import (read_QIcon, MONOSPACE_FONT, Buttons, CancelButton, OkButton,
                    CloseButton)
 
 if TYPE_CHECKING:
-    from electrum_nyc.wallet import Abstract_Wallet
+    from electrum_sct.wallet import Abstract_Wallet
 
 try:
-    from electrum_nyc.plot import plot_history, NothingToPlotException
+    from electrum_sct.plot import plot_history, NothingToPlotException
 except:
-    print_error("qt/history_list: could not import electrum_nyc.plot. This feature needs matplotlib to be installed.")
+    print_error("qt/history_list: could not import electrum_sct.plot. This feature needs matplotlib to be installed.")
     plot_history = None
 
 # note: this list needs to be kept in sync with another in kivy
@@ -631,7 +631,7 @@ class HistoryList(MyTreeView, AcceptFileDragDrop):
         d = WindowModalDialog(self, _('Export History'))
         d.setMinimumSize(400, 200)
         vbox = QVBoxLayout(d)
-        defaultname = os.path.expanduser('~/electrum-nyc-history.csv')
+        defaultname = os.path.expanduser('~/electrum-sct-history.csv')
         select_msg = _('Select file to export your wallet transactions to')
         hbox, filename_e, csv_button = filename_field(self, self.config, defaultname, select_msg)
         vbox.addLayout(hbox)
@@ -648,7 +648,7 @@ class HistoryList(MyTreeView, AcceptFileDragDrop):
         try:
             self.do_export_history(filename, csv_button.isChecked())
         except (IOError, os.error) as reason:
-            export_error_label = _("NYCFlash Electrum Wallet was unable to produce a transaction export.")
+            export_error_label = _("SmartCryptoTech Electrum Wallet was unable to produce a transaction export.")
             self.parent.show_critical(export_error_label + "\n" + str(reason), title=_("Unable to export history"))
             return
         self.parent.show_message(_("Your wallet history has been successfully exported."))
