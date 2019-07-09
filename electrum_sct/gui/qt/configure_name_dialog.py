@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
-# Electrum-NYC - lightweight NewYorkCoin client
-# Copyright (C) 2012-2018 NewYorkCoin Developers, Electrum Developers
+# Electrum-SCT - lightweight SmartCryptoTech client
+# Copyright (C) 2012-2019 SmartCryptoTech Developers, Electrum Developers
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation files
@@ -30,13 +30,13 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
-from electrum_nyc.bitcoin import TYPE_ADDRESS
-from electrum_nyc.commands import NameAlreadyExistsError
-from electrum_nyc.i18n import _
-from electrum_nyc.names import format_name_identifier
-from electrum_nyc.network import TxBroadcastError, BestEffortRequestFailed
-from electrum_nyc.util import NotEnoughFunds, NoDynamicFeeEstimates
-from electrum_nyc.wallet import InternalAddressCorruption
+from electrum_sct.bitcoin import TYPE_ADDRESS
+from electrum_sct.commands import NameAlreadyExistsError
+from electrum_sct.i18n import _
+from electrum_sct.names import format_name_identifier
+from electrum_sct.network import TxBroadcastError, BestEffortRequestFailed
+from electrum_sct.util import NotEnoughFunds, NoDynamicFeeEstimates
+from electrum_sct.wallet import InternalAddressCorruption
 
 from .paytoedit import PayToEdit
 
