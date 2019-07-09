@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
-# Electrum-NYC - lightweight NewYorkCoin client
-# Copyright (C) 2018 NewYorkCoin Developers
+# Electrum-SCT - lightweight SmartCryptoTech client
+# Copyright (C) 2019 SmartCryptoTech Developers
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation files
@@ -169,11 +169,11 @@ def format_name_identifier_domain(identifier):
     if len(label) < 1:
         return format_name_identifier_unknown(identifier)
 
-    # Source: https://github.com/newyorkcoin/proposals/blob/master/ifa-0001.md#keys
+    # Source: https://github.com/smartcryptotech/proposals/blob/master/ifa-0001.md#keys
     if len(label) > 63:
         return format_name_identifier_unknown(identifier)
 
-    # Source: https://github.com/newyorkcoin/proposals/blob/master/ifa-0001.md#keys
+    # Source: https://github.com/smartcryptotech/proposals/blob/master/ifa-0001.md#keys
     label_regex = r"^(xn--)?[a-z0-9]+(-[a-z0-9]+)*$"
     label_match = re.match(label_regex, label)
     if label_match is None:
@@ -196,10 +196,10 @@ def format_name_identifier_identity(identifier):
 
     # Max id/ identifier length is 255 chars according to wiki spec.  But we
     # don't need to check for this, because that's also the max length of an
-    # identifier under the NewYorkCoin consensus rules.
+    # identifier under the SmartCryptoTech consensus rules.
 
     # Same as d/ regex but without IDN prefix.
-    # TODO: this doesn't exactly match the https://wiki.newyorkcoin.org spec.
+    # TODO: this doesn't exactly match the https://wiki.smartcryptotech.org spec.
     label_regex = r"^[a-z0-9]+(-[a-z0-9]+)*$"
     label_match = re.match(label_regex, label)
     if label_match is None:
