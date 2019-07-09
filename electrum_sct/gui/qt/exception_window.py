@@ -30,8 +30,8 @@ import PyQt5.QtCore as QtCore
 from PyQt5.QtWidgets import (QWidget, QLabel, QPushButton, QTextEdit,
                              QMessageBox, QHBoxLayout, QVBoxLayout)
 
-from electrum_nyc.i18n import _
-from electrum_nyc.base_crash_reporter import BaseCrashReporter
+from electrum_sct.i18n import _
+from electrum_sct.base_crash_reporter import BaseCrashReporter
 from .util import MessageBoxMixin, read_QIcon
 
 
@@ -43,7 +43,7 @@ class Exception_Window(BaseCrashReporter, QWidget, MessageBoxMixin):
         self.main_window = main_window
 
         QWidget.__init__(self)
-        self.setWindowTitle('NYCFlash Electrum Wallet - ' + _('An Error Occurred'))
+        self.setWindowTitle('SmartCryptoTech Electrum Wallet - ' + _('An Error Occurred'))
         self.setMinimumSize(600, 300)
 
         main_box = QVBoxLayout()
