@@ -20,8 +20,8 @@ from PyQt5.QtWidgets import (QPushButton, QLabel, QMessageBox, QHBoxLayout,
                              QFileDialog, QWidget, QToolButton, QTreeView, QPlainTextEdit,
                              QHeaderView, QApplication, QToolTip, QTreeWidget, QStyledItemDelegate)
 
-from electrum_nyc.i18n import _, languages
-from electrum_nyc.util import (FileImportFailed, FileExportFailed,
+from electrum_sct.i18n import _, languages
+from electrum_sct.util import (FileImportFailed, FileExportFailed,
                            resource_path)
 from electrum_nyc.paymentrequest import PR_UNPAID, PR_PAID, PR_EXPIRED
 
