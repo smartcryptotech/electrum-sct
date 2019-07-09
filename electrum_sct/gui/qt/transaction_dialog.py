@@ -36,13 +36,13 @@ from PyQt5.QtWidgets import (QDialog, QLabel, QPushButton, QHBoxLayout, QVBoxLay
 import qrcode
 from qrcode import exceptions
 
-from electrum_nyc.bitcoin import base_encode
-from electrum_nyc.i18n import _
-from electrum_nyc.names import format_name_op
-from electrum_nyc.plugin import run_hook
-from electrum_nyc import simple_config
-from electrum_nyc.util import bfh
-from electrum_nyc.transaction import SerializationError, Transaction
+from electrum_sct.bitcoin import base_encode
+from electrum_sct.i18n import _
+from electrum_sct.names import format_name_op
+from electrum_sct.plugin import run_hook
+from electrum_sct import simple_config
+from electrum_sct.util import bfh
+from electrum_sct.transaction import SerializationError, Transaction
 
 from .util import (MessageBoxMixin, read_QIcon, Buttons, CopyButton,
                    MONOSPACE_FONT, ColorScheme, ButtonsLineEdit)
@@ -60,7 +60,7 @@ def show_transaction(tx, parent, desc=None, prompt_if_unsaved=False):
         d = TxDialog(tx, parent, desc, prompt_if_unsaved)
     except SerializationError as e:
         traceback.print_exc(file=sys.stderr)
-        parent.show_critical(_("NYCFlash Electrum Wallet was unable to deserialize the transaction:") + "\n" + str(e))
+        parent.show_critical(_("SmartCryptoTech Electrum Wallet was unable to deserialize the transaction:") + "\n" + str(e))
     else:
         dialogs.append(d)
         d.show()
