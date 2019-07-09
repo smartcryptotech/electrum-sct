@@ -36,7 +36,7 @@ import aiohttp
 try:
     from . import paymentrequest_pb2 as pb2
 except ImportError:
-    sys.exit("Error: could not find paymentrequest_pb2.py. Create it with 'protoc --proto_path=electrum_nyc/ --python_out=electrum_nyc/ electrum_nyc/paymentrequest.proto'")
+    sys.exit("Error: could not find paymentrequest_pb2.py. Create it with 'protoc --proto_path=electrum_sct/ --python_out=electrum_sct/ electrum_sct/paymentrequest.proto'")
 
 from . import bitcoin, ecc, util, transaction, x509, rsakey
 from .util import print_error, bh2u, bfh, export_meta, import_meta, make_aiohttp_session
@@ -46,8 +46,8 @@ from .transaction import TxOutput
 from .network import Network
 
 
-REQUEST_HEADERS = {'Accept': 'application/newyorkcoin-paymentrequest', 'User-Agent': 'Electrum-NYC'}
-ACK_HEADERS = {'Content-Type':'application/newyorkcoin-payment','Accept':'application/newyorkcoin-paymentack','User-Agent':'Electrum-NYC'}
+REQUEST_HEADERS = {'Accept': 'application/smartcryptotech-paymentrequest', 'User-Agent': 'Electrum-SCT'}
+ACK_HEADERS = {'Content-Type':'application/smartcryptotech-payment','Accept':'application/smartcryptotech-paymentack','User-Agent':'Electrum-SCT'}
 
 ca_path = certifi.where()
 ca_list = None
@@ -78,9 +78,9 @@ async def get_payment_request(url: str) -> 'PaymentRequest':
                 async with session.get(url) as response:
                     resp_content = await response.read()
                     response.raise_for_status()
-                    # Guard against `newyorkcoin:`-URIs with invalid payment request URLs
+                    # Guard against `smartcryptotech:`-URIs with invalid payment request URLs
                     if "Content-Type" not in response.headers \
-                    or response.headers["Content-Type"] != "application/newyorkcoin-paymentrequest":
+                    or response.headers["Content-Type"] != "application/smartcryptotech-paymentrequest":
                         data = None
                         error = "payment URL not pointing to a payment request handling server"
                     else:
@@ -163,7 +163,7 @@ class PaymentRequest:
             return True
         if pr.pki_type in ["x509+sha256", "x509+sha1"]:
             return self.verify_x509(pr)
-        elif pr.pki_type in ["dnssec+nyc", "dnssec+ecdsa"]:
+        elif pr.pki_type in ["dnssec+sct", "dnssec+ecdsa"]:
             return self.verify_dnssec(pr, contacts)
         else:
             self.error = "ERROR: Unsupported PKI Type for Message Signature"
@@ -216,7 +216,7 @@ class PaymentRequest:
         if info.get('validated') is not True:
             self.error = "Alias verification failed (DNSSEC)"
             return False
-        if pr.pki_type == "dnssec+nyc":
+        if pr.pki_type == "dnssec+sct":
             self.requestor = alias
             address = info.get('address')
             pr.signature = b''
@@ -332,7 +332,7 @@ def make_unsigned_request(req):
 
 
 def sign_request_with_alias(pr, alias, alias_privkey):
-    pr.pki_type = 'dnssec+nyc'
+    pr.pki_type = 'dnssec+sct'
     pr.pki_data = str(alias)
     message = pr.SerializeToString()
     ec_key = ecc.ECPrivkey(alias_privkey)
@@ -439,7 +439,7 @@ def serialize_request(req):
     requestor = req.get('name')
     if requestor and signature:
         pr.signature = bfh(signature)
-        pr.pki_type = 'dnssec+nyc'
+        pr.pki_type = 'dnssec+sct'
         pr.pki_data = str(requestor)
     return pr
 
