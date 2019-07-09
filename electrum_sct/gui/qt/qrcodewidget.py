@@ -6,8 +6,8 @@ import PyQt5.QtGui as QtGui
 from PyQt5.QtWidgets import (
     QApplication, QVBoxLayout, QTextEdit, QHBoxLayout, QPushButton, QWidget)
 
-import electrum_nyc as electrum
-from electrum_nyc.i18n import _
+import electrum_sct as electrum
+from electrum_sct.i18n import _
 from .util import WindowModalDialog
 
 
