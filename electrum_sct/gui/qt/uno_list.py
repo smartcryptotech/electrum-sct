@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
-# Electrum-NYC - lightweight NewYorkCoin client
-# Copyright (C) 2018-2019 NewYorkCoin Developers
+# Electrum-SCT - lightweight SmartCryptoTech client
+# Copyright (C) 2019 SmartCryptoTech Developers
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation files
@@ -32,11 +32,11 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QStandardItemModel, QStandardItem, QFont
 from PyQt5.QtWidgets import QAbstractItemView, QMenu
 
-from electrum_nyc.commands import NameUpdatedTooRecentlyError
-from electrum_nyc.i18n import _
-from electrum_nyc.names import format_name_identifier, format_name_value, name_expires_in
-from electrum_nyc.util import NotEnoughFunds, NoDynamicFeeEstimates
-from electrum_nyc.wallet import InternalAddressCorruption
+from electrum_sct.commands import NameUpdatedTooRecentlyError
+from electrum_sct.i18n import _
+from electrum_sct.names import format_name_identifier, format_name_value, name_expires_in
+from electrum_sct.util import NotEnoughFunds, NoDynamicFeeEstimates
+from electrum_sct.wallet import InternalAddressCorruption
 
 from .configure_name_dialog import show_configure_name
 from .util import MyTreeView, ColorScheme, MONOSPACE_FONT
