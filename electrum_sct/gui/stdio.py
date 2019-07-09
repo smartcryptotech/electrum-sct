@@ -2,11 +2,11 @@ from decimal import Decimal
 import getpass
 import datetime
 
-from electrum_nyc import WalletStorage, Wallet
-from electrum_nyc.util import format_satoshis, set_verbosity
-from electrum_nyc.bitcoin import is_address, COIN, TYPE_ADDRESS
-from electrum_nyc.transaction import TxOutput
-from electrum_nyc.network import TxBroadcastError, BestEffortRequestFailed
+from electrum_sct import WalletStorage, Wallet
+from electrum_sct.util import format_satoshis, set_verbosity
+from electrum_sct.bitcoin import is_address, COIN, TYPE_ADDRESS
+from electrum_sct.transaction import TxOutput
+from electrum_sct.network import TxBroadcastError, BestEffortRequestFailed
 
 _ = lambda x:x  # i18n
 
@@ -218,12 +218,12 @@ class ElectrumGui:
             #self.update_contacts_tab()
 
     def network_dialog(self):
-        print("use 'electrum-nyc setconfig server/proxy' to change your network settings")
+        print("use 'electrum-sct setconfig server/proxy' to change your network settings")
         return True
 
 
     def settings_dialog(self):
-        print("use 'electrum-nyc setconfig' to change your settings")
+        print("use 'electrum-sct setconfig' to change your settings")
         return True
 
     def password_dialog(self):
