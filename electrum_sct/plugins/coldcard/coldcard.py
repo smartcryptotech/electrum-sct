@@ -6,15 +6,15 @@ from struct import pack, unpack
 import os, sys, time, io
 import traceback
 
-from electrum_nyc.bip32 import BIP32Node, InvalidMasterKeyVersionBytes
-from electrum_nyc.i18n import _
-from electrum_nyc.plugin import Device
-from electrum_nyc.keystore import Hardware_KeyStore, xpubkey_to_pubkey, Xpub
-from electrum_nyc.transaction import Transaction
-from electrum_nyc.wallet import Standard_Wallet
-from electrum_nyc.crypto import hash_160
-from electrum_nyc.util import print_error, bfh, bh2u, versiontuple, UserFacingException
-from electrum_nyc.base_wizard import ScriptTypeNotSupported
+from electrum_sct.bip32 import BIP32Node, InvalidMasterKeyVersionBytes
+from electrum_sct.i18n import _
+from electrum_sct.plugin import Device
+from electrum_sct.keystore import Hardware_KeyStore, xpubkey_to_pubkey, Xpub
+from electrum_sct.transaction import Transaction
+from electrum_sct.wallet import Standard_Wallet
+from electrum_sct.crypto import hash_160
+from electrum_sct.util import print_error, bfh, bh2u, versiontuple, UserFacingException
+from electrum_sct.base_wizard import ScriptTypeNotSupported
 
 from ..hw_wallet import HW_PluginBase
 from ..hw_wallet.plugin import LibraryFoundButUnusable
