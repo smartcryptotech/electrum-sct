@@ -1,6 +1,6 @@
-from electrum_nyc.plugin import hook
+from electrum_sct.plugin import hook
 from .coldcard import ColdcardPlugin
-from electrum_nyc.util import print_msg, print_error, raw_input, print_stderr
+from electrum_sct.util import print_msg, print_error, raw_input, print_stderr
 
 class ColdcardCmdLineHandler:
 
