@@ -7,10 +7,10 @@ import platform
 
 from PyQt5.QtWidgets import (QComboBox, QGridLayout, QLabel, QPushButton)
 
-from electrum_nyc.plugin import BasePlugin, hook
-from electrum_nyc.gui.qt.util import WaitingDialog, EnterButton, WindowModalDialog, read_QIcon
-from electrum_nyc.util import print_msg, print_error
-from electrum_nyc.i18n import _
+from electrum_sct.plugin import BasePlugin, hook
+from electrum_sct.gui.qt.util import WaitingDialog, EnterButton, WindowModalDialog, read_QIcon
+from electrum_sct.util import print_msg, print_error
+from electrum_sct.i18n import _
 
 try:
     import amodem.audio
