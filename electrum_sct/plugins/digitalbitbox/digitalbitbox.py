@@ -15,21 +15,21 @@ import struct
 import sys
 import time
 
-from electrum_nyc.crypto import sha256d, EncodeAES_base64, EncodeAES_bytes, DecodeAES_bytes, hmac_oneshot
-from electrum_nyc.bitcoin import (TYPE_ADDRESS, push_script, var_int, public_key_to_p2pkh,
+from electrum_sct.crypto import sha256d, EncodeAES_base64, EncodeAES_bytes, DecodeAES_bytes, hmac_oneshot
+from electrum_sct.bitcoin import (TYPE_ADDRESS, push_script, var_int, public_key_to_p2pkh,
                               is_address)
-from electrum_nyc.bip32 import BIP32Node
-from electrum_nyc import ecc
-from electrum_nyc.ecc import msg_magic
-from electrum_nyc.wallet import Standard_Wallet
-from electrum_nyc import constants
-from electrum_nyc.transaction import Transaction
-from electrum_nyc.i18n import _
-from electrum_nyc.keystore import Hardware_KeyStore
+from electrum_sct.bip32 import BIP32Node
+from electrum_sct import ecc
+from electrum_sct.ecc import msg_magic
+from electrum_sct.wallet import Standard_Wallet
+from electrum_sct import constants
+from electrum_sct.transaction import Transaction
+from electrum_sct.i18n import _
+from electrum_sct.keystore import Hardware_KeyStore
 from ..hw_wallet import HW_PluginBase
-from electrum_nyc.util import print_error, to_string, UserCancelled, UserFacingException
-from electrum_nyc.base_wizard import ScriptTypeNotSupported, HWD_SETUP_NEW_WALLET
-from electrum_nyc.network import Network
+from electrum_sct.util import print_error, to_string, UserCancelled, UserFacingException
+from electrum_sct.base_wizard import ScriptTypeNotSupported, HWD_SETUP_NEW_WALLET
+from electrum_sct.network import Network
 
 try:
     import hid
