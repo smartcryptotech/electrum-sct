@@ -1,11 +1,11 @@
 import time
 from struct import pack
 
-from electrum_nyc import ecc
-from electrum_nyc.i18n import _
-from electrum_nyc.util import PrintError, UserCancelled, UserFacingException
-from electrum_nyc.keystore import bip39_normalize_passphrase
-from electrum_nyc.bip32 import BIP32Node, convert_bip32_path_to_list_of_uint32 as parse_path
+from electrum_sct import ecc
+from electrum_sct.i18n import _
+from electrum_sct.util import PrintError, UserCancelled, UserFacingException
+from electrum_sct.keystore import bip39_normalize_passphrase
+from electrum_sct.bip32 import BIP32Node, convert_bip32_path_to_list_of_uint32 as parse_path
 
 from trezorlib.client import TrezorClient
 from trezorlib.exceptions import TrezorFailure, Cancelled, OutdatedFirmwareError
@@ -253,7 +253,7 @@ class TrezorClientBase(PrintError):
             msg = _("Enter a passphrase to generate this wallet.  Each time "
                     "you use this wallet your {} will prompt you for the "
                     "passphrase.  If you forget the passphrase you cannot "
-                    "access the newyorkcoins in the wallet.").format(self.device)
+                    "access the smartcryptotech coins in the wallet.").format(self.device)
         else:
             msg = _("Enter the passphrase to unlock this wallet:")
         passphrase = self.handler.get_passphrase(msg, self.creating_wallet)
