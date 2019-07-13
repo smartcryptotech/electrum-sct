@@ -2,15 +2,15 @@ from binascii import hexlify, unhexlify
 import traceback
 import sys
 
-from electrum_nyc.util import bfh, bh2u, versiontuple, UserCancelled, UserFacingException
-from electrum_nyc.bitcoin import TYPE_ADDRESS, TYPE_SCRIPT
-from electrum_nyc.bip32 import BIP32Node
-from electrum_nyc import constants
-from electrum_nyc.i18n import _
-from electrum_nyc.plugin import Device
-from electrum_nyc.transaction import deserialize, Transaction
-from electrum_nyc.keystore import Hardware_KeyStore, is_xpubkey, parse_xpubkey
-from electrum_nyc.base_wizard import ScriptTypeNotSupported
+from electrum_sct.util import bfh, bh2u, versiontuple, UserCancelled, UserFacingException
+from electrum_sct.bitcoin import TYPE_ADDRESS, TYPE_SCRIPT
+from electrum_sct.bip32 import BIP32Node
+from electrum_sct import constants
+from electrum_sct.i18n import _
+from electrum_sct.plugin import Device
+from electrum_sct.transaction import deserialize, Transaction
+from electrum_sct.keystore import Hardware_KeyStore, is_xpubkey, parse_xpubkey
+from electrum_sct.base_wizard import ScriptTypeNotSupported
 
 from ..hw_wallet import HW_PluginBase
 from ..hw_wallet.plugin import is_any_tx_output_on_change_branch, trezor_validate_op_return_output_and_get_data
@@ -159,7 +159,7 @@ class SafeTPlugin(HW_PluginBase):
         return client
 
     def get_coin_name(self):
-        return "Testnet" if constants.net.TESTNET else "NewYorkCoin"
+        return "Testnet" if constants.net.TESTNET else "SmartCryptoTech"
 
     def initialize_device(self, device_id, wizard, handler):
         # Initialization method
