@@ -2,8 +2,8 @@ import random
 
 from PyQt5.QtWidgets import (QVBoxLayout, QGridLayout, QPushButton)
 
-from electrum_nyc.plugin import BasePlugin, hook
-from electrum_nyc.i18n import _
+from electrum_sct.plugin import BasePlugin, hook
+from electrum_sct.i18n import _
 
 
 class Plugin(BasePlugin):
