@@ -495,10 +495,10 @@ class DeviceMgr(ThreadJob, PrintError):
         # The user input has wrong PIN or passphrase, or cancelled input,
         # or it is not pairable
         raise DeviceUnpairableError(
-            _('Electrum-NYC cannot pair with your {}.\n\n'
-              'Before you request newyorkcoins to be sent to addresses in this '
+            _('Electrum-SCT cannot pair with your {}.\n\n'
+              'Before you request SmartCryptoTech coins to be sent to addresses in this '
               'wallet, ensure you can pair with your device, or that you have '
-              'its seed (and passphrase, if any).  Otherwise all newyorkcoins you '
+              'its seed (and passphrase, if any).  Otherwise all SmartCryptoTech coins you '
               'receive will be unspendable.').format(plugin.device))
 
     def unpaired_device_infos(self, handler, plugin: 'HW_PluginBase', devices=None,
