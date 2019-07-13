@@ -30,9 +30,9 @@ from typing import TYPE_CHECKING
 
 from PyQt5.QtWidgets import QApplication, QPushButton
 
-from electrum_nyc.plugin import BasePlugin, hook
-from electrum_nyc.i18n import _
-from electrum_nyc.network import Network
+from electrum_sct.plugin import BasePlugin, hook
+from electrum_sct.i18n import _
+from electrum_sct.network import Network
 
 if TYPE_CHECKING:
     from aiohttp import ClientResponse
