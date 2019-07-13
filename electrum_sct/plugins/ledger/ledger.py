@@ -3,15 +3,15 @@ import hashlib
 import sys
 import traceback
 
-from electrum_nyc import ecc
-from electrum_nyc.bitcoin import TYPE_ADDRESS, int_to_hex, var_int
-from electrum_nyc.bip32 import BIP32Node
-from electrum_nyc.i18n import _
-from electrum_nyc.keystore import Hardware_KeyStore
-from electrum_nyc.transaction import Transaction
-from electrum_nyc.wallet import Standard_Wallet
-from electrum_nyc.util import print_error, bfh, bh2u, versiontuple, UserFacingException
-from electrum_nyc.base_wizard import ScriptTypeNotSupported
+from electrum_sct import ecc
+from electrum_sct.bitcoin import TYPE_ADDRESS, int_to_hex, var_int
+from electrum_sct.bip32 import BIP32Node
+from electrum_sct.i18n import _
+from electrum_sct.keystore import Hardware_KeyStore
+from electrum_sct.transaction import Transaction
+from electrum_sct.wallet import Standard_Wallet
+from electrum_sct.util import print_error, bfh, bh2u, versiontuple, UserFacingException
+from electrum_sct.base_wizard import ScriptTypeNotSupported
 
 from ..hw_wallet import HW_PluginBase
 from ..hw_wallet.plugin import is_any_tx_output_on_change_branch
