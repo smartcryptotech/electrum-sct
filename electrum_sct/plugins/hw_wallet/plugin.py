@@ -24,11 +24,11 @@
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from electrum_nyc.plugin import BasePlugin, hook
-from electrum_nyc.i18n import _
-from electrum_nyc.bitcoin import is_address, TYPE_SCRIPT, opcodes
-from electrum_nyc.util import bfh, versiontuple, UserFacingException
-from electrum_nyc.transaction import TxOutput, Transaction
+from electrum_sct.plugin import BasePlugin, hook
+from electrum_sct.i18n import _
+from electrum_sct.bitcoin import is_address, TYPE_SCRIPT, opcodes
+from electrum_sct.util import bfh, versiontuple, UserFacingException
+from electrum_sct.transaction import TxOutput, Transaction
 
 
 class HW_PluginBase(BasePlugin):
@@ -71,7 +71,7 @@ class HW_PluginBase(BasePlugin):
         if keystore is None:
             keystore = wallet.get_keystore()
         if not is_address(address):
-            keystore.handler.show_error(_('Invalid NewYorkCoin Address'))
+            keystore.handler.show_error(_('Invalid SmartCryptoTech Address'))
             return False
         if not wallet.is_mine(address):
             keystore.handler.show_error(_('Address not in wallet.'))
