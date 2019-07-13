@@ -35,19 +35,19 @@ from urllib.parse import urljoin
 from urllib.parse import quote
 from aiohttp import ClientResponse
 
-from electrum_nyc import ecc, constants, keystore, version, bip32, bitcoin
-from electrum_nyc.bitcoin import TYPE_ADDRESS
-from electrum_nyc.bip32 import CKD_pub, BIP32Node, xpub_type
-from electrum_nyc.crypto import sha256
-from electrum_nyc.transaction import TxOutput
-from electrum_nyc.mnemonic import Mnemonic, seed_type, is_any_2fa_seed_type
-from electrum_nyc.wallet import Multisig_Wallet, Deterministic_Wallet
-from electrum_nyc.i18n import _
-from electrum_nyc.plugin import BasePlugin, hook
-from electrum_nyc.util import NotEnoughFunds, UserFacingException, PrintError
-from electrum_nyc.storage import STO_EV_USER_PW
-from electrum_nyc.network import Network
-from electrum_nyc.base_wizard import BaseWizard
+from electrum_sct import ecc, constants, keystore, version, bip32, bitcoin
+from electrum_sct.bitcoin import TYPE_ADDRESS
+from electrum_sct.bip32 import CKD_pub, BIP32Node, xpub_type
+from electrum_sct.crypto import sha256
+from electrum_sct.transaction import TxOutput
+from electrum_sct.mnemonic import Mnemonic, seed_type, is_any_2fa_seed_type
+from electrum_sct.wallet import Multisig_Wallet, Deterministic_Wallet
+from electrum_sct.i18n import _
+from electrum_sct.plugin import BasePlugin, hook
+from electrum_sct.util import NotEnoughFunds, UserFacingException, PrintError
+from electrum_sct.storage import STO_EV_USER_PW
+from electrum_sct.network import Network
+from electrum_sct.base_wizard import BaseWizard
 
 def get_signing_xpub(xtype):
     if not constants.net.TESTNET:
