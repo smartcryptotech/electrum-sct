@@ -1,14 +1,14 @@
 import os
 
-from electrum_nyc.simple_config import SimpleConfig
-from electrum_nyc import constants
-from electrum_nyc.daemon import Daemon
-from electrum_nyc.storage import WalletStorage
-from electrum_nyc.wallet import Wallet, create_new_wallet
-from electrum_nyc.commands import Commands
+from electrum_sct.simple_config import SimpleConfig
+from electrum_sct import constants
+from electrum_sct.daemon import Daemon
+from electrum_sct.storage import WalletStorage
+from electrum_sct.wallet import Wallet, create_new_wallet
+from electrum_sct.commands import Commands
 
 
-config = SimpleConfig({"testnet": True})  # to use ~/.electrum-nyc/testnet as datadir
+config = SimpleConfig({"testnet": True})  # to use ~/.electrum-sct/testnet as datadir
 constants.set_testnet()  # to set testnet magic bytes
 daemon = Daemon(config, listen_jsonrpc=False)
 network = daemon.network
