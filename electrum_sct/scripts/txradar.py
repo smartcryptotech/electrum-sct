@@ -2,8 +2,8 @@
 import sys
 import asyncio
 
-from electrum_nyc.network import filter_protocol, Network
-from electrum_nyc.util import create_and_start_event_loop, log_exceptions
+from electrum_sct.network import filter_protocol, Network
+from electrum_sct.util import create_and_start_event_loop, log_exceptions
 
 
 try:
