@@ -5,8 +5,8 @@
 import time
 import asyncio
 
-from electrum_nyc.network import Network
-from electrum_nyc.util import print_msg, json_encode, create_and_start_event_loop, log_exceptions
+from electrum_sct.network import Network
+from electrum_sct.util import print_msg, json_encode, create_and_start_event_loop, log_exceptions
 
 # start network
 loop, stopping_fut, loop_thread = create_and_start_event_loop()
