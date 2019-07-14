@@ -3,15 +3,15 @@
 import sys
 import asyncio
 
-from electrum_nyc.network import Network
-from electrum_nyc.util import print_msg, create_and_start_event_loop
-from electrum_nyc.synchronizer import SynchronizerBase
+from electrum_sct.network import Network
+from electrum_sct.util import print_msg, create_and_start_event_loop
+from electrum_sct.synchronizer import SynchronizerBase
 
 
 try:
     addr = sys.argv[1]
 except Exception:
-    print("usage: watch_address <newyorkcoin_address>")
+    print("usage: watch_address <smartcryptotech_address>")
     sys.exit(1)
 
 # start network
