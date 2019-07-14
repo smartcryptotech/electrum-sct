@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #
-# scrypt.py - basic implementation of NewYorkCoin's proof-of-work algorithm
-# Copyright (C) 2014, 2017 pooler@newyorkcoinpool.org
+# scrypt.py - basic implementation of SmartCryptoTech's proof-of-stake algorithm
+# Copyright (C) 2019
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
