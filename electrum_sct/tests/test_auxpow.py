@@ -13,7 +13,7 @@ class Test_auxpow(SequentialTestCase):
     # This height was chosen because it has large, non-equal lengths of the
     # coinbase and chain Merkle branches.
     def test_deserialize_auxpow_header(self):
-        header_bytes = bfh(newyorkcoin_header_37174)
+        header_bytes = bfh(smartcryptotech_header_37174)
         # We can't pass the real height because it's below a checkpoint, and
         # the deserializer expects ElectrumX to strip checkpointed AuxPoW.
         header = blockchain.deserialize_header(header_bytes, constants.net.max_checkpoint() + 1)
