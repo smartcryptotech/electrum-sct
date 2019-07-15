@@ -2,10 +2,10 @@ import shutil
 import tempfile
 import os
 
-from electrum_nyc import constants, blockchain
-from electrum_nyc.simple_config import SimpleConfig
-from electrum_nyc.blockchain import Blockchain, deserialize_header, hash_header
-from electrum_nyc.util import bh2u, bfh, make_dir
+from electrum_sct import constants, blockchain
+from electrum_sct.simple_config import SimpleConfig
+from electrum_sct.blockchain import Blockchain, deserialize_header, hash_header
+from electrum_sct.util import bh2u, bfh, make_dir
 
 from . import SequentialTestCase
 
