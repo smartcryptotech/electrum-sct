@@ -47,7 +47,7 @@ from .keystore import xpubkey_to_address, xpubkey_to_pubkey
 NO_SIGNATURE = 'ff'
 PARTIAL_TXN_HEADER_MAGIC = b'EPTF\xff'
 
-NEWYORKCOIN_VERSION = 0x7100
+SMARTCRYPTOTECH_VERSION = 0x7100
 
 
 class SerializationError(Exception):
@@ -540,7 +540,7 @@ def parse_output(vds, i):
     d['type'], d['address'] = get_address_from_output_script(scriptPubKey)
     d['name_op'] = get_name_op_from_output_script(scriptPubKey)
     if d['name_op'] is not None:
-        # Subtract the 0.01 NYC that's permanently locked in the name
+        # Subtract the 0.01 SCT that's permanently locked in the name
         d['value'] = d['value'] - COIN // 100
         if d['value'] < 0:
             raise SerializationError('invalid output amount (insufficient for name output)')
@@ -774,7 +774,7 @@ class Transaction:
         self._outputs = outputs
         for o in outputs:
             if o.name_op is not None:
-                self.version = NEWYORKCOIN_VERSION
+                self.version = SMARTCRYPTOTECH_VERSION
         self.locktime = locktime
         if version is not None:
             self.version = version
@@ -1027,7 +1027,7 @@ class Transaction:
     def serialize_output(cls, output: TxOutput) -> str:
         amount = output.value
         if output.name_op is not None:
-            # Add the 0.01 NYC that's permanently locked in the name
+            # Add the 0.01 SCT that's permanently locked in the name
             amount = amount + COIN // 100
         s = int_to_hex(amount, 8)
         script = cls.pay_script(output.type, output.address, output.name_op)
