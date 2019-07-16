@@ -7,14 +7,14 @@ from decimal import Decimal
 import time
 
 from io import StringIO
-from electrum_nyc.storage import WalletStorage
-from electrum_nyc.json_db import FINAL_SEED_VERSION
-from electrum_nyc.wallet import (Abstract_Wallet, Standard_Wallet, create_new_wallet,
+from electrum_sct.storage import WalletStorage
+from electrum_sct.json_db import FINAL_SEED_VERSION
+from electrum_sct.wallet import (Abstract_Wallet, Standard_Wallet, create_new_wallet,
                                  restore_wallet_from_text)
-from electrum_nyc.exchange_rate import ExchangeBase, FxThread
-from electrum_nyc.util import TxMinedInfo
-from electrum_nyc.bitcoin import COIN
-from electrum_nyc.json_db import JsonDB
+from electrum_sct.exchange_rate import ExchangeBase, FxThread
+from electrum_sct.util import TxMinedInfo
+from electrum_sct.bitcoin import COIN
+from electrum_sct.json_db import JsonDB
 
 from . import SequentialTestCase
 
@@ -179,7 +179,7 @@ class TestCreateRestoreWallet(WalletTestCase):
         self.assertEqual(text, wallet.keystore.get_seed(password))
         self.assertEqual(encrypt_file, wallet.storage.is_encrypted())
         #self.assertEqual('bc1q2ccr34wzep58d4239tl3x3734ttle92a8srmuw', wallet.get_receiving_addresses()[0])
-        # Converted to NewYorkCoin using `contrib/convertBechAddress.py` from NewYorkCoin Core.
+        # Converted to SmartCryptoTech using `contrib/convertBechAddress.py` from SmartCryptoTech Core.
         self.assertEqual('nc1q2ccr34wzep58d4239tl3x3734ttle92aquuuud', wallet.get_receiving_addresses()[0])
 
     def test_restore_wallet_from_text_xpub(self):
@@ -188,7 +188,7 @@ class TestCreateRestoreWallet(WalletTestCase):
         wallet = d['wallet']  # type: Standard_Wallet
         self.assertEqual(text, wallet.keystore.get_master_public_key())
         #self.assertEqual('bc1q2ccr34wzep58d4239tl3x3734ttle92a8srmuw', wallet.get_receiving_addresses()[0])
-        # Converted to NewYorkCoin using `contrib/convertBechAddress.py` from NewYorkCoin Core.
+        # Converted to SmartCryptoTech using `contrib/convertBechAddress.py` from SmartCryptoTech Core.
         self.assertEqual('nc1q2ccr34wzep58d4239tl3x3734ttle92aquuuud', wallet.get_receiving_addresses()[0])
 
     def test_restore_wallet_from_text_xprv(self):
@@ -197,32 +197,32 @@ class TestCreateRestoreWallet(WalletTestCase):
         wallet = d['wallet']  # type: Standard_Wallet
         self.assertEqual(text, wallet.keystore.get_master_private_key(password=None))
         #self.assertEqual('bc1q2ccr34wzep58d4239tl3x3734ttle92a8srmuw', wallet.get_receiving_addresses()[0])
-        # Converted to NewYorkCoin using `contrib/convertBechAddress.py` from NewYorkCoin Core.
+        # Converted to SmartCryptoTech using `contrib/convertBechAddress.py` from SmartCryptoTech Core.
         self.assertEqual('nc1q2ccr34wzep58d4239tl3x3734ttle92aquuuud', wallet.get_receiving_addresses()[0])
 
     def test_restore_wallet_from_text_addresses(self):
         #text = 'bc1q2ccr34wzep58d4239tl3x3734ttle92a8srmuw bc1qnp78h78vp92pwdwq5xvh8eprlga5q8gu66960c'
-        # Converted to NewYorkCoin using `contrib/convertBechAddress.py` from NewYorkCoin Core.
+        # Converted to SmartCryptoTech using `contrib/convertBechAddress.py` from SmartCryptoTech Core.
         text = 'nc1q2ccr34wzep58d4239tl3x3734ttle92aquuuud nc1qnp78h78vp92pwdwq5xvh8eprlga5q8guak6a0m'
         d = restore_wallet_from_text(text, path=self.wallet_path, network=None)
         wallet = d['wallet']  # type: Abstract_Wallet
         #self.assertEqual('bc1q2ccr34wzep58d4239tl3x3734ttle92a8srmuw', wallet.get_receiving_addresses()[0])
-        # Converted to NewYorkCoin using `contrib/convertBechAddress.py` from NewYorkCoin Core.
+        # Converted to SmartCryptoTech using `contrib/convertBechAddress.py` from SmartCryptoTech Core.
         self.assertEqual('nc1q2ccr34wzep58d4239tl3x3734ttle92aquuuud', wallet.get_receiving_addresses()[0])
         self.assertEqual(2, len(wallet.get_receiving_addresses()))
 
     def test_restore_wallet_from_text_privkeys(self):
         #text = 'p2wpkh:L4jkdiXszG26SUYvwwJhzGwg37H2nLhrbip7u6crmgNeJysv5FHL p2wpkh:L24GxnN7NNUAfCXA6hFzB1jt59fYAAiFZMcLaJ2ZSawGpM3uqhb1'
-        # Converted to NewYorkCoin using `contrib/convertAddress.py` from NewYorkCoin Core.
+        # Converted to SmartCryptoTech using `contrib/convertAddress.py` from SmartCryptoTech Core.
         text = 'p2wpkh:TktYN7Gf6FfF7PEshsq9PKrzyhixC6of4hCtzidnJZZexCH2ETJ5 p2wpkh:TiD4hB6tUN7KL7D6rdnRa4fD1k7TZvp42L17fv3UyU8HTZUp13qP'
         d = restore_wallet_from_text(text, path=self.wallet_path, network=None)
         wallet = d['wallet']  # type: Abstract_Wallet
         addr0 = wallet.get_receiving_addresses()[0]
         #self.assertEqual('bc1q2ccr34wzep58d4239tl3x3734ttle92a8srmuw', addr0)
-        # Converted to NewYorkCoin using `contrib/convertBechAddress.py` from NewYorkCoin Core.
+        # Converted to SmartCryptoTech using `contrib/convertBechAddress.py` from SmartCryptoTech Core.
         self.assertEqual('nc1q2ccr34wzep58d4239tl3x3734ttle92aquuuud', addr0)
         #self.assertEqual('p2wpkh:L4jkdiXszG26SUYvwwJhzGwg37H2nLhrbip7u6crmgNeJysv5FHL',
-        # Converted to NewYorkCoin using `contrib/convertAddress.py` from NewYorkCoin Core.
+        # Converted to SmartCryptoTech using `contrib/convertAddress.py` from SmartCryptoTech Core.
         self.assertEqual('p2wpkh:TktYN7Gf6FfF7PEshsq9PKrzyhixC6of4hCtzidnJZZexCH2ETJ5',
                          wallet.export_private_key(addr0, password=None)[0])
         self.assertEqual(2, len(wallet.get_receiving_addresses()))
