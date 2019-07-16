@@ -244,7 +244,7 @@ class Abstract_Wallet(AddressSynchronizer):
         addrs = self.get_receiving_addresses()
         if len(addrs) > 0:
             if not bitcoin.is_address(addrs[0]):
-                raise WalletFileException('The addresses in this wallet are not newyorkcoin addresses.')
+                raise WalletFileException('The addresses in this wallet are not smartcryptotech addresses.')
 
     def calc_unused_change_addresses(self):
         with self.lock:
@@ -642,7 +642,7 @@ class Abstract_Wallet(AddressSynchronizer):
             # all inputs should be is_mine
             if not all([self.is_mine(self.get_txin_address(txin)) for txin in tx.inputs()]):
                 continue
-            # NewYorkCoin: avoid multiple name outputs in a single transaction,
+            # SmartCryptoTech: avoid multiple name outputs in a single transaction,
             # but allow replacing a name_anyupdate output with the same
             # identifier
             if name_identifier is None or any([o.name_op is not None and ("name" not in o.name_op or o.name_op["name"] != name_identifier) for o in tx.outputs()]):
@@ -664,7 +664,7 @@ class Abstract_Wallet(AddressSynchronizer):
         for i, o in enumerate(outputs):
             if o.type == TYPE_ADDRESS:
                 if not is_address(o.address):
-                    raise Exception("Invalid newyorkcoin address: {}".format(o.address))
+                    raise Exception("Invalid smartcryptotech address: {}".format(o.address))
             if o.value == '!':
                 if i_max is not None:
                     raise Exception("More than one output set to spend max")
@@ -735,14 +735,14 @@ class Abstract_Wallet(AddressSynchronizer):
                     lower_bound = lower_bound if not is_local else 0
                     return max(lower_bound, original_fee_estimator(size))
                 txi = base_tx.inputs()
-                # NewYorkCoin: remove any existing name outputs for the same
+                # SmartCryptoTech: remove any existing name outputs for the same
                 # identifier, since we'll be replacing them.  We already know
                 # that there aren't any existing name outputs for different
                 # identifiers, because get_unconfirmed_base_tx_for_batching
                 # does that check for us.
                 txo = list(filter(lambda o: not self.is_change(o.address) and o.name_op is None, base_tx.outputs()))
 
-                # NewYorkCoin: remove any new name inputs if the existing
+                # SmartCryptoTech: remove any new name inputs if the existing
                 # transaction already has a name input.
                 if any([self.db.transactions[i["prevout_hash"]].outputs()[i["prevout_n"]].name_op is not None for i in txi]):
                     name_inputs = list(filter(lambda i: self.db.transactions[i["prevout_hash"]].outputs()[i["prevout_n"]].name_op is None, name_inputs))
@@ -1068,7 +1068,7 @@ class Abstract_Wallet(AddressSynchronizer):
         if not r:
             return
         out = copy.copy(r)
-        out['URI'] = 'newyorkcoin:' + addr + '?amount=' + format_satoshis(out.get('amount'))
+        out['URI'] = 'smartcryptotech:' + addr + '?amount=' + format_satoshis(out.get('amount'))
         status, conf = self.get_request_status(addr)
         out['status'] = status
         if conf is not None:
@@ -1145,7 +1145,7 @@ class Abstract_Wallet(AddressSynchronizer):
     def add_payment_request(self, req, config):
         addr = req['address']
         if not bitcoin.is_address(addr):
-            raise Exception(_('Invalid NewYorkCoin address.'))
+            raise Exception(_('Invalid SmartCryptoTech address.'))
         if not self.is_mine(addr):
             raise Exception(_('Address not in wallet.'))
 
