@@ -17,7 +17,7 @@ _min_python_version_tuple = tuple(map(int, (MIN_PYTHON_VERSION.split("."))))
 
 
 if sys.version_info[:3] < _min_python_version_tuple:
-    sys.exit("Error: Electrum-NYC requires Python version >= %s..." % MIN_PYTHON_VERSION)
+    sys.exit("Error: Electrum-SCT requires Python version >= %s..." % MIN_PYTHON_VERSION)
 
 with open('contrib/requirements/requirements.txt') as f:
     requirements = f.read().splitlines()
@@ -26,7 +26,7 @@ with open('contrib/requirements/requirements-hw.txt') as f:
     requirements_hw = f.read().splitlines()
 
 # load version.py; needlessly complicated alternative to "imp.load_source":
-version_spec = importlib.util.spec_from_file_location('version', 'electrum_nyc/version.py')
+version_spec = importlib.util.spec_from_file_location('version', 'electrum_sct/version.py')
 version_module = version = importlib.util.module_from_spec(version_spec)
 version_spec.loader.exec_module(version_module)
 
@@ -46,8 +46,8 @@ if platform.system() in ['Linux', 'FreeBSD', 'DragonFly']:
         else:
             usr_share = os.path.expanduser('~/.local/share')
     data_files += [
-        (os.path.join(usr_share, 'applications/'), ['electrum-nyc.desktop']),
-        (os.path.join(usr_share, icons_dirname), ['electrum_nyc/gui/icons/electrum_nyc.png']),
+        (os.path.join(usr_share, 'applications/'), ['electrum-sct.desktop']),
+        (os.path.join(usr_share, icons_dirname), ['electrum_sct/gui/icons/electrum_sct.png']),
     ]
 
 extras_require = {
@@ -59,23 +59,23 @@ extras_require['full'] = [pkg for sublist in list(extras_require.values()) for p
 
 
 setup(
-    name="Electrum-NYC",
+    name="Electrum-SCT",
     version=version.ELECTRUM_VERSION,
     python_requires='>={}'.format(MIN_PYTHON_VERSION),
     install_requires=requirements,
     extras_require=extras_require,
     packages=[
-        'electrum_nyc',
-        'electrum_nyc.gui',
-        'electrum_nyc.gui.qt',
-        'electrum_nyc.plugins',
-    ] + [('electrum_nyc.plugins.'+pkg) for pkg in find_packages('electrum_nyc/plugins')],
+        'electrum_sct',
+        'electrum_sct.gui',
+        'electrum_sct.gui.qt',
+        'electrum_sct.plugins',
+    ] + [('electrum_sct.plugins.'+pkg) for pkg in find_packages('electrum_sct/plugins')],
     package_dir={
-        'electrum_nyc': 'electrum_nyc',
+        'electrum_sct': 'electrum_sct',
     },
     package_data={
         '': ['*.txt', '*.json', '*.ttf', '*.otf'],
-        'electrum_nyc': [
+        'electrum_sct': [
             'wordlist/*.txt',
             'locale/*/LC_MESSAGES/electrum.mo',
         ],
@@ -83,12 +83,12 @@ setup(
             'icons/*',
         ],
     },
-    scripts=['electrum_nyc/electrum-nyc'],
+    scripts=['electrum_sct/electrum-sct'],
     data_files=data_files,
-    description="Lightweight NewYorkCoin Wallet",
-    author="The NewYorkCoin developers; based on Electrum by Thomas Voegtlin and Electrum-DOGE by The Electrum-DOGE contributors",
-    author_email="jeremy@newyorkcoin.org",
+    description="Lightweight SmartCryptoTech Wallet",
+    author="The SmartCryptoTech developers; based on Electrum by Thomas Voegtlin and Electrum-DOGE by The Electrum-DOGE contributors",
+    author_email="cryptolover@twittertipbots.xyz",
     license="GNU GPLv3+ for Electrum-DOGE components; MIT Licence for all other components",
-    url="https://www.newyorkcoin.org/",
-    long_description="""Lightweight NewYorkCoin Wallet""",
+    url="https://smart-crypto-tech.com/",
+    long_description="""Lightweight SmartCryptoTech Wallet""",
 )
